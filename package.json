@@ -1,0 +1,41 @@
+{
+  "name": "locale-util",
+  "version": "0.1.1",
+  "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
+  "main": "data/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-core": "node generators/core/phoneNumberMetadata.js && node generators/core/supplementalData.js && node generators/core/currencies.js && node generators/core/subdivisions.js && node generators/core/timezones.js && node generators/core/languageNamesByCode.js",
+    "update-extra": "node generators/extra/currencyCodes.js && node generators/extra/countryCodes.js && node generators/extra/languageCodes.js && node generators/extra/currencyCodesByCountry.js && node generators/extra/timezonesByCountry.js",
+    "update-all": "npm run update-core && npm run update-extra && node generators/jstz-update-dst-rules",
+    "release": "bash dev/push.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muratgozel/locale-util.git"
+  },
+  "keywords": [
+    "cldr-json",
+    "cldr",
+    "locale-gen",
+    "locale",
+    "i18n",
+    "localization",
+    "phone-number",
+    "country-codes",
+    "languages",
+    "timezones",
+    "currency-codes"
+  ],
+  "author": "Murat Gözel <murat@gozel.com.tr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muratgozel/locale-util/issues"
+  },
+  "homepage": "https://github.com/muratgozel/locale-util#readme",
+  "dependencies": {
+    "my-little-lodash": "^2.3.0",
+    "node-expat": "^2.3.18",
+    "node-fetch": "^2.6.0"
+  }
+}
