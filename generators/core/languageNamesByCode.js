@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const fetch = require('node-fetch')
+const {updateSizeReport} = require('../../helpers')
 
 const url = 'https://raw.githubusercontent.com/unicode-org/cldr/master/tools/java/org/unicode/cldr/util/data/lstreg.txt'
 const filename = 'languageNamesByCode.json'
@@ -32,6 +33,7 @@ function parse(body) {
     }
     if (lines[i].length >= 11 && '# ISO 639-2' == lines[i].slice(0, 11)) {
       fs.writeFileSync(dest, JSON.stringify(languageNamesByCode))
+      updateSizeReport(dest, 'core')
       console.log(filename + ' has been created successfully.')
       break;
     }

@@ -3,5 +3,6 @@ module.exports = {
   currencyCodes: require('./currencyCodes.json'),
   currencyCodesByCountry: require('./currencyCodesByCountry.json'),
   languageCodes: require('./languageCodes.json'),
-  timezonesByCountry: require('./timezonesByCountry.json')
+  timezonesByCountry: require('./timezonesByCountry.json'),
+  countryOfficialLanguages: require('./countryOfficialLanguages.json')
 }

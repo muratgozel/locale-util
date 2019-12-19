@@ -3,6 +3,7 @@ const path = require('path')
 const { Readable } = require('stream')
 const expat = require('node-expat')
 const fetch = require('node-fetch')
+const {updateSizeReport} = require('../../helpers')
 
 const url = 'https://raw.githubusercontent.com/googlei18n/libphonenumber/master/resources/PhoneNumberMetadata.xml'
 const filename = 'phoneNumberMetadata.json'
@@ -36,6 +37,7 @@ function parse(body, parser, stream) {
   parser.on('close', function() {
     fs.writeFile(dest, JSON.stringify(phoneNumberMetadata), function(err) {
       if (err) throw err
+      updateSizeReport(dest, 'core')
       console.log(filename + ' has been created successfully.')
     })
   })

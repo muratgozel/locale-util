@@ -1,6 +1,8 @@
 const { spawn } = require('child_process')
 const os = require('os')
 const fs = require('fs')
+const minify = require('minify-stream')
+const {updateSizeReport} = require('../../helpers')
 
 const libpath = 'generators/jstz-update-dst-rules/jstz'
 const dest = 'data/jstz'
@@ -31,8 +33,14 @@ gen.on('close', function(code) {
     try {
       fs.mkdirSync(dest)
     } catch (e) {}
-    fs.writeFileSync(dest + '/index.js', data)
-
-    console.log('jstz dst rules updated. add ' + dest + '/index.js file into your bundle.')
+    fs.writeFileSync(dest + '/index.map.js', data)
+    fs
+      .createReadStream(dest + '/index.map.js')
+      .pipe(minify({ sourceMap: false }))
+      .pipe(fs.createWriteStream(dest + '/index.js'))
+      .on('finish', function() {
+        updateSizeReport(dest + '/index.js', 'jstz')
+        console.log('jstz dst rules updated. add ' + dest + '/index.js file into your bundle.')
+      })
   }
 })

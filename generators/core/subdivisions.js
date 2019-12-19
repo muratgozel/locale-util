@@ -3,6 +3,7 @@ const path = require('path')
 const { Readable } = require('stream')
 const expat = require('node-expat')
 const fetch = require('node-fetch')
+const {updateSizeReport} = require('../../helpers')
 
 const url = 'https://raw.githubusercontent.com/unicode-org/cldr/master/common/subdivisions/en.xml'
 const filename = 'subdivisions.json'
@@ -48,6 +49,7 @@ function parse(body, parser, stream) {
   parser.on('close', function() {
     fs.writeFile(dest, JSON.stringify(map), function(err) {
       if (err) throw err
+      updateSizeReport(dest, 'core')
       console.log(filename + ' has been created successfully.')
     })
   })

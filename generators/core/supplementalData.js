@@ -4,6 +4,7 @@ const { Readable } = require('stream')
 const expat = require('node-expat')
 const fetch = require('node-fetch')
 const utility = require('my-little-lodash')
+const {updateSizeReport} = require('../../helpers')
 
 const url = 'https://raw.githubusercontent.com/unicode-org/cldr/master/common/supplemental/supplementalData.xml'
 const filename = 'supplementalData.json'
@@ -94,6 +95,7 @@ function parse(body, parser, stream) {
     })
     fs.writeFile(dest, JSON.stringify(data), function(err) {
       if (err) throw err
+      updateSizeReport(dest, 'core')
       console.log(filename + ' has been created successfully.')
     })
   })

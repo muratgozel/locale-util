@@ -47,3 +47,8 @@ The generated data is available under `data` directory. It's pre-generated. Ther
 npm run update-all
 ```
 inside the package directory.
+
+## Data Size Report
+Be careful with importing the data into your bundles for browsers since the data may increase your bundle size dramatically.
+
+Please refer to the file [dataSizeReport.json](https://github.com/muratgozel/locale-util/blob/master/dataSizeReport.json) that shows the size of each data item in kilobytes.
