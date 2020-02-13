@@ -14,9 +14,18 @@ const currentRelease = matchedReleases[0]
 
 // increment appropriate release number
 const parts = currentRelease.split('.').map(p => parseFloat(p))
-if (releaseType == 'major') parts[0] = parts[0] + 1
-else if (releaseType == 'minor') parts[1] = parts[1] + 1
-else parts[2] = parts[2] + 1
+if (releaseType == 'major') {
+  parts[0] = parts[0] + 1
+  parts[1] = 0
+  parts[2] = 0
+}
+else if (releaseType == 'minor') {
+  parts[1] = parts[1] + 1
+  parts[2] = 0
+}
+else {
+  parts[2] = parts[2] + 1
+}
 const nextRelease = parts.join('.')
 
 // save next release

@@ -42,7 +42,7 @@ if [[ ! -z $(git status -s) ]]; then
   git tag -a "$next" -m "$message"
   git add .
   git commit -m "$message"
-  git push origin $branch
+  git push origin $branch --tags
 
   echo "Codebase updated successfully."
   exit 0

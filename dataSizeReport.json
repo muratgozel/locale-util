@@ -13,7 +13,8 @@
     "languageCodes": 0.95,
     "currencyCodesByCountry": 1.79,
     "timezonesByCountry": 9.96,
-    "countryOfficialLanguages": 3.71
+    "countryOfficialLanguages": 3.71,
+    "countriesByCode": 4.59
   },
   "jstz": {
     "index": 14.65
