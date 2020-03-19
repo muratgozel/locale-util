@@ -10,11 +10,13 @@ kit.addKit(kitObject)
 kit.addKit(kitError)
 kit.addKit(kitValidator)
 const {updateSizeReport} = require('../../helpers')
+const {excludedCountryCodes} = require('../config')
 
 const supplementalData = require('../../data/core/supplementalData.json')
 const countryCodes = Object.keys(supplementalData.territoryInfo)
 const countriesByCode = countryCodes.reduce(function(memo, code) {
-  if (kit.isNotEmpty( kit.getProp(supplementalData.territoryInfo[code], 'name') )) {
+  if (kit.isNotEmpty( kit.getProp(supplementalData.territoryInfo[code], 'name') )
+  && excludedCountryCodes.indexOf(code) === -1) {
     memo[code] = supplementalData.territoryInfo[code].name
   }
   return memo

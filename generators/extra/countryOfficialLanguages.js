@@ -1,11 +1,13 @@
 const fs = require('fs')
 const path = require('path')
 const {updateSizeReport} = require('../../helpers')
+const {excludedCountryCodes} = require('../config')
 const languageNamesByCode = require('../../data/core/languageNamesByCode.json')
 
 const supplementalData = require('../../data/core/supplementalData.json')
 const countryOfficialLanguages = Object
   .keys(supplementalData.territoryInfo)
+  .filter(c => excludedCountryCodes.indexOf(c) === -1)
   .reduce(function(memo, country) {
     const languages = supplementalData.territoryInfo[country].languages
       .filter(o => o.official)

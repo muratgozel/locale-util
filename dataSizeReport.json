@@ -2,21 +2,21 @@
   "core": {
     "currencies": 11.27,
     "phoneNumberMetadata": 2.6,
-    "supplementalData": 127.92,
-    "subdivisions": 102.47,
+    "supplementalData": 127.99,
+    "subdivisions": 104.33,
     "timezones": 45.11,
     "languageNamesByCode": 3.24
   },
   "extra": {
     "currencyCodes": 1.08,
-    "countryCodes": 1.29,
+    "countryCodes": 1.28,
     "languageCodes": 0.95,
-    "currencyCodesByCountry": 1.79,
+    "currencyCodesByCountry": 1.78,
     "timezonesByCountry": 9.96,
     "countryOfficialLanguages": 3.71,
-    "countriesByCode": 4.59
+    "countriesByCode": 4.54
   },
   "jstz": {
-    "index": 14.65
+    "index": 15.15
   }
 }
