@@ -2,9 +2,9 @@
   "core": {
     "currencies": 11.27,
     "phoneNumberMetadata": 2.6,
-    "supplementalData": 127.99,
+    "supplementalData": 128.07,
     "subdivisions": 104.33,
-    "timezones": 45.11,
+    "timezones": 45.29,
     "languageNamesByCode": 3.24
   },
   "extra": {
@@ -17,6 +17,6 @@
     "countriesByCode": 4.54
   },
   "jstz": {
-    "index": 15.15
+    "index": 15.53
   }
 }

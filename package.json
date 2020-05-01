@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "main": "data/index.js",
   "scripts": {
@@ -27,7 +27,15 @@
     "timezones",
     "currency-codes"
   ],
-  "author": "Murat Gözel <murat@gozel.com.tr>",
+  "author": {
+    "name": "Murat Gözel",
+    "email": "murat@gozel.com.tr",
+    "url": "https://gozel.com.tr"
+  },
+  "funding": {
+    "type": "ko-fi",
+    "url": "https://ko-fi.com/muratgozel"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/muratgozel/locale-util/issues"
