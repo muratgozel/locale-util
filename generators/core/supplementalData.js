@@ -3,11 +3,7 @@ const path = require('path')
 const { Readable } = require('stream')
 const expat = require('node-expat')
 const fetch = require('node-fetch')
-const kit = require('@basekits/core')
-const kitType = require('@basekits/kit-type')
-const kitObject = require('@basekits/kit-object')
-kit.addKit(kitType)
-kit.addKit(kitObject)
+const {objectkit} = require('basekits')
 const {updateSizeReport} = require('../../helpers')
 
 const url = 'https://raw.githubusercontent.com/unicode-org/cldr/master/common/supplemental/supplementalData.xml'
@@ -54,7 +50,7 @@ function parse(body, parser, stream) {
     }
 
     if (name == 'languagePopulation' && territoryInfo.activeItem) {
-      const official = kit.getProp(attrs, 'officialStatus', false)
+      const official = objectkit.getProp(attrs, 'officialStatus', false)
       const obj = {
         code: attrs.type,
         name: null,
