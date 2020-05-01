@@ -1,6 +1,10 @@
 # locale-util
 Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.
 
+![NPM](https://img.shields.io/npm/l/locale-util)
+[![npm version](https://badge.fury.io/js/locale-util.svg)](https://badge.fury.io/js/locale-util)
+![npm](https://img.shields.io/npm/dy/locale-util)
+
 ## Installation
 Install as an npm package:
 ```
@@ -52,3 +56,9 @@ inside the package directory.
 Be careful with importing the data into your bundles for browsers since the data may increase your bundle size dramatically.
 
 Please refer to the file [dataSizeReport.json](https://github.com/muratgozel/locale-util/blob/master/dataSizeReport.json) that shows the size of each data item in kilobytes.
+
+---
+
+Thanks for watching 🐬
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F1RFO7)
