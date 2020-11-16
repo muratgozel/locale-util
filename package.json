@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "main": "data/index.js",
   "scripts": {
@@ -43,11 +43,11 @@
   "homepage": "https://github.com/muratgozel/locale-util#readme",
   "dependencies": {},
   "devDependencies": {
-    "basekits": "^1.0.2",
-    "minify-stream": "^2.0.0",
+    "basekits": "^1.2.1",
+    "minify-stream": "^2.1.0",
     "node-expat": "^2.3.18",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "semver": "^7.3.2",
-    "yargs": "^15.3.1"
+    "yargs": "^15.4.1"
   }
 }
