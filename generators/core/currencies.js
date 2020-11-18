@@ -92,7 +92,7 @@ function parse(body, parser, stream) {
           .keys(currencyCodesByCountry)
           .filter(country => currencyCodesByCountry[country] == item.code)
         if (countryMatches && countryMatches.length > 0) {
-          const countryDataPath = 'data/core/byLocale/' + (countryMatches.length > 1 ? 'en' : countryMatches[0].toLowerCase()) + '.json'
+          const countryDataPath = 'data/core/main/' + (countryMatches.length > 1 ? 'en' : countryMatches[0].toLowerCase()) + '.json'
           if (!fs.existsSync(countryDataPath)) {
             return null
           }

@@ -16,15 +16,21 @@ git clone git@github.com:muratgozel/locale-util.git
 ```
 
 ## Using Generated Data
-The generated data is available under `data` directory. It's pre-generated and stays up to date by regenerating the data for a couple of times in a year. You can import whichever data you want into your project by just requiring:
+The generated data is available under `data` directory. It's pre-generated and will always be up-to-date. You can import whichever data you want into your project by just requiring:
 ```js
+// list of currencies
 const currencies = require('locale-util/data/core/currencies.json')
+// list of currency codes by country
 const currencyCodesByCountry = require('locale-util/data/extra/currencyCodesByCountry.json')
+// list of country names by country code
+const countryNamesByCode = require('locale-util/data/extra/countryNamesByCode.json')
+
+// and more inside the data directory
 ```
-Or you can require group of data:
+Or you can require a collection of data:
 ```js
 const core = require('locale-util/data/core')
-// core now has currencies, languageNamesByCode, phoneNumberMetadata etc.
+// core now has currencies, supplementalData, phoneNumberMetadata etc.
 
 const extra = require('locale-util/data/extra')
 // extra now has countryCodes, currencyCodes etc.
