@@ -2,26 +2,19 @@ const fs = require('fs')
 const path = require('path')
 const { Readable } = require('stream')
 const expat = require('node-expat')
-const fetch = require('node-fetch')
 const {updateSizeReport} = require('../../helpers')
 
-const url = 'https://raw.githubusercontent.com/unicode-org/cldr/master/common/supplemental/windowsZones.xml'
+const src = path.join('cldr-data/supplemental/windowsZones.xml')
 const filename = 'timezones.json'
 const dest = path.join('data/core', filename)
 
-fetch(url)
-  .then(res => res.text())
-  .then(function(body) {
-    const parser = new expat.Parser('UTF-8')
-    const stream = new Readable()
+const data = fs.readFileSync(src, 'utf8')
+parse(data)
 
-    return parse(body, parser, stream)
-  })
-  .catch(function(err) {
-    throw err
-  })
+function parse(body) {
+  const parser = new expat.Parser('UTF-8')
+  const stream = new Readable()
 
-function parse(body, parser, stream) {
   parser.on('error', function(err) {
     throw err
   })

@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const {updateSizeReport} = require('../../helpers')
 const {excludedCountryCodes} = require('../config')
-const languageNamesByCode = require('../../data/core/languageNamesByCode.json')
+const languageNamesByCode = require('../../data/extra/languageNamesByCode.json')
 
 const supplementalData = require('../../data/core/supplementalData.json')
 const countryOfficialLanguages = Object

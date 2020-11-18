@@ -2,26 +2,23 @@ const fs = require('fs')
 const path = require('path')
 const { Readable } = require('stream')
 const expat = require('node-expat')
-const fetch = require('node-fetch')
 const {updateSizeReport} = require('../../helpers')
 
-const url = 'https://raw.githubusercontent.com/unicode-org/cldr/master/common/subdivisions/en.xml'
-const filename = 'subdivisions.json'
-const dest = path.join('data/core', filename)
+const src = path.join('cldr-data/subdivisions')
+const dest = path.join('data/core/subdivisions')
+fs.mkdirSync(dest, {recursive: true})
 
-fetch(url)
-  .then(res => res.text())
-  .then(function(body) {
-    const parser = new expat.Parser('UTF-8')
-    const stream = new Readable()
+const files = fs.readdirSync(src).filter(f => path.extname(f) == '.xml')
+for (var i = 0; i < files.length; i++) {
+  const filename = path.basename(files[i])
+  const data = fs.readFileSync(path.join(src, filename), 'utf8')
+  parse(data, path.basename(filename, '.xml'))
+}
 
-    return parse(body, parser, stream)
-  })
-  .catch(function(err) {
-    throw err
-  })
+function parse(body, filename) {
+  const parser = new expat.Parser('UTF-8')
+  const stream = new Readable()
 
-function parse(body, parser, stream) {
   parser.on('error', function(err) {
     throw err
   })
@@ -39,18 +36,18 @@ function parse(body, parser, stream) {
 
   parser.on('text', function (text) {
     if (countryCode !== null && subdivisionCode !== null) {
-      if (!map.hasOwnProperty(countryCode)) map[countryCode] = []
-      map[countryCode].push({[subdivisionCode]: text})
+      if (!map.hasOwnProperty(countryCode)) map[countryCode] = {}
+      map[countryCode][subdivisionCode] = text
       countryCode = null
       subdivisionCode = null
     }
   })
 
   parser.on('close', function() {
-    fs.writeFile(dest, JSON.stringify(map), function(err) {
+    fs.writeFile(path.join(dest, filename + '.json'), JSON.stringify(map), function(err) {
       if (err) throw err
-      updateSizeReport(dest, 'core')
-      console.log(filename + ' has been created successfully.')
+      //updateSizeReport(path.join(dest, filename + '.json'), 'core')
+      console.log(filename + '.json has been created successfully.')
     })
   })
 

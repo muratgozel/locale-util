@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const {updateSizeReport} = require('../../helpers')
 
-const languageNamesByCode = require('../../data/core/languageNamesByCode.json')
+const languageNamesByCode = require('../../data/extra/languageNamesByCode.json')
 const languageCodes = Object.keys(languageNamesByCode)
 
 const filename = 'languageCodes.json'

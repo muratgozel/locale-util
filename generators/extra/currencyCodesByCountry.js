@@ -7,9 +7,12 @@ const supplementalData = require('../../data/core/supplementalData.json')
 const currencyCodesByCountry = Object
   .keys(supplementalData.currencyData)
   .reduce(function(memo, currencyCode) {
-    const countryCode = supplementalData.currencyData[currencyCode]
-    if (excludedCountryCodes.indexOf(countryCode) === -1) {
-      memo[countryCode] = currencyCode
+    const countryCodes = supplementalData.currencyData[currencyCode]
+    for (var i = 0; i < countryCodes.length; i++) {
+      const c = countryCodes[i]
+      if (excludedCountryCodes.indexOf(c) === -1) {
+        memo[c] = currencyCode
+      }
     }
     return memo
   }, {})

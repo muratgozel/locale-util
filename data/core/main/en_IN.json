@@ -1,0 +1,12 @@
+{
+  "languages": {
+    "bn": "Bengali",
+    "ro_MD": "Moldavian"
+  },
+  "countryNamesByCode": {},
+  "currencyNamesByCode": {
+    "USD": null,
+    "VEF": "Venezuelan Bolívar",
+    "VES": "VES"
+  }
+}

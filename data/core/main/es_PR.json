@@ -1,0 +1,17 @@
+{
+  "languages": {
+    "ace": "acehnés",
+    "arp": "arapaho",
+    "bho": "bhojpuri",
+    "grc": "griego antiguo",
+    "nso": "sotho septentrional",
+    "ss": "siswati",
+    "wo": "wolof"
+  },
+  "countryNamesByCode": {
+    "UM": "Islas menores alejadas de EE. UU."
+  },
+  "currencyNamesByCode": {
+    "USD": null
+  }
+}

@@ -1,12 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 const {updateSizeReport} = require('../../helpers')
-const {excludedCountryCodes} = require('../config')
 
-const supplementalData = require('../../data/core/supplementalData.json')
-const countryCodes = Object
-  .keys(supplementalData.territoryInfo)
-  .filter(c => excludedCountryCodes.indexOf(c) === -1)
+const countryNamesByCode = require('../../data/extra/countryNamesByCode.json')
+const countryCodes = Object.keys(countryNamesByCode)
 
 const filename = 'countryCodes.json'
 const dest = path.join('data/extra', filename)

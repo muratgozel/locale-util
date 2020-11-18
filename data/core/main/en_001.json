@@ -1,0 +1,31 @@
+{
+  "languages": {
+    "mus": "Creek",
+    "nds_NL": "West Low German",
+    "sah": "Yakut"
+  },
+  "countryNamesByCode": {
+    "UM": "US Outlying Islands",
+    "VI": "US Virgin Islands"
+  },
+  "currencyNamesByCode": {
+    "AFN": "Afghan afghani",
+    "BMD": "Bermudian Dollar",
+    "BYB": "Belarusian New Rouble (1994–1999)",
+    "BYN": "Belarusian Rouble",
+    "BYR": "Belarusian Rouble (2000–2016)",
+    "ETB": "Ethiopian birr",
+    "JPY": null,
+    "LSL": "Lesotho maloti",
+    "LVR": "Latvian Rouble",
+    "MGA": "Malagasy ariary",
+    "MVR": "Maldivian rufiyaa",
+    "PHP": "Philippine Peso",
+    "RUB": "Russian Rouble",
+    "RUR": "Russian Rouble (1991–1998)",
+    "SHP": "St Helena Pound",
+    "TJR": "Tajikistani Rouble",
+    "USD": null,
+    "VUV": "Vanuatu vatu"
+  }
+}
