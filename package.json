@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "main": "data/index.js",
   "scripts": {

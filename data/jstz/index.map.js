@@ -500,7 +500,7 @@ jstz.olson.timezones = {
     '840,0': 'Pacific/Kiritimati'
 };
 
-/* Build time: 2020-11-21 18:59:48Z Build by invoking python utilities/dst.py generate */
+/* Build time: 2020-11-21 19:49:25Z Build by invoking python utilities/dst.py generate */
 jstz.olson.dst_rules = {
     "years": [
         2008,

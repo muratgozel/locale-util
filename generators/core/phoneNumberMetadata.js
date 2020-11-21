@@ -4,6 +4,7 @@ const { Readable } = require('stream')
 const expat = require('node-expat')
 const fetch = require('node-fetch')
 const {updateSizeReport} = require('../../helpers')
+const {excludedCountryCodes} = require('../config')
 
 const url = 'https://raw.githubusercontent.com/googlei18n/libphonenumber/master/resources/PhoneNumberMetadata.xml'
 const filename = 'phoneNumberMetadata.json'
@@ -30,7 +31,8 @@ function parse(body, parser, stream) {
 
   parser.on('startElement', function (name, attrs) {
     if (name == 'territory' && attrs.id && attrs.countryCode) {
-      phoneNumberMetadata[attrs.id] = attrs.countryCode
+      if (excludedCountryCodes.indexOf(attrs.id) === -1 && /[A-Z]{2}/.test(attrs.id) === true)
+        phoneNumberMetadata[attrs.id] = attrs.countryCode;
     }
   })
 
