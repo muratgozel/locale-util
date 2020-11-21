@@ -13,8 +13,9 @@ for (var i = 0; i < countryCodes.length; i++) {
   const arr = []
   const countryCode = countryCodes[i]
   if (countryCode == 'TR') {
-    Object.keys(citiesByCode).map(function(cityCode) {
-      const item = {code: cityCode, name: citiesByCode[cityCode], children: []}
+    citiesByCode.map(function(arritem) {
+      const cityCode = arritem[0]
+      const item = {code: cityCode, name: arritem[1], children: []}
       districtsByCity[cityCode].map(function(districtName) {
         const item2 = {code: null, name: districtName, children: []}
         neighbourhoodsByDistrictAndCity[cityCode][districtName].map(function(neighborhood) {

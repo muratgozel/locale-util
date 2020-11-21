@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "main": "data/index.js",
   "scripts": {
@@ -48,7 +48,7 @@
     "node-expat": "^2.3.18",
     "node-fetch": "^2.6.1",
     "semver": "^7.3.2",
-    "yargs": "^15.4.1",
-    "turkey-neighbourhoods": "^2.0.1"
+    "turkey-neighbourhoods": "^2.0.2",
+    "yargs": "^15.4.1"
   }
 }
