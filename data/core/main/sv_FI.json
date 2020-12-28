@@ -1,5 +1,7 @@
 {
-  "languages": {},
+  "languages": {
+    "ky": "kirgiziska"
+  },
   "countryNamesByCode": {},
   "currencyNamesByCode": {}
 }

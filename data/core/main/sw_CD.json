@@ -9,6 +9,7 @@
     "hup": "Kihupa",
     "jbo": "Kilojban",
     "kac": "Kikachin",
+    "khq": "Kikoyra Chiini",
     "kkj": "Kikako",
     "koi": "Kikomipermyak",
     "kru": "Kikurukh",
@@ -38,6 +39,8 @@
     "BJ": "Benini",
     "CI": "Kodivaa",
     "CX": "Kisiwa cha Christmas",
+    "CY": "Saiprasi",
+    "DK": "Denmaki",
     "HR": "Kroeshia",
     "JO": "Yordani",
     "LB": "Lebanoni",
@@ -46,6 +49,7 @@
     "LV": "Lativia",
     "MA": "Moroko",
     "MM": "Myama",
+    "MV": "Maldivi",
     "NE": "Nijeri",
     "NG": "Nijeria",
     "NO": "Norwe",
@@ -56,7 +60,8 @@
     "SD": "Sudani",
     "ST": "Sao Tome na Prinsipe",
     "TD": "Chadi",
-    "TL": "Timori ya Mashariki"
+    "TL": "Timori ya Mashariki",
+    "VN": "Vietnamu"
   },
   "currencyNamesByCode": {
     "CDF": null,

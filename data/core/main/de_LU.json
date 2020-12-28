@@ -1,5 +1,7 @@
 {
-  "languages": {},
+  "languages": {
+    "be": "Belarussisch"
+  },
   "countryNamesByCode": {},
   "currencyNamesByCode": {
     "LUF": null

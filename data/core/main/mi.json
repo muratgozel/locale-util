@@ -24,8 +24,8 @@
     "ru": "Ruhiana",
     "und": "Reo Tē Mōhiotia",
     "zh": "Hainamana Manarini",
-    "zh_Hans": "Hainamana Māmā",
-    "zh_Hant": "Hainamana Tukuiho"
+    "zh_Hans": "↑↑↑",
+    "zh_Hant": "↑↑↑"
   },
   "countryNamesByCode": {
     "BR": "Parahi",
@@ -43,15 +43,37 @@
     "ZZ": "Rohe Tē Mōhiotia"
   },
   "currencyNamesByCode": {
+    "ANG": null,
+    "ARS": null,
+    "AWG": null,
+    "BBD": null,
+    "BMD": null,
     "BRL": "Real Parahi",
+    "BSD": null,
+    "BZD": null,
+    "CAD": null,
     "CNY": "Yuan Haina",
+    "CRC": null,
+    "CUC": null,
+    "CUP": null,
+    "DOP": null,
     "EUR": "Euro",
     "GBP": "Pāuna Piritene",
+    "GTQ": null,
+    "HNL": null,
+    "HTG": null,
     "INR": "Rupī Iniana",
+    "JMD": null,
     "JPY": "Yen Hapanihi",
+    "KYD": null,
+    "MXN": null,
+    "NIO": null,
     "NZD": "Tāra o Aotearoa",
+    "PAB": null,
     "RUB": "Rūpera Ruhiana",
+    "TTD": null,
     "USD": "Tāra US",
+    "XCD": null,
     "XXX": "Moni Tē Mōhiotia"
   }
 }

@@ -5,7 +5,14 @@
     "sah": "Yakut"
   },
   "countryNamesByCode": {
+    "BL": "St. Barthélemy",
+    "KN": " Nevis",
+    "LC": "St. Lucia",
+    "MF": "St. Martin",
+    "PM": " Miquelon",
+    "SH": "St. Helena",
     "UM": "US Outlying Islands",
+    "VC": " Grenadines",
     "VI": "US Virgin Islands"
   },
   "currencyNamesByCode": {
