@@ -1,12 +1,12 @@
 {
   "name": "locale-util",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "main": "data/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "update-core": "node generators/core/phoneNumberMetadata.js && node generators/core/supplementalData.js && node generators/core/main.js && node generators/core/currencies.js && node generators/core/subdivisions.js && node generators/core/timezones.js",
-    "update-extra": "node generators/extra/currencyCodes.js && node generators/extra/countryCodes.js && node generators/extra/languageNamesByCode.js && node generators/extra/languageCodes.js && node generators/extra/currencyCodesByCountry.js && node generators/extra/timezonesByCountry.js && node generators/extra/countryOfficialLanguages.js && node generators/extra/countryNamesByCode.js && node generators/extra/divisions.js",
+    "update-extra": "node generators/extra/currencyCodes.js && node generators/extra/countryCodes.js && node generators/extra/languageNamesByCode.js && node generators/extra/languageCodes.js && node generators/extra/currencyCodesByCountry.js && node generators/extra/timezonesByCountry.js && node generators/extra/countryOfficialLanguages.js && node generators/extra/countryNamesByCode.js && node generators/extra/divisions.js && node generators/extra/localeList.js",
     "update-all": "npm run update-core && npm run update-extra && node generators/jstz-update-dst-rules",
     "commit": "node dev/commit.js commit"
   },

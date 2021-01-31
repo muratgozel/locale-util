@@ -108,6 +108,13 @@ function parse(body, parser, stream) {
       })
       .filter(item => item !== null)
 
+    // sort by code
+    localizedList.sort(function(a, b) {
+      if (a.code < b.code) return -1;
+      else if (a.code > b.code) return 1;
+      else return 0;
+    })
+
     fs.writeFile(dest, JSON.stringify(localizedList), function(err) {
       if (err) throw err
       updateSizeReport(dest, 'core')

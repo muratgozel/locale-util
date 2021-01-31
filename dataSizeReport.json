@@ -895,7 +895,8 @@
     "countryOfficialLanguages": 4.01,
     "countriesByCode": 5.03,
     "languageNamesByCode": 10.89,
-    "countryNamesByCode": 5.03
+    "countryNamesByCode": 5.03,
+    "localeList": 18.75
   },
   "jstz": {
     "index": 13.05
