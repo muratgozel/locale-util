@@ -6,6 +6,7 @@
     "bm": "bamanankan",
     "bn": "bangla",
     "de": "njemački",
+    "de_CH": "švajcarski visoki njemački",
     "en_GB": "engleski (Velika Britanija)",
     "es_ES": "španski (Evropa)",
     "fa_AF": "dari",
@@ -65,6 +66,7 @@
   "currencyNamesByCode": {
     "BAM": "Bosanskohercegovačka konvertibilna marka",
     "BYN": "Bjeloruska rublja",
-    "KPW": "Sjevernokorejski von"
+    "KPW": "Sjevernokorejski von",
+    "NIO": "Nikaragvanska zlatna kordoba"
   }
 }
