@@ -33,14 +33,8 @@ gen.on('close', function(code) {
     try {
       fs.mkdirSync(dest)
     } catch (e) {}
-    fs.writeFileSync(dest + '/index.map.js', data)
-    fs
-      .createReadStream(dest + '/index.map.js')
-      .pipe(minify({ sourceMap: false }))
-      .pipe(fs.createWriteStream(dest + '/index.js'))
-      .on('finish', function() {
-        updateSizeReport(dest + '/index.js', 'jstz')
-        console.log('jstz dst rules updated. add ' + dest + '/index.js file into your bundle.')
-      })
+    fs.writeFileSync(dest + '/index.js', data)
+    updateSizeReport(dest + '/index.js', 'jstz')
+    console.log('jstz dst rules updated. add ' + dest + '/index.js file into your bundle.')
   }
 })

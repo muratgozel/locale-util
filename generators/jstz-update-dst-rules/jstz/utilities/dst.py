@@ -100,7 +100,7 @@ OLSON_TO_WIN32_MAPPING = {
 
 current_year = datetime.now().year
 
-YEARS = range(current_year-2, current_year)
+YEARS = range(current_year-2, current_year+2)
 
 def set_windows_timezone(timezone):
     windows_tz = OLSON_TO_WIN32_MAPPING[timezone]
