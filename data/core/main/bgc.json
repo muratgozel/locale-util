@@ -1,0 +1,11 @@
+{
+  "languages": {
+    "bgc": "हरियाणवी",
+    "en": "अंग्रेजी"
+  },
+  "countryNamesByCode": {
+    "IN": "भारत",
+    "ZZ": "अणजाण जगह"
+  },
+  "currencyNamesByCode": {}
+}

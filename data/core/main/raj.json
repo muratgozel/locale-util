@@ -1,0 +1,11 @@
+{
+  "languages": {
+    "en": "अंग्रेजी",
+    "raj": "राजस्थानी"
+  },
+  "countryNamesByCode": {
+    "IN": "भारत",
+    "ZZ": "अज्ञात"
+  },
+  "currencyNamesByCode": {}
+}

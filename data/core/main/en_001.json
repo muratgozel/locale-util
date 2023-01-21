@@ -1,18 +1,19 @@
 {
   "languages": {
+    "bla": "Siksika",
     "mus": "Creek",
     "nds_NL": "West Low German",
     "sah": "Yakut"
   },
   "countryNamesByCode": {
-    "BL": "St. Barthélemy",
+    "BL": "St Barthélemy",
     "KN": " Nevis",
-    "LC": "St. Lucia",
-    "MF": "St. Martin",
+    "LC": "St Lucia",
+    "MF": "St Martin",
     "PM": " Miquelon",
-    "SH": "St. Helena",
+    "SH": "St Helena",
     "UM": "US Outlying Islands",
-    "VC": " Grenadines",
+    "VC": " the Grenadines",
     "VI": "US Virgin Islands"
   },
   "currencyNamesByCode": {

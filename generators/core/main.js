@@ -2,7 +2,6 @@ const fs = require('fs')
 const path = require('path')
 const { Readable } = require('stream')
 const expat = require('node-expat')
-const {objectkit} = require('basekits')
 const {updateSizeReport} = require('../../helpers')
 
 const src = path.join('cldr-data/main')

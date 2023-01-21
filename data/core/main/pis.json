@@ -1,0 +1,12 @@
+{
+  "languages": {
+    "en": "Ingglis",
+    "pis": "Pijin"
+  },
+  "countryNamesByCode": {
+    "SB": "Solomon Aelan"
+  },
+  "currencyNamesByCode": {
+    "SBD": null
+  }
+}

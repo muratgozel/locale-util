@@ -1,12 +1,13 @@
 {
-  "npm": {
-    "enable": true,
-    "updatePkgJson": true,
-    "publish": true,
-    "publishCmdSuffix": "--access public"
-  },
-  "github": {
-    "enable": true,
-    "release": true
-  }
+  "versioningScheme": "semver",
+  "versioningPrefix": "",
+  "npmUpdatePackageVersion": true,
+  "npmPublishPackage": true,
+  "githubRelease": true,
+  "location": ".releaser.json",
+  "npmPublishPackageArgs": [],
+  "gitlabRelease": false,
+  "dockerBuildPath": ".",
+  "dockerBuildArgs": [],
+  "dockerPushArgs": []
 }

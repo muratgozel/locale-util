@@ -1,8 +1,8 @@
 const fs = require('fs')
 const path = require('path')
 const { Readable } = require('stream')
+const _ = require('underscore')
 const expat = require('node-expat')
-const {objectkit} = require('basekits')
 const {updateSizeReport} = require('../../helpers')
 
 const src = path.join('cldr-data/supplemental/supplementalData.xml')
@@ -44,7 +44,7 @@ function parse(body) {
     }
 
     if (name == 'languagePopulation' && territoryInfo.activeItem) {
-      const official = objectkit.getProp(attrs, 'officialStatus', false)
+      const official = _.get(attrs, 'officialStatus', false)
       const obj = {
         code: attrs.type,
         name: null,
