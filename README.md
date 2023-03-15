@@ -1,67 +1,96 @@
 # locale-util
-Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.
+Unicode CLDR data parser and module, regularly updated based on https://github.com/unicode-org/cldr releases.
 
-![NPM](https://img.shields.io/npm/l/locale-util)
-[![npm version](https://badge.fury.io/js/locale-util.svg)](https://badge.fury.io/js/locale-util)
-![npm](https://img.shields.io/npm/dy/locale-util)
+## ⭐ Breaking Changes in v3
+In v3, I extended the scope of the package, made it a module that has the necessary methods to interact with the data.
 
 ## Installation
-Install as an npm package:
-```
+```sh
 npm install locale-util
 ```
-or clone to your project directory:
-```sh
-git clone git@github.com:muratgozel/locale-util.git
-```
 
-## Using Generated Data
-The generated data is available under `data` directory. It's pre-generated and will always be up-to-date. You can import whichever data you want into your project by just requiring:
+## Usage
+The package contains large amount of data which is not suitable for browser environment. Benefit from tree-shaking might work if you are interested in small chunks of it.
+
+Here are the methods that you can use to interact with the data:
 ```js
-// list of currencies
-const currencies = require('locale-util/data/core/currencies.json')
-// list of currency codes by country
-const currencyCodesByCountry = require('locale-util/data/extra/currencyCodesByCountry.json')
-// list of country names by country code
-const countryNamesByCode = require('locale-util/data/extra/countryNamesByCode.json')
+import {isCountryCode, findCountry, findCallingCode, findCountryLanguages, 
+    isCurrencyCode, findCurrency, isLanguageCode, findLanguage, 
+    findCountryTimezones, findTimezoneOffset} from 'locale-util'
 
-// and more inside the data directory
+isCountryCode('TR') // true
+isCountryCode('XX') // false
+
+findCountry('TR') /*
+{
+    'code': 'TR',
+    'englishName': 'Turkey',
+    'nativeName': 'Türkiye'
+}
+*/
+findCountry('ABC') // undefined
+
+findCallingCode('US') // 1
+findCallingCode('TR') // 90
+findCallingCode(null) // undefined
+
+findCountryLanguages('TR') // ['tr']
+findCountryLanguages('US') // ['en', 'es', 'haw']
+
+isCurrencyCode('TRY') // true
+
+findCurrency('TRY') /*
+{
+    'code': 'TRY',
+    'num': 949,
+    'englishName': 'Turkish',
+    'nativeName': 'Türkçe'
+}
+*/
+
+isLanguageCode('xxx') // false
+isLanguageCode('tr') // true
+
+findLanguage('tr') /*
+{
+    'code': 'tr',
+    'nativeName': 'Türkçe',
+    'englishName': 'Turkish'
+}
+*/
+
+findCountryTimezones('TR') /*
+[{
+    'name': 'Europe/Istanbul',
+    'offset': -180,
+    'country': 'TR'
+}]
+*/
+
+findCountryTimezones('TT') /*
+[{
+    'name': 'America/Port_of_Spain',
+    'offset': 240,
+    'country': 'TT'
+}, {
+    'name': 'America/Puerto_Rico',
+    'offset': 240,
+    'country': 'TT'
+}]
+*/
+
+findTimezoneOffset('America/Puerto_Rico') // 240
+findTimezoneOffset('Europe/Istanbul') // -180
 ```
-Or you can require a collection of data:
-```js
-const core = require('locale-util/data/core')
-// core now has currencies, supplementalData, phoneNumberMetadata etc.
 
-const extra = require('locale-util/data/extra')
-// extra now has countryCodes, currencyCodes etc.
+Have a look at the tests, types and source for more info.
 
-const data = require('locale-util')
-// data has core, extra and jstz lib.
-```
+## Keeping Data Up To Date
+Data updates published regularly as minor releases so you only need to update the package as new version comes in. If you have a kind of manual setup, download the release you wish from https://github.com/unicode-org/cldr/releases and copy the `common` directory under `cldr-data-common`. Then run `npm run generate`, `compile`, `build` and `test` to parse the new data.
 
-## About Generators
-Generators grouped by their function.
+---
 
-### Core Generators
-The scripts in `generators/core` folder fetch and parse the data from a chosen reliable source.
-
-### Extra Generators
-The scripts in `generators/extra` folder parse the data from `data/core/somefile` file.
-
-### JSTZ Lib Generator
-[jstz](https://github.com/pellepim/jstimezonedetect) is a timezone detection library and its DST (daylight saving time) values by timezone needs to be updated by time. `locale-util` generates the library source code by regenerating the daylight saving time values by timezone.
-
-## About Generated Data
-The generated data is available under `data` directory. It's pre-generated. There is no need to generate any data when you install this package. However, sources that this package uses to generate data may update theirself overtime. Generally a couple of times in a year. If you want to stay up to date, you need to regenerate the data by running:
-```sh
-npm run update-all
-```
-inside the package directory.
-
-## Data Size Report
-Be careful with importing the data into your bundles for browsers since the data may increase your bundle size dramatically.
-
-Please refer to the file [dataSizeReport.json](https://github.com/muratgozel/locale-util/blob/master/dataSizeReport.json) that shows the size of each data item in kilobytes.
+Version management of this repository done by [releaser](https://github.com/muratgozel/node-releaser) 🚀
 
 ---
 
