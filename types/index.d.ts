@@ -9,6 +9,12 @@ declare module 'locale-util' {
     export type {LanguageCodeExtended} from './languageCodesExtended'
     export type {CurrencyCode} from './currencyCodes'
 
+    export {isCountryCode, isLanguageCode, isCurrencyCode,
+        findCurrency, findCountry, findCountryLanguages,
+        findCallingCode, findCountryTimezones, findLanguage, findTimezoneOffset,
+        currencies, currencyCodes, countryCodes, countryLanguages,
+        countries, languages, countryCallingCodes, languageCodes, timezones} from '../build/index.js'
+
     export interface CountryLanguages {
         [index: CountryCode]: LanguageCode[]
     }
