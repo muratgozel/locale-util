@@ -1,7 +1,7 @@
 export const timezones = [
     {
         'name': 'Europe/Andorra',
-        'offset': -60,
+        'offset': -120,
         'country': 'AD'
     },
     {
@@ -36,7 +36,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Tirane',
-        'offset': -60,
+        'offset': -120,
         'country': 'AL'
     },
     {
@@ -96,7 +96,7 @@ export const timezones = [
     },
     {
         'name': 'Antarctica/Troll',
-        'offset': 0,
+        'offset': -120,
         'country': 'AQ'
     },
     {
@@ -191,7 +191,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Vienna',
-        'offset': -60,
+        'offset': -120,
         'country': 'AT'
     },
     {
@@ -266,12 +266,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Helsinki',
-        'offset': -120,
+        'offset': -180,
         'country': 'AX'
     },
     {
         'name': 'Europe/Mariehamn',
-        'offset': -120,
+        'offset': -180,
         'country': 'AX'
     },
     {
@@ -281,12 +281,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -60,
+        'offset': -120,
         'country': 'BA'
     },
     {
         'name': 'Europe/Sarajevo',
-        'offset': -60,
+        'offset': -120,
         'country': 'BA'
     },
     {
@@ -301,7 +301,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Brussels',
-        'offset': -60,
+        'offset': -120,
         'country': 'BE'
     },
     {
@@ -316,7 +316,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Sofia',
-        'offset': -120,
+        'offset': -180,
         'country': 'BG'
     },
     {
@@ -691,7 +691,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Zurich',
-        'offset': -60,
+        'offset': -120,
         'country': 'CH'
     },
     {
@@ -781,32 +781,32 @@ export const timezones = [
     },
     {
         'name': 'Asia/Famagusta',
-        'offset': -120,
+        'offset': -180,
         'country': 'CY'
     },
     {
         'name': 'Asia/Nicosia',
-        'offset': -120,
+        'offset': -180,
         'country': 'CY'
     },
     {
         'name': 'Europe/Prague',
-        'offset': -60,
+        'offset': -120,
         'country': 'CZ'
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -60,
+        'offset': -120,
         'country': 'DE'
     },
     {
         'name': 'Europe/Busingen',
-        'offset': -60,
+        'offset': -120,
         'country': 'DE'
     },
     {
         'name': 'Europe/Zurich',
-        'offset': -60,
+        'offset': -120,
         'country': 'DE'
     },
     {
@@ -821,12 +821,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -60,
+        'offset': -120,
         'country': 'DK'
     },
     {
         'name': 'Europe/Copenhagen',
-        'offset': -60,
+        'offset': -120,
         'country': 'DK'
     },
     {
@@ -861,7 +861,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Tallinn',
-        'offset': -120,
+        'offset': -180,
         'country': 'EE'
     },
     {
@@ -871,7 +871,7 @@ export const timezones = [
     },
     {
         'name': 'Africa/El_Aaiun',
-        'offset': -60,
+        'offset': 0,
         'country': 'EH'
     },
     {
@@ -886,17 +886,17 @@ export const timezones = [
     },
     {
         'name': 'Africa/Ceuta',
-        'offset': -60,
+        'offset': -120,
         'country': 'ES'
     },
     {
         'name': 'Atlantic/Canary',
-        'offset': 0,
+        'offset': -60,
         'country': 'ES'
     },
     {
         'name': 'Europe/Madrid',
-        'offset': -60,
+        'offset': -120,
         'country': 'ES'
     },
     {
@@ -911,7 +911,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Helsinki',
-        'offset': -120,
+        'offset': -180,
         'country': 'FI'
     },
     {
@@ -951,12 +951,12 @@ export const timezones = [
     },
     {
         'name': 'Atlantic/Faroe',
-        'offset': 0,
+        'offset': -60,
         'country': 'FO'
     },
     {
         'name': 'Europe/Paris',
-        'offset': -60,
+        'offset': -120,
         'country': 'FR'
     },
     {
@@ -971,7 +971,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/London',
-        'offset': 0,
+        'offset': -60,
         'country': 'GB'
     },
     {
@@ -996,12 +996,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Guernsey',
-        'offset': 0,
+        'offset': -60,
         'country': 'GG'
     },
     {
         'name': 'Europe/London',
-        'offset': 0,
+        'offset': -60,
         'country': 'GG'
     },
     {
@@ -1016,7 +1016,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Gibraltar',
-        'offset': -60,
+        'offset': -120,
         'country': 'GI'
     },
     {
@@ -1026,12 +1026,12 @@ export const timezones = [
     },
     {
         'name': 'America/Nuuk',
-        'offset': 180,
+        'offset': 120,
         'country': 'GL'
     },
     {
         'name': 'America/Scoresbysund',
-        'offset': 60,
+        'offset': 0,
         'country': 'GL'
     },
     {
@@ -1081,7 +1081,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Athens',
-        'offset': -120,
+        'offset': -180,
         'country': 'GR'
     },
     {
@@ -1121,12 +1121,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -60,
+        'offset': -120,
         'country': 'HR'
     },
     {
         'name': 'Europe/Zagreb',
-        'offset': -60,
+        'offset': -120,
         'country': 'HR'
     },
     {
@@ -1136,7 +1136,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Budapest',
-        'offset': -60,
+        'offset': -120,
         'country': 'HU'
     },
     {
@@ -1161,22 +1161,22 @@ export const timezones = [
     },
     {
         'name': 'Europe/Dublin',
-        'offset': 0,
+        'offset': -60,
         'country': 'IE'
     },
     {
         'name': 'Asia/Jerusalem',
-        'offset': -120,
+        'offset': -180,
         'country': 'IL'
     },
     {
         'name': 'Europe/Isle_of_Man',
-        'offset': 0,
+        'offset': -60,
         'country': 'IM'
     },
     {
         'name': 'Europe/London',
-        'offset': 0,
+        'offset': -60,
         'country': 'IM'
     },
     {
@@ -1211,17 +1211,17 @@ export const timezones = [
     },
     {
         'name': 'Europe/Rome',
-        'offset': -60,
+        'offset': -120,
         'country': 'IT'
     },
     {
         'name': 'Europe/Jersey',
-        'offset': 0,
+        'offset': -60,
         'country': 'JE'
     },
     {
         'name': 'Europe/London',
-        'offset': 0,
+        'offset': -60,
         'country': 'JE'
     },
     {
@@ -1371,7 +1371,7 @@ export const timezones = [
     },
     {
         'name': 'Asia/Beirut',
-        'offset': -120,
+        'offset': -180,
         'country': 'LB'
     },
     {
@@ -1386,12 +1386,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Vaduz',
-        'offset': -60,
+        'offset': -120,
         'country': 'LI'
     },
     {
         'name': 'Europe/Zurich',
-        'offset': -60,
+        'offset': -120,
         'country': 'LI'
     },
     {
@@ -1416,22 +1416,22 @@ export const timezones = [
     },
     {
         'name': 'Europe/Vilnius',
-        'offset': -120,
+        'offset': -180,
         'country': 'LT'
     },
     {
         'name': 'Europe/Brussels',
-        'offset': -60,
+        'offset': -120,
         'country': 'LU'
     },
     {
         'name': 'Europe/Luxembourg',
-        'offset': -60,
+        'offset': -120,
         'country': 'LU'
     },
     {
         'name': 'Europe/Riga',
-        'offset': -120,
+        'offset': -180,
         'country': 'LV'
     },
     {
@@ -1441,32 +1441,32 @@ export const timezones = [
     },
     {
         'name': 'Africa/Casablanca',
-        'offset': -60,
+        'offset': 0,
         'country': 'MA'
     },
     {
         'name': 'Europe/Monaco',
-        'offset': -60,
+        'offset': -120,
         'country': 'MC'
     },
     {
         'name': 'Europe/Paris',
-        'offset': -60,
+        'offset': -120,
         'country': 'MC'
     },
     {
         'name': 'Europe/Chisinau',
-        'offset': -120,
+        'offset': -180,
         'country': 'MD'
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -60,
+        'offset': -120,
         'country': 'ME'
     },
     {
         'name': 'Europe/Podgorica',
-        'offset': -60,
+        'offset': -120,
         'country': 'ME'
     },
     {
@@ -1506,12 +1506,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -60,
+        'offset': -120,
         'country': 'MK'
     },
     {
         'name': 'Europe/Skopje',
-        'offset': -60,
+        'offset': -120,
         'country': 'MK'
     },
     {
@@ -1586,7 +1586,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Malta',
-        'offset': -60,
+        'offset': -120,
         'country': 'MT'
     },
     {
@@ -1726,22 +1726,22 @@ export const timezones = [
     },
     {
         'name': 'Europe/Amsterdam',
-        'offset': -60,
+        'offset': -120,
         'country': 'NL'
     },
     {
         'name': 'Europe/Brussels',
-        'offset': -60,
+        'offset': -120,
         'country': 'NL'
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -60,
+        'offset': -120,
         'country': 'NO'
     },
     {
         'name': 'Europe/Oslo',
-        'offset': -60,
+        'offset': -120,
         'country': 'NO'
     },
     {
@@ -1826,7 +1826,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Warsaw',
-        'offset': -60,
+        'offset': -120,
         'country': 'PL'
     },
     {
@@ -1846,27 +1846,27 @@ export const timezones = [
     },
     {
         'name': 'Asia/Gaza',
-        'offset': -120,
+        'offset': -180,
         'country': 'PS'
     },
     {
         'name': 'Asia/Hebron',
-        'offset': -120,
+        'offset': -180,
         'country': 'PS'
     },
     {
         'name': 'Atlantic/Azores',
-        'offset': 60,
+        'offset': 0,
         'country': 'PT'
     },
     {
         'name': 'Atlantic/Madeira',
-        'offset': 0,
+        'offset': -60,
         'country': 'PT'
     },
     {
         'name': 'Europe/Lisbon',
-        'offset': 0,
+        'offset': -60,
         'country': 'PT'
     },
     {
@@ -1876,7 +1876,7 @@ export const timezones = [
     },
     {
         'name': 'America/Asuncion',
-        'offset': 180,
+        'offset': 240,
         'country': 'PY'
     },
     {
@@ -1896,12 +1896,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Bucharest',
-        'offset': -120,
+        'offset': -180,
         'country': 'RO'
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -60,
+        'offset': -120,
         'country': 'RS'
     },
     {
@@ -2076,12 +2076,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -60,
+        'offset': -120,
         'country': 'SE'
     },
     {
         'name': 'Europe/Stockholm',
-        'offset': -60,
+        'offset': -120,
         'country': 'SE'
     },
     {
@@ -2101,32 +2101,32 @@ export const timezones = [
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -60,
+        'offset': -120,
         'country': 'SI'
     },
     {
         'name': 'Europe/Ljubljana',
-        'offset': -60,
+        'offset': -120,
         'country': 'SI'
     },
     {
         'name': 'Arctic/Longyearbyen',
-        'offset': -60,
+        'offset': -120,
         'country': 'SJ'
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -60,
+        'offset': -120,
         'country': 'SJ'
     },
     {
         'name': 'Europe/Bratislava',
-        'offset': -60,
+        'offset': -120,
         'country': 'SK'
     },
     {
         'name': 'Europe/Prague',
-        'offset': -60,
+        'offset': -120,
         'country': 'SK'
     },
     {
@@ -2141,12 +2141,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Rome',
-        'offset': -60,
+        'offset': -120,
         'country': 'SM'
     },
     {
         'name': 'Europe/San_Marino',
-        'offset': -60,
+        'offset': -120,
         'country': 'SM'
     },
     {
@@ -2326,7 +2326,7 @@ export const timezones = [
     },
     {
         'name': 'Europe/Kyiv',
-        'offset': -120,
+        'offset': -180,
         'country': 'UA'
     },
     {
@@ -2531,12 +2531,12 @@ export const timezones = [
     },
     {
         'name': 'Europe/Rome',
-        'offset': -60,
+        'offset': -120,
         'country': 'VA'
     },
     {
         'name': 'Europe/Vatican',
-        'offset': -60,
+        'offset': -120,
         'country': 'VA'
     },
     {

@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "main": "build/index.js",
   "type": "module",
@@ -15,10 +15,11 @@
     }
   },
   "scripts": {
+    "presetup": "rm -rf src/data/*",
+    "setup": "node setup/generateResources.js",
     "precompile": "rm -rf build/*",
     "compile": "tsc -p tsconfig.json",
-    "generate": "node build/generateResources.js",
-    "build": "npm run compile && node esbuild.js",
+    "build": "node esbuild.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {

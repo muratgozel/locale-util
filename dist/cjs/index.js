@@ -1833,7 +1833,17 @@ var countryCallingCodes = {
   "ZA": 27,
   "ZM": 260,
   "ZW": 263,
-  "001": 979
+  "AQ": void 0,
+  "BV": void 0,
+  "CP": void 0,
+  "DG": void 0,
+  "EA": void 0,
+  "GS": void 0,
+  "HM": void 0,
+  "IC": void 0,
+  "PN": void 0,
+  "TF": void 0,
+  "UM": void 0
 };
 
 // src/data/countryLanguages.ts
@@ -4447,7 +4457,7 @@ var languages = [
 var timezones = [
   {
     "name": "Europe/Andorra",
-    "offset": -60,
+    "offset": -120,
     "country": "AD"
   },
   {
@@ -4482,7 +4492,7 @@ var timezones = [
   },
   {
     "name": "Europe/Tirane",
-    "offset": -60,
+    "offset": -120,
     "country": "AL"
   },
   {
@@ -4542,7 +4552,7 @@ var timezones = [
   },
   {
     "name": "Antarctica/Troll",
-    "offset": 0,
+    "offset": -120,
     "country": "AQ"
   },
   {
@@ -4637,7 +4647,7 @@ var timezones = [
   },
   {
     "name": "Europe/Vienna",
-    "offset": -60,
+    "offset": -120,
     "country": "AT"
   },
   {
@@ -4712,12 +4722,12 @@ var timezones = [
   },
   {
     "name": "Europe/Helsinki",
-    "offset": -120,
+    "offset": -180,
     "country": "AX"
   },
   {
     "name": "Europe/Mariehamn",
-    "offset": -120,
+    "offset": -180,
     "country": "AX"
   },
   {
@@ -4727,12 +4737,12 @@ var timezones = [
   },
   {
     "name": "Europe/Belgrade",
-    "offset": -60,
+    "offset": -120,
     "country": "BA"
   },
   {
     "name": "Europe/Sarajevo",
-    "offset": -60,
+    "offset": -120,
     "country": "BA"
   },
   {
@@ -4747,7 +4757,7 @@ var timezones = [
   },
   {
     "name": "Europe/Brussels",
-    "offset": -60,
+    "offset": -120,
     "country": "BE"
   },
   {
@@ -4762,7 +4772,7 @@ var timezones = [
   },
   {
     "name": "Europe/Sofia",
-    "offset": -120,
+    "offset": -180,
     "country": "BG"
   },
   {
@@ -5137,7 +5147,7 @@ var timezones = [
   },
   {
     "name": "Europe/Zurich",
-    "offset": -60,
+    "offset": -120,
     "country": "CH"
   },
   {
@@ -5227,32 +5237,32 @@ var timezones = [
   },
   {
     "name": "Asia/Famagusta",
-    "offset": -120,
+    "offset": -180,
     "country": "CY"
   },
   {
     "name": "Asia/Nicosia",
-    "offset": -120,
+    "offset": -180,
     "country": "CY"
   },
   {
     "name": "Europe/Prague",
-    "offset": -60,
+    "offset": -120,
     "country": "CZ"
   },
   {
     "name": "Europe/Berlin",
-    "offset": -60,
+    "offset": -120,
     "country": "DE"
   },
   {
     "name": "Europe/Busingen",
-    "offset": -60,
+    "offset": -120,
     "country": "DE"
   },
   {
     "name": "Europe/Zurich",
-    "offset": -60,
+    "offset": -120,
     "country": "DE"
   },
   {
@@ -5267,12 +5277,12 @@ var timezones = [
   },
   {
     "name": "Europe/Berlin",
-    "offset": -60,
+    "offset": -120,
     "country": "DK"
   },
   {
     "name": "Europe/Copenhagen",
-    "offset": -60,
+    "offset": -120,
     "country": "DK"
   },
   {
@@ -5307,7 +5317,7 @@ var timezones = [
   },
   {
     "name": "Europe/Tallinn",
-    "offset": -120,
+    "offset": -180,
     "country": "EE"
   },
   {
@@ -5317,7 +5327,7 @@ var timezones = [
   },
   {
     "name": "Africa/El_Aaiun",
-    "offset": -60,
+    "offset": 0,
     "country": "EH"
   },
   {
@@ -5332,17 +5342,17 @@ var timezones = [
   },
   {
     "name": "Africa/Ceuta",
-    "offset": -60,
+    "offset": -120,
     "country": "ES"
   },
   {
     "name": "Atlantic/Canary",
-    "offset": 0,
+    "offset": -60,
     "country": "ES"
   },
   {
     "name": "Europe/Madrid",
-    "offset": -60,
+    "offset": -120,
     "country": "ES"
   },
   {
@@ -5357,7 +5367,7 @@ var timezones = [
   },
   {
     "name": "Europe/Helsinki",
-    "offset": -120,
+    "offset": -180,
     "country": "FI"
   },
   {
@@ -5397,12 +5407,12 @@ var timezones = [
   },
   {
     "name": "Atlantic/Faroe",
-    "offset": 0,
+    "offset": -60,
     "country": "FO"
   },
   {
     "name": "Europe/Paris",
-    "offset": -60,
+    "offset": -120,
     "country": "FR"
   },
   {
@@ -5417,7 +5427,7 @@ var timezones = [
   },
   {
     "name": "Europe/London",
-    "offset": 0,
+    "offset": -60,
     "country": "GB"
   },
   {
@@ -5442,12 +5452,12 @@ var timezones = [
   },
   {
     "name": "Europe/Guernsey",
-    "offset": 0,
+    "offset": -60,
     "country": "GG"
   },
   {
     "name": "Europe/London",
-    "offset": 0,
+    "offset": -60,
     "country": "GG"
   },
   {
@@ -5462,7 +5472,7 @@ var timezones = [
   },
   {
     "name": "Europe/Gibraltar",
-    "offset": -60,
+    "offset": -120,
     "country": "GI"
   },
   {
@@ -5472,12 +5482,12 @@ var timezones = [
   },
   {
     "name": "America/Nuuk",
-    "offset": 180,
+    "offset": 120,
     "country": "GL"
   },
   {
     "name": "America/Scoresbysund",
-    "offset": 60,
+    "offset": 0,
     "country": "GL"
   },
   {
@@ -5527,7 +5537,7 @@ var timezones = [
   },
   {
     "name": "Europe/Athens",
-    "offset": -120,
+    "offset": -180,
     "country": "GR"
   },
   {
@@ -5567,12 +5577,12 @@ var timezones = [
   },
   {
     "name": "Europe/Belgrade",
-    "offset": -60,
+    "offset": -120,
     "country": "HR"
   },
   {
     "name": "Europe/Zagreb",
-    "offset": -60,
+    "offset": -120,
     "country": "HR"
   },
   {
@@ -5582,7 +5592,7 @@ var timezones = [
   },
   {
     "name": "Europe/Budapest",
-    "offset": -60,
+    "offset": -120,
     "country": "HU"
   },
   {
@@ -5607,22 +5617,22 @@ var timezones = [
   },
   {
     "name": "Europe/Dublin",
-    "offset": 0,
+    "offset": -60,
     "country": "IE"
   },
   {
     "name": "Asia/Jerusalem",
-    "offset": -120,
+    "offset": -180,
     "country": "IL"
   },
   {
     "name": "Europe/Isle_of_Man",
-    "offset": 0,
+    "offset": -60,
     "country": "IM"
   },
   {
     "name": "Europe/London",
-    "offset": 0,
+    "offset": -60,
     "country": "IM"
   },
   {
@@ -5657,17 +5667,17 @@ var timezones = [
   },
   {
     "name": "Europe/Rome",
-    "offset": -60,
+    "offset": -120,
     "country": "IT"
   },
   {
     "name": "Europe/Jersey",
-    "offset": 0,
+    "offset": -60,
     "country": "JE"
   },
   {
     "name": "Europe/London",
-    "offset": 0,
+    "offset": -60,
     "country": "JE"
   },
   {
@@ -5817,7 +5827,7 @@ var timezones = [
   },
   {
     "name": "Asia/Beirut",
-    "offset": -120,
+    "offset": -180,
     "country": "LB"
   },
   {
@@ -5832,12 +5842,12 @@ var timezones = [
   },
   {
     "name": "Europe/Vaduz",
-    "offset": -60,
+    "offset": -120,
     "country": "LI"
   },
   {
     "name": "Europe/Zurich",
-    "offset": -60,
+    "offset": -120,
     "country": "LI"
   },
   {
@@ -5862,22 +5872,22 @@ var timezones = [
   },
   {
     "name": "Europe/Vilnius",
-    "offset": -120,
+    "offset": -180,
     "country": "LT"
   },
   {
     "name": "Europe/Brussels",
-    "offset": -60,
+    "offset": -120,
     "country": "LU"
   },
   {
     "name": "Europe/Luxembourg",
-    "offset": -60,
+    "offset": -120,
     "country": "LU"
   },
   {
     "name": "Europe/Riga",
-    "offset": -120,
+    "offset": -180,
     "country": "LV"
   },
   {
@@ -5887,32 +5897,32 @@ var timezones = [
   },
   {
     "name": "Africa/Casablanca",
-    "offset": -60,
+    "offset": 0,
     "country": "MA"
   },
   {
     "name": "Europe/Monaco",
-    "offset": -60,
+    "offset": -120,
     "country": "MC"
   },
   {
     "name": "Europe/Paris",
-    "offset": -60,
+    "offset": -120,
     "country": "MC"
   },
   {
     "name": "Europe/Chisinau",
-    "offset": -120,
+    "offset": -180,
     "country": "MD"
   },
   {
     "name": "Europe/Belgrade",
-    "offset": -60,
+    "offset": -120,
     "country": "ME"
   },
   {
     "name": "Europe/Podgorica",
-    "offset": -60,
+    "offset": -120,
     "country": "ME"
   },
   {
@@ -5952,12 +5962,12 @@ var timezones = [
   },
   {
     "name": "Europe/Belgrade",
-    "offset": -60,
+    "offset": -120,
     "country": "MK"
   },
   {
     "name": "Europe/Skopje",
-    "offset": -60,
+    "offset": -120,
     "country": "MK"
   },
   {
@@ -6032,7 +6042,7 @@ var timezones = [
   },
   {
     "name": "Europe/Malta",
-    "offset": -60,
+    "offset": -120,
     "country": "MT"
   },
   {
@@ -6172,22 +6182,22 @@ var timezones = [
   },
   {
     "name": "Europe/Amsterdam",
-    "offset": -60,
+    "offset": -120,
     "country": "NL"
   },
   {
     "name": "Europe/Brussels",
-    "offset": -60,
+    "offset": -120,
     "country": "NL"
   },
   {
     "name": "Europe/Berlin",
-    "offset": -60,
+    "offset": -120,
     "country": "NO"
   },
   {
     "name": "Europe/Oslo",
-    "offset": -60,
+    "offset": -120,
     "country": "NO"
   },
   {
@@ -6272,7 +6282,7 @@ var timezones = [
   },
   {
     "name": "Europe/Warsaw",
-    "offset": -60,
+    "offset": -120,
     "country": "PL"
   },
   {
@@ -6292,27 +6302,27 @@ var timezones = [
   },
   {
     "name": "Asia/Gaza",
-    "offset": -120,
+    "offset": -180,
     "country": "PS"
   },
   {
     "name": "Asia/Hebron",
-    "offset": -120,
+    "offset": -180,
     "country": "PS"
   },
   {
     "name": "Atlantic/Azores",
-    "offset": 60,
+    "offset": 0,
     "country": "PT"
   },
   {
     "name": "Atlantic/Madeira",
-    "offset": 0,
+    "offset": -60,
     "country": "PT"
   },
   {
     "name": "Europe/Lisbon",
-    "offset": 0,
+    "offset": -60,
     "country": "PT"
   },
   {
@@ -6322,7 +6332,7 @@ var timezones = [
   },
   {
     "name": "America/Asuncion",
-    "offset": 180,
+    "offset": 240,
     "country": "PY"
   },
   {
@@ -6342,12 +6352,12 @@ var timezones = [
   },
   {
     "name": "Europe/Bucharest",
-    "offset": -120,
+    "offset": -180,
     "country": "RO"
   },
   {
     "name": "Europe/Belgrade",
-    "offset": -60,
+    "offset": -120,
     "country": "RS"
   },
   {
@@ -6522,12 +6532,12 @@ var timezones = [
   },
   {
     "name": "Europe/Berlin",
-    "offset": -60,
+    "offset": -120,
     "country": "SE"
   },
   {
     "name": "Europe/Stockholm",
-    "offset": -60,
+    "offset": -120,
     "country": "SE"
   },
   {
@@ -6547,32 +6557,32 @@ var timezones = [
   },
   {
     "name": "Europe/Belgrade",
-    "offset": -60,
+    "offset": -120,
     "country": "SI"
   },
   {
     "name": "Europe/Ljubljana",
-    "offset": -60,
+    "offset": -120,
     "country": "SI"
   },
   {
     "name": "Arctic/Longyearbyen",
-    "offset": -60,
+    "offset": -120,
     "country": "SJ"
   },
   {
     "name": "Europe/Berlin",
-    "offset": -60,
+    "offset": -120,
     "country": "SJ"
   },
   {
     "name": "Europe/Bratislava",
-    "offset": -60,
+    "offset": -120,
     "country": "SK"
   },
   {
     "name": "Europe/Prague",
-    "offset": -60,
+    "offset": -120,
     "country": "SK"
   },
   {
@@ -6587,12 +6597,12 @@ var timezones = [
   },
   {
     "name": "Europe/Rome",
-    "offset": -60,
+    "offset": -120,
     "country": "SM"
   },
   {
     "name": "Europe/San_Marino",
-    "offset": -60,
+    "offset": -120,
     "country": "SM"
   },
   {
@@ -6772,7 +6782,7 @@ var timezones = [
   },
   {
     "name": "Europe/Kyiv",
-    "offset": -120,
+    "offset": -180,
     "country": "UA"
   },
   {
@@ -6977,12 +6987,12 @@ var timezones = [
   },
   {
     "name": "Europe/Rome",
-    "offset": -60,
+    "offset": -120,
     "country": "VA"
   },
   {
     "name": "Europe/Vatican",
-    "offset": -60,
+    "offset": -120,
     "country": "VA"
   },
   {
@@ -7099,10 +7109,10 @@ var timezones = [
 
 // build/index.js
 var isCountryCode = (v) => {
-  return countryCodes.includes(v);
+  return typeof v === "string" && countryCodes.find((code) => code === v) !== void 0;
 };
 var findCountry = (v) => {
-  return countries.some(({ code }) => code === v) ? countries.filter(({ code }) => code === v)[0] : void 0;
+  return countries.find(({ code }) => code === v);
 };
 var findCallingCode = (v) => {
   return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v) ? countryCallingCodes[v] : void 0;
@@ -7111,16 +7121,16 @@ var findCountryLanguages = (v) => {
   return isCountryCode(v) && Object.hasOwn(countryLanguages, v) ? countryLanguages[v] : void 0;
 };
 var isCurrencyCode = (v) => {
-  return currencyCodes.includes(v);
+  return typeof v === "string" && currencyCodes.find((code) => code === v) !== void 0;
 };
 var findCurrency = (v) => {
-  return isCurrencyCode(v) && currencies.some(({ code }) => code === v) ? currencies.filter(({ code }) => code === v)[0] : void 0;
+  return currencies.find(({ code }) => code === v);
 };
 var isLanguageCode = (v) => {
-  return languageCodes.includes(v);
+  return typeof v === "string" && languageCodes.find((code) => code === v) !== void 0;
 };
 var findLanguage = (v) => {
-  return isLanguageCode(v) && languages.some(({ code }) => code === v) ? languages.filter(({ code }) => code === v)[0] : void 0;
+  return languages.find(({ code }) => code === v);
 };
 var findCountryTimezones = (v) => {
   return isCountryCode(v) && timezones.some(({ country }) => country === v) ? timezones.filter(({ country }) => country === v) : void 0;

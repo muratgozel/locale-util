@@ -24,13 +24,11 @@ export {languages} from '#src/data/languages'
 export {timezones} from '#src/data/timezones'
 
 export const isCountryCode = (v: unknown): v is CountryCode => {
-    return countryCodes.includes(v)
+    return typeof v === 'string' && countryCodes.find((code) => code === v) !== undefined
 }
 
 export const findCountry = (v: CountryCode): Country | undefined => {
-    return countries.some(({code}) => code === v)
-        ? countries.filter(({code}) => code === v)[0]
-        : undefined
+    return countries.find(({code}) => code === v)
 }
 
 export const findCallingCode = (v: CountryCode): number | undefined => {
@@ -46,23 +44,19 @@ export const findCountryLanguages = (v: CountryCode): LanguageCode[] | undefined
 }
 
 export const isCurrencyCode = (v: unknown): v is CurrencyCode => {
-    return currencyCodes.includes(v)
+    return typeof v === 'string' && currencyCodes.find((code) => code === v) !== undefined
 }
 
-export const findCurrency = (v: unknown): Currency | undefined => {
-    return isCurrencyCode(v) && currencies.some(({code}) => code === v)
-        ? currencies.filter(({code}) => code === v)[0]
-        : undefined
+export const findCurrency = (v: CurrencyCode): Currency | undefined => {
+    return currencies.find(({code}) => code === v)
 }
 
 export const isLanguageCode = (v: unknown): v is LanguageCode => {
-    return languageCodes.includes(v)
+    return typeof v === 'string' && languageCodes.find((code) => code === v) !== undefined
 }
 
-export const findLanguage = (v: unknown): Language | undefined => {
-    return isLanguageCode(v) && languages.some(({code}) => code === v)
-        ? languages.filter(({code}) => code === v)[0]
-        : undefined
+export const findLanguage = (v: LanguageCode): Language | undefined => {
+    return languages.find(({code}) => code === v)
 }
 
 export const findCountryTimezones = (v: CountryCode): Timezone[] | undefined => {

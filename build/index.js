@@ -17,12 +17,10 @@ export { languageCodes } from '#src/data/languageCodes';
 export { languages } from '#src/data/languages';
 export { timezones } from '#src/data/timezones';
 export const isCountryCode = (v) => {
-    return countryCodes.includes(v);
+    return typeof v === 'string' && countryCodes.find((code) => code === v) !== undefined;
 };
 export const findCountry = (v) => {
-    return countries.some(({ code }) => code === v)
-        ? countries.filter(({ code }) => code === v)[0]
-        : undefined;
+    return countries.find(({ code }) => code === v);
 };
 export const findCallingCode = (v) => {
     return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v)
@@ -35,20 +33,16 @@ export const findCountryLanguages = (v) => {
         : undefined;
 };
 export const isCurrencyCode = (v) => {
-    return currencyCodes.includes(v);
+    return typeof v === 'string' && currencyCodes.find((code) => code === v) !== undefined;
 };
 export const findCurrency = (v) => {
-    return isCurrencyCode(v) && currencies.some(({ code }) => code === v)
-        ? currencies.filter(({ code }) => code === v)[0]
-        : undefined;
+    return currencies.find(({ code }) => code === v);
 };
 export const isLanguageCode = (v) => {
-    return languageCodes.includes(v);
+    return typeof v === 'string' && languageCodes.find((code) => code === v) !== undefined;
 };
 export const findLanguage = (v) => {
-    return isLanguageCode(v) && languages.some(({ code }) => code === v)
-        ? languages.filter(({ code }) => code === v)[0]
-        : undefined;
+    return languages.find(({ code }) => code === v);
 };
 export const findCountryTimezones = (v) => {
     return isCountryCode(v) && timezones.some(({ country }) => country === v)

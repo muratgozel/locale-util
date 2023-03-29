@@ -244,5 +244,15 @@ export const countryCallingCodes = {
     'ZA': 27,
     'ZM': 260,
     'ZW': 263,
-    '001': 979
+    'AQ': undefined,
+    'BV': undefined,
+    'CP': undefined,
+    'DG': undefined,
+    'EA': undefined,
+    'GS': undefined,
+    'HM': undefined,
+    'IC': undefined,
+    'PN': undefined,
+    'TF': undefined,
+    'UM': undefined
 };

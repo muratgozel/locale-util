@@ -86,7 +86,7 @@ findTimezoneOffset('Europe/Istanbul') // -180
 Have a look at the tests, types and source for more info.
 
 ## Keeping Data Up To Date
-Data updates published regularly as minor releases so you only need to update the package as new version comes in. If you have a kind of manual setup, download the release you wish from https://github.com/unicode-org/cldr/releases and copy the `common` directory under `cldr-data-common`. Then run `npm run generate`, `compile`, `build` and `test` to parse the new data.
+Data updates published regularly as minor releases so you only need to update the package as new version comes in. If you have a kind of manual setup, download the release you wish from https://github.com/unicode-org/cldr/releases and copy the `common` directory under `cldr-data-common`. Then run `npm run setup`, `compile`, `build` and `test` to parse the new data.
 
 ---
 
