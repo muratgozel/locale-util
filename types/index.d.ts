@@ -22,13 +22,13 @@ declare module 'locale-util' {
     export type findCountryTimezones = (v: CountryCode) => Timezone[] | undefined
     export type findTimezoneOffset = (v: Timezone) => number | undefined
 
-    export type countryCodes = import('#src/data/countryCodes').countryCodes
-    export type currencyCodes = import('#src/data/currencyCodes').currencyCodes
-    export type countryLanguages = import('#src/data/countryLanguages').countryLanguages
-    export type languageCodes = import('#src/data/languageCodes').languageCodes
-    export type countries = import('#src/data/countries').countries
-    export type currencies = import('#src/data/currencies').currencies
-    export type languages = import('#src/data/languages').languages
-    export type countryCallingCodes = import('#src/data/countryCallingCodes').countryCallingCodes
-    export type timezones = import('#src/data/timezones').timezones
+    export {countryCodes} from '#src/data/countryCodes'
+    export {currencyCodes} from '#src/data/currencyCodes'
+    export {countryLanguages} from '#src/data/countryLanguages'
+    export {languageCodes} from '#src/data/languageCodes'
+    export {countries} from '#src/data/countries'
+    export {currencies} from '#src/data/currencies'
+    export {languages} from '#src/data/languages'
+    export {countryCallingCodes} from '#src/data/countryCallingCodes'
+    export {timezones} from '#src/data/timezones'
 }
