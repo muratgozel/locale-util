@@ -11,16 +11,16 @@ declare module 'locale-util' {
     export type Timezone = import('../src/data/timezones').Timezone
     export type CountryCallingCodes = import('../src/data/countryCallingCodes').CountryCallingCodes
 
-    export type isCountryCode = (v: unknown) => v is CountryCode
-    export type findCountry = (v: CountryCode) => Country | undefined
-    export type findCallingCode = (v: CountryCode) => number | undefined
-    export type findCountryLanguages = (v: CountryCode) => LanguageCode[] | undefined
-    export type isCurrencyCode = (v: unknown) => v is CurrencyCode
-    export type findCurrency = (v: CurrencyCode) => Currency | undefined
-    export type isLanguageCode = (v: unknown) => v is LanguageCode
-    export type findLanguage = (v: LanguageCode) => Language | undefined
-    export type findCountryTimezones = (v: CountryCode) => Timezone[] | undefined
-    export type findTimezoneOffset = (v: Timezone) => number | undefined
+    export function isCountryCode(v: unknown): v is CountryCode
+    export function findCountry(v: CountryCode): Country | undefined
+    export function findCallingCode(v: CountryCode): number | undefined
+    export function findCountryLanguages(v: CountryCode): LanguageCode[] | undefined
+    export function isCurrencyCode(v: unknown): v is CurrencyCode
+    export function findCurrency(v: CurrencyCode): Currency | undefined
+    export function isLanguageCode(v: unknown): v is LanguageCode
+    export function findLanguage(v: LanguageCode): Language | undefined
+    export function findCountryTimezones(v: CountryCode): Timezone[] | undefined
+    export function findTimezoneOffset(v: Timezone): number | undefined
 
     export const countryCodes: CountryCode[]
     export const currencyCodes: CurrencyCode[]
