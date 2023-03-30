@@ -31,4 +31,6 @@ declare module 'locale-util' {
     export {languages} from '#src/data/languages'
     export {countryCallingCodes} from '#src/data/countryCallingCodes'
     export {timezones} from '#src/data/timezones'
+
+    export as namespace localeUtil
 }
