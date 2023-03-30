@@ -1,6 +1,5 @@
 .idea
 cldr-data-common/*
-src/data/*
 
 **/.DS_Store
 
