@@ -41,7 +41,7 @@ __export(build_exports, {
 });
 module.exports = __toCommonJS(build_exports);
 
-// src/data/countryCodes.ts
+// build/data/countryCodes.js
 var countryCodes = [
   "AC",
   "AD",
@@ -301,7 +301,7 @@ var countryCodes = [
   "ZW"
 ];
 
-// src/data/countries.ts
+// build/data/countries.js
 var countries = [
   {
     "code": "AC",
@@ -1585,7 +1585,7 @@ var countries = [
   }
 ];
 
-// src/data/countryCallingCodes.ts
+// build/data/countryCallingCodes.js
 var countryCallingCodes = {
   "AC": 247,
   "AD": 376,
@@ -1845,7 +1845,7 @@ var countryCallingCodes = {
   "UM": void 0
 };
 
-// src/data/countryLanguages.ts
+// build/data/countryLanguages.js
 var countryLanguages = {
   "AC": [
     "en"
@@ -2694,7 +2694,7 @@ var countryLanguages = {
   ]
 };
 
-// src/data/currencyCodes.ts
+// build/data/currencyCodes.js
 var currencyCodes = [
   "SHP",
   "EUR",
@@ -2850,7 +2850,7 @@ var currencyCodes = [
   "ZMW"
 ];
 
-// src/data/currencies.ts
+// build/data/currencies.js
 var currencies = [
   {
     "code": "AED",
@@ -3754,7 +3754,7 @@ var currencies = [
   }
 ];
 
-// src/data/languageCodes.ts
+// build/data/languageCodes.js
 var languageCodes = [
   "en",
   "ca",
@@ -3873,7 +3873,7 @@ var languageCodes = [
   "nd"
 ];
 
-// src/data/languages.ts
+// build/data/languages.js
 var languages = [
   {
     "code": "en",
@@ -4452,7 +4452,7 @@ var languages = [
   }
 ];
 
-// src/data/timezones.ts
+// build/data/timezones.js
 var timezones = [
   {
     "name": "Europe/Andorra",

@@ -2,7 +2,7 @@ import {expect, test} from '@jest/globals'
 import {
     isCountryCode, findCountry, findCallingCode, findCountryLanguages,
     isCurrencyCode, findCurrency, isLanguageCode, findLanguage, findCountryTimezones, findTimezoneOffset
-} from '#src/index'
+} from '../build/index'
 
 test('validates country codes', () => {
     expect(isCountryCode('TR')).toBe(true)
