@@ -27,7 +27,6 @@ export const countryLanguages = {
     'AO': [
         'pt'
     ],
-    'AQ': [],
     'AR': [
         'es'
     ],
@@ -162,7 +161,6 @@ export const countryLanguages = {
     'CO': [
         'es'
     ],
-    'CP': [],
     'CR': [
         'es'
     ],

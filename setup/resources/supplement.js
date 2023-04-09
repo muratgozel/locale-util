@@ -54,6 +54,9 @@ export class Supplement {
         const languagesStr = JSON.stringify(languages, null, 4).replace(/"/g, '\'')
         await writeFile(path.join(this.pathOutput, 'languages.ts'), 'import type {LanguageCode} from \'./languageCodes\'\n\nexport type Language = {\n    code: LanguageCode,\n    nativeName: string,\n    englishName: string\n}\n\nexport const languages: Language[] = ' + languagesStr)
 
+        const countryCurrenciesStr = JSON.stringify(supplement.countryCurrencyMap, null, 4).replace(/"/g, '\'')
+        await writeFile(path.join(this.pathOutput, 'countryCurrencies.ts'), 'import type {CountryCode} from \'./countryCodes\'\nimport type {CurrencyCode} from \'./currencyCodes\'\n\nexport type CountryCurrencies = {\n    [key in CountryCode]: CurrencyCode\n}\n\nexport const countryCurrencies: CountryCurrencies = ' + countryCurrenciesStr)
+
         const currencies = supplement.currencies.map(({code, num}) => {
             const countryCode = Object.keys(supplement.countryCurrencyMap).filter((countryCode) => supplement.countryCurrencyMap[countryCode] === code)[0]
             const languageCode = Object.hasOwn(supplement.countryLanguages, countryCode) ? (supplement.countryLanguages[countryCode][0] || 'en') : 'en'
@@ -122,7 +125,7 @@ export class Supplement {
         const countryLanguages = {}
         const countryLanguagesExtended = {}
         territoryInfo.territory.map(({languagePopulation, type}) => {
-            if (type === 'ZZ' || /[^A-Z]/.test(type)) return
+            if (type === 'ZZ' || type === 'AQ' || type === 'CP' || /[^A-Z]/.test(type)) return
 
             countryCodes.push(type)
 

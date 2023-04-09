@@ -12,6 +12,7 @@ import {currencies} from './data/currencies.js'
 import {languageCodes} from './data/languageCodes.js'
 import {languages} from './data/languages.js'
 import {timezones} from './data/timezones.js'
+import {countryCurrencies} from './data/countryCurrencies.js'
 
 export {countryCodes} from './data/countryCodes.js'
 export {countries} from './data/countries.js'
@@ -22,6 +23,7 @@ export {currencies} from './data/currencies.js'
 export {languageCodes} from './data/languageCodes.js'
 export {languages} from './data/languages.js'
 export {timezones} from './data/timezones.js'
+export {countryCurrencies} from './data/countryCurrencies.js'
 
 export type {CountryCode} from './data/countryCodes'
 export type {Country} from './data/countries'
@@ -32,6 +34,7 @@ export type {Currency} from './data/currencies'
 export type {LanguageCode} from './data/languageCodes'
 export type {Language} from './data/languages'
 export type {Timezone} from './data/timezones'
+export type {CountryCurrencies} from './data/countryCurrencies'
 
 export const isCountryCode = (v: unknown): v is CountryCode => {
     return typeof v === 'string' && countryCodes.find((code) => code === v) !== undefined
@@ -59,6 +62,10 @@ export const isCurrencyCode = (v: unknown): v is CurrencyCode => {
 
 export const findCurrency = (v: CurrencyCode): Currency | undefined => {
     return currencies.find(({code}) => code === v)
+}
+
+export const findCurrencyCode = (v: CountryCode): CurrencyCode | undefined => {
+    return countryCurrencies[v] || undefined
 }
 
 export const isLanguageCode = (v: unknown): v is LanguageCode => {

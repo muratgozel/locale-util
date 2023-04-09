@@ -10,6 +10,7 @@ declare module 'locale-util' {
     export type Country = import('../src/data/countries').Country
     export type Timezone = import('../src/data/timezones').Timezone
     export type CountryCallingCodes = import('../src/data/countryCallingCodes').CountryCallingCodes
+    export type CountryCurrencies = import('../src/data/countryCurrencies').CountryCurrencies
 
     export function isCountryCode(v: unknown): v is CountryCode
     export function findCountry(v: CountryCode): Country | undefined
@@ -17,6 +18,7 @@ declare module 'locale-util' {
     export function findCountryLanguages(v: CountryCode): LanguageCode[] | undefined
     export function isCurrencyCode(v: unknown): v is CurrencyCode
     export function findCurrency(v: CurrencyCode): Currency | undefined
+    export function findCurrencyCode(v: CountryCode): CurrencyCode | undefined
     export function isLanguageCode(v: unknown): v is LanguageCode
     export function findLanguage(v: LanguageCode): Language | undefined
     export function findCountryTimezones(v: CountryCode): Timezone[] | undefined
@@ -31,4 +33,5 @@ declare module 'locale-util' {
     export const languages: Language[]
     export const countryCallingCodes: CountryCallingCodes
     export const timezones: Timezone[]
+    export const countryCurrencies: CountryCurrencies
 }

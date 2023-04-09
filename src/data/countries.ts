@@ -53,11 +53,6 @@ export const countries: Country[] = [
         'nativeName': 'Angola'
     },
     {
-        'code': 'AQ',
-        'englishName': 'Antarctica',
-        'nativeName': 'Antarctica'
-    },
-    {
         'code': 'AR',
         'englishName': 'Argentina',
         'nativeName': 'Argentina'
@@ -256,11 +251,6 @@ export const countries: Country[] = [
         'code': 'CO',
         'englishName': 'Colombia',
         'nativeName': 'Colombia'
-    },
-    {
-        'code': 'CP',
-        'englishName': 'Clipperton Island',
-        'nativeName': 'Clipperton Island'
     },
     {
         'code': 'CR',

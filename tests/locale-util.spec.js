@@ -1,7 +1,8 @@
 import {expect, test} from '@jest/globals'
 import {
     isCountryCode, findCountry, findCallingCode, findCountryLanguages,
-    isCurrencyCode, findCurrency, isLanguageCode, findLanguage, findCountryTimezones, findTimezoneOffset
+    isCurrencyCode, findCurrency, isLanguageCode, findLanguage, findCountryTimezones, findTimezoneOffset,
+    findCurrencyCode
 } from '../build/index'
 
 test('validates country codes', () => {
@@ -82,4 +83,9 @@ test('finds timezone offset', () => {
     expect(findTimezoneOffset('America/Puerto_Rico')).toBe(240)
     expect(findTimezoneOffset('Europe/Istanbul')).toBe(-180)
     expect(findTimezoneOffset('asdasd')).toBe(undefined)
+})
+
+test('finds currency code from country code', () => {
+    expect(findCurrencyCode('TR')).toBe('TRY')
+    expect(findCurrencyCode('US')).toBe('USD')
 })

@@ -63,76 +63,6 @@ export const timezones: Timezone[] = [
         'country': 'AO'
     },
     {
-        'name': 'Antarctica/Casey',
-        'offset': -660,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/Davis',
-        'offset': -420,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/DumontDUrville',
-        'offset': -600,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/Mawson',
-        'offset': -300,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/McMurdo',
-        'offset': -780,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/Palmer',
-        'offset': 180,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/Rothera',
-        'offset': 180,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/Syowa',
-        'offset': -180,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/Troll',
-        'offset': -120,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Antarctica/Vostok',
-        'offset': -360,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Asia/Riyadh',
-        'offset': -180,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Asia/Urumqi',
-        'offset': -360,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Pacific/Auckland',
-        'offset': -780,
-        'country': 'AQ'
-    },
-    {
-        'name': 'Pacific/Port_Moresby',
-        'offset': -600,
-        'country': 'AQ'
-    },
-    {
         'name': 'America/Argentina/Buenos_Aires',
         'offset': 180,
         'country': 'AR'
@@ -204,12 +134,12 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Antarctica/Macquarie',
-        'offset': -660,
+        'offset': -600,
         'country': 'AU'
     },
     {
         'name': 'Australia/Adelaide',
-        'offset': -630,
+        'offset': -570,
         'country': 'AU'
     },
     {
@@ -219,7 +149,7 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Australia/Broken_Hill',
-        'offset': -630,
+        'offset': -570,
         'country': 'AU'
     },
     {
@@ -234,7 +164,7 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Australia/Hobart',
-        'offset': -660,
+        'offset': -600,
         'country': 'AU'
     },
     {
@@ -244,12 +174,12 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Australia/Lord_Howe',
-        'offset': -660,
+        'offset': -630,
         'country': 'AU'
     },
     {
         'name': 'Australia/Melbourne',
-        'offset': -660,
+        'offset': -600,
         'country': 'AU'
     },
     {
@@ -259,7 +189,7 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Australia/Sydney',
-        'offset': -660,
+        'offset': -600,
         'country': 'AU'
     },
     {
@@ -643,11 +573,6 @@ export const timezones: Timezone[] = [
         'country': 'CA'
     },
     {
-        'name': 'America/Yellowknife',
-        'offset': 360,
-        'country': 'CA'
-    },
-    {
         'name': 'Asia/Yangon',
         'offset': -390,
         'country': 'CC'
@@ -719,12 +644,12 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'America/Santiago',
-        'offset': 180,
+        'offset': 240,
         'country': 'CL'
     },
     {
         'name': 'Pacific/Easter',
-        'offset': 300,
+        'offset': 360,
         'country': 'CL'
     },
     {
@@ -1719,7 +1644,7 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Pacific/Norfolk',
-        'offset': -720,
+        'offset': -660,
         'country': 'NF'
     },
     {
@@ -1769,12 +1694,12 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Pacific/Auckland',
-        'offset': -780,
+        'offset': -720,
         'country': 'NZ'
     },
     {
         'name': 'Pacific/Chatham',
-        'offset': -825,
+        'offset': -765,
         'country': 'NZ'
     },
     {
@@ -1854,12 +1779,12 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Asia/Gaza',
-        'offset': -180,
+        'offset': -120,
         'country': 'PS'
     },
     {
         'name': 'Asia/Hebron',
-        'offset': -180,
+        'offset': -120,
         'country': 'PS'
     },
     {
@@ -2351,11 +2276,6 @@ export const timezones: Timezone[] = [
         'name': 'Africa/Nairobi',
         'offset': -180,
         'country': 'UG'
-    },
-    {
-        'name': 'Pacific/Honolulu',
-        'offset': 600,
-        'country': 'UM'
     },
     {
         'name': 'Pacific/Midway',

@@ -7,6 +7,7 @@ import { currencies } from './data/currencies.js';
 import { languageCodes } from './data/languageCodes.js';
 import { languages } from './data/languages.js';
 import { timezones } from './data/timezones.js';
+import { countryCurrencies } from './data/countryCurrencies.js';
 export { countryCodes } from './data/countryCodes.js';
 export { countries } from './data/countries.js';
 export { countryCallingCodes } from './data/countryCallingCodes.js';
@@ -16,6 +17,7 @@ export { currencies } from './data/currencies.js';
 export { languageCodes } from './data/languageCodes.js';
 export { languages } from './data/languages.js';
 export { timezones } from './data/timezones.js';
+export { countryCurrencies } from './data/countryCurrencies.js';
 export const isCountryCode = (v) => {
     return typeof v === 'string' && countryCodes.find((code) => code === v) !== undefined;
 };
@@ -37,6 +39,9 @@ export const isCurrencyCode = (v) => {
 };
 export const findCurrency = (v) => {
     return currencies.find(({ code }) => code === v);
+};
+export const findCurrencyCode = (v) => {
+    return countryCurrencies[v] || undefined;
 };
 export const isLanguageCode = (v) => {
     return typeof v === 'string' && languageCodes.find((code) => code === v) !== undefined;

@@ -56,9 +56,6 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'kmb',
         'ln'
     ],
-    'AQ': [
-        'und'
-    ],
     'AR': [
         'es',
         'en',
@@ -399,9 +396,6 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'es',
         'guc',
         'yrl'
-    ],
-    'CP': [
-        'und'
     ],
     'CR': [
         'es'

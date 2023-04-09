@@ -48,6 +48,9 @@ findCurrency('TRY') /*
 }
 */
 
+findCurrencyCode('TR') // TRY
+findCurrencyCode('US') // USD
+
 isLanguageCode('xxx') // false
 isLanguageCode('tr') // true
 
