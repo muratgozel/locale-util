@@ -799,12 +799,12 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Africa/Cairo',
-        'offset': -120,
+        'offset': -180,
         'country': 'EG'
     },
     {
         'name': 'Africa/El_Aaiun',
-        'offset': 0,
+        'offset': -60,
         'country': 'EH'
     },
     {
@@ -1374,7 +1374,7 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Africa/Casablanca',
-        'offset': 0,
+        'offset': -60,
         'country': 'MA'
     },
     {
@@ -1779,12 +1779,12 @@ export const timezones: Timezone[] = [
     },
     {
         'name': 'Asia/Gaza',
-        'offset': -120,
+        'offset': -180,
         'country': 'PS'
     },
     {
         'name': 'Asia/Hebron',
-        'offset': -120,
+        'offset': -180,
         'country': 'PS'
     },
     {

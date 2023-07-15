@@ -91,6 +91,9 @@ Have a look at the tests, types and source for more info.
 ## Keeping Data Up To Date
 Data updates published regularly as minor releases so you only need to update the package as new version comes in. If you have a kind of manual setup, download the release you wish from https://github.com/unicode-org/cldr/releases and copy the `common` directory under `cldr-data-common`. Then run `npm run setup`, `compile`, `build` and `test` to parse the new data.
 
+## Contributing
+If you're interested in contributing, read the [CONTRIBUTING.md](https://github.com/muratgozel/muratgozel/blob/main/CONTRIBUTING.md) first, please.
+
 ---
 
 Version management of this repository done by [releaser](https://github.com/muratgozel/node-releaser) 🚀
@@ -99,4 +102,4 @@ Version management of this repository done by [releaser](https://github.com/mura
 
 Thanks for watching 🐬
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F1RFO7)
+[![Support me on Patreon](https://cdn.muratgozel.com.tr/support-me-on-patreon.v1.png)](https://patreon.com/muratgozel?utm_medium=organic&utm_source=github_repo&utm_campaign=github&utm_content=join_link)

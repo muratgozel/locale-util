@@ -3,7 +3,7 @@ import {
     isCountryCode, findCountry, findCallingCode, findCountryLanguages,
     isCurrencyCode, findCurrency, isLanguageCode, findLanguage, findCountryTimezones, findTimezoneOffset,
     findCurrencyCode
-} from '../build/index'
+} from '../build/index.js'
 
 test('validates country codes', () => {
     expect(isCountryCode('TR')).toBe(true)
