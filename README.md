@@ -24,7 +24,7 @@ isCountryCode('XX') // false
 findCountry('TR') /*
 {
     'code': 'TR',
-    'englishName': 'Turkey',
+    'englishName': 'Türkiye',
     'nativeName': 'Türkiye'
 }
 */
