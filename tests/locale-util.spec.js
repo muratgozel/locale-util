@@ -14,7 +14,7 @@ test('validates country codes', () => {
 test('finds a country by its code', () => {
     expect(findCountry('TR')).toEqual({
         'code': 'TR',
-        'englishName': 'Turkey',
+        'englishName': 'Türkiye',
         'nativeName': 'Türkiye'
     })
     expect(findCountry('ABC')).toEqual(undefined)

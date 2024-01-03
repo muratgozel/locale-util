@@ -1,16 +1,29 @@
 declare module 'locale-util' {
-    export type CountryCode = import('../src/data/countryCodes').CountryCode
-    export type LanguageCode = import('../src/data/languageCodes').LanguageCode
-    export type LanguageCodeExtended = import('../src/data/languageCodesExtended').LanguageCodeExtended
-    export type CurrencyCode = import('../src/data/currencyCodes').CurrencyCode
-    export type CountryLanguages = import('../src/data/countryLanguages').CountryLanguages
-    export type CountryLanguagesExtended = import('../src/data/countryLanguagesExtended').CountryLanguagesExtended
-    export type Language = import('../src/data/languages').Language
-    export type Currency = import('../src/data/currencies').Currency
-    export type Country = import('../src/data/countries').Country
-    export type Timezone = import('../src/data/timezones').Timezone
-    export type CountryCallingCodes = import('../src/data/countryCallingCodes').CountryCallingCodes
-    export type CountryCurrencies = import('../src/data/countryCurrencies').CountryCurrencies
+    import { type CountryCode } from '../src/data/countryCodes'
+    import { type LanguageCode } from '../src/data/languageCodes'
+    import { type LanguageCodeExtended } from '../src/data/languageCodesExtended'
+    import { type CurrencyCode } from '../src/data/currencyCodes'
+    import { type CountryLanguages } from '../src/data/countryLanguages'
+    import { type CountryLanguagesExtended } from '../src/data/countryLanguagesExtended'
+    import { type Language } from '../src/data/languages'
+    import { type Currency } from '../src/data/currencies'
+    import { type Country } from '../src/data/countries'
+    import { type Timezone } from '../src/data/timezones'
+    import { type CountryCallingCodes } from '../src/data/countryCallingCodes'
+    import { type CountryCurrencies } from '../src/data/countryCurrencies'
+
+    export { type CountryCode } from '../src/data/countryCodes'
+    export { type LanguageCode } from '../src/data/languageCodes'
+    export { type LanguageCodeExtended } from '../src/data/languageCodesExtended'
+    export { type CurrencyCode } from '../src/data/currencyCodes'
+    export { type CountryLanguages } from '../src/data/countryLanguages'
+    export { type CountryLanguagesExtended } from '../src/data/countryLanguagesExtended'
+    export { type Language } from '../src/data/languages'
+    export { type Currency } from '../src/data/currencies'
+    export { type Country } from '../src/data/countries'
+    export { type Timezone } from '../src/data/timezones'
+    export { type CountryCallingCodes } from '../src/data/countryCallingCodes'
+    export { type CountryCurrencies } from '../src/data/countryCurrencies'
 
     export function isCountryCode(v: unknown): v is CountryCode
     export function findCountry(v: CountryCode): Country | undefined

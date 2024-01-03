@@ -540,7 +540,7 @@ export const currencies: Currency[] = [
         'code': 'MVR',
         'num': 462,
         'englishName': 'Divehi',
-        'nativeName': ''
+        'nativeName': 'ދިވެހިބަސް'
     },
     {
         'code': 'MWK',
@@ -648,7 +648,7 @@ export const currencies: Currency[] = [
         'code': 'PYG',
         'num': 600,
         'englishName': 'Guarani',
-        'nativeName': ''
+        'nativeName': 'avañe’ẽ'
     },
     {
         'code': 'QAR',

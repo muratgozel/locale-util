@@ -795,7 +795,7 @@ export const countries: Country[] = [
     {
         'code': 'MV',
         'englishName': 'Maldives',
-        'nativeName': ''
+        'nativeName': 'ދިވެހި ރާއްޖެ'
     },
     {
         'code': 'MW',
@@ -950,7 +950,7 @@ export const countries: Country[] = [
     {
         'code': 'PY',
         'englishName': 'Paraguay',
-        'nativeName': ''
+        'nativeName': 'Paraguai'
     },
     {
         'code': 'QA',
@@ -1149,7 +1149,7 @@ export const countries: Country[] = [
     },
     {
         'code': 'TR',
-        'englishName': 'Turkey',
+        'englishName': 'Türkiye',
         'nativeName': 'Türkiye'
     },
     {

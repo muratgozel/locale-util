@@ -157,7 +157,8 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
     'BJ': [
         'fr',
         'fon',
-        'yo'
+        'yo',
+        'blo'
     ],
     'BL': [
         'fr'
@@ -281,7 +282,8 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'pqm',
         'crl',
         'kwk',
-        'gwi'
+        'gwi',
+        'tok'
     ],
     'CC': [
         'ms_Arab',
@@ -455,7 +457,8 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'dsb',
         'frs',
         'stq',
-        'pfl'
+        'pfl',
+        'vo'
     ],
     'DG': [
         'en'
@@ -502,7 +505,8 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'ru',
         'en',
         'fi',
-        'vro'
+        'vro',
+        'ie'
     ],
     'EG': [
         'ar',
@@ -802,6 +806,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'he',
         'en',
         'ar',
+        'apc',
         'ru',
         'ro',
         'yi',
@@ -888,6 +893,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'bft',
         'bra',
         'lep',
+        'kxv',
         'btv',
         'lif',
         'lah',
@@ -939,6 +945,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'it',
         'en',
         'fr',
+        'lmo',
         'sc',
         'de',
         'vec',
@@ -951,7 +958,6 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'egl',
         'ca',
         'el',
-        'lmo',
         'pms',
         'hr',
         'rgn'
@@ -965,6 +971,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
     ],
     'JO': [
         'ar',
+        'apc',
         'en'
     ],
     'JP': [
@@ -1042,6 +1049,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'kdt'
     ],
     'LB': [
+        'apc',
         'ar',
         'en',
         'hy',
@@ -1110,7 +1118,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'shi',
         'shi_Latn',
         'rif',
-        'rif_Latn',
+        'rif_Tfng',
         'es'
     ],
     'MC': [
@@ -1325,7 +1333,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'gos',
         'id',
         'zea',
-        'rif_Latn',
+        'rif',
         'tr'
     ],
     'NO': [
@@ -1474,7 +1482,8 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'en'
     ],
     'PS': [
-        'ar'
+        'ar',
+        'apc'
     ],
     'PT': [
         'pt',
@@ -1695,6 +1704,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'nl'
     ],
     'SY': [
+        'apc',
         'ar',
         'ku',
         'fr',
@@ -1723,7 +1733,8 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
     'TG': [
         'fr',
         'ee',
-        'ife'
+        'ife',
+        'blo'
     ],
     'TH': [
         'th',
@@ -1774,6 +1785,7 @@ export const countryLanguagesExtended: CountryLanguagesExtended = {
         'tr',
         'en',
         'ku',
+        'apc',
         'zza',
         'kbd',
         'az',

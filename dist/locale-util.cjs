@@ -1046,7 +1046,7 @@ const countries = [
     {
         'code': 'MV',
         'englishName': 'Maldives',
-        'nativeName': ''
+        'nativeName': 'ދިވެހި ރާއްޖެ'
     },
     {
         'code': 'MW',
@@ -1201,7 +1201,7 @@ const countries = [
     {
         'code': 'PY',
         'englishName': 'Paraguay',
-        'nativeName': ''
+        'nativeName': 'Paraguai'
     },
     {
         'code': 'QA',
@@ -1400,7 +1400,7 @@ const countries = [
     },
     {
         'code': 'TR',
-        'englishName': 'Turkey',
+        'englishName': 'Türkiye',
         'nativeName': 'Türkiye'
     },
     {
@@ -3321,7 +3321,7 @@ const currencies = [
         'code': 'MVR',
         'num': 462,
         'englishName': 'Divehi',
-        'nativeName': ''
+        'nativeName': 'ދިވެހިބަސް'
     },
     {
         'code': 'MWK',
@@ -3429,7 +3429,7 @@ const currencies = [
         'code': 'PYG',
         'num': 600,
         'englishName': 'Guarani',
-        'nativeName': ''
+        'nativeName': 'avañe’ẽ'
     },
     {
         'code': 'QAR',
@@ -3872,7 +3872,7 @@ const languages = [
     },
     {
         'code': 'pap',
-        'nativeName': '',
+        'nativeName': 'Papiamentu',
         'englishName': 'Papiamento'
     },
     {
@@ -3942,7 +3942,7 @@ const languages = [
     },
     {
         'code': 'tn',
-        'nativeName': '',
+        'nativeName': 'Setswana',
         'englishName': 'Tswana'
     },
     {
@@ -4197,7 +4197,7 @@ const languages = [
     },
     {
         'code': 'dv',
-        'nativeName': '',
+        'nativeName': 'ދިވެހިބަސް',
         'englishName': 'Divehi'
     },
     {
@@ -4227,7 +4227,7 @@ const languages = [
     },
     {
         'code': 'nn',
-        'nativeName': 'norsk nynorsk',
+        'nativeName': '↑↑↑',
         'englishName': 'Norwegian Nynorsk'
     },
     {
@@ -4287,7 +4287,7 @@ const languages = [
     },
     {
         'code': 'gn',
-        'nativeName': '',
+        'nativeName': 'avañe’ẽ',
         'englishName': 'Guarani'
     },
     {
@@ -4312,7 +4312,7 @@ const languages = [
     },
     {
         'code': 'ss',
-        'nativeName': '',
+        'nativeName': 'siSwati',
         'englishName': 'Swati'
     },
     {
@@ -4390,7 +4390,7 @@ const languages = [
 const timezones = [
     {
         'name': 'Europe/Andorra',
-        'offset': -120,
+        'offset': -60,
         'country': 'AD'
     },
     {
@@ -4425,7 +4425,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Tirane',
-        'offset': -120,
+        'offset': -60,
         'country': 'AL'
     },
     {
@@ -4510,17 +4510,17 @@ const timezones = [
     },
     {
         'name': 'Europe/Vienna',
-        'offset': -120,
+        'offset': -60,
         'country': 'AT'
     },
     {
         'name': 'Antarctica/Macquarie',
-        'offset': -600,
+        'offset': -660,
         'country': 'AU'
     },
     {
         'name': 'Australia/Adelaide',
-        'offset': -570,
+        'offset': -630,
         'country': 'AU'
     },
     {
@@ -4530,7 +4530,7 @@ const timezones = [
     },
     {
         'name': 'Australia/Broken_Hill',
-        'offset': -570,
+        'offset': -630,
         'country': 'AU'
     },
     {
@@ -4545,7 +4545,7 @@ const timezones = [
     },
     {
         'name': 'Australia/Hobart',
-        'offset': -600,
+        'offset': -660,
         'country': 'AU'
     },
     {
@@ -4555,12 +4555,12 @@ const timezones = [
     },
     {
         'name': 'Australia/Lord_Howe',
-        'offset': -630,
+        'offset': -660,
         'country': 'AU'
     },
     {
         'name': 'Australia/Melbourne',
-        'offset': -600,
+        'offset': -660,
         'country': 'AU'
     },
     {
@@ -4570,7 +4570,7 @@ const timezones = [
     },
     {
         'name': 'Australia/Sydney',
-        'offset': -600,
+        'offset': -660,
         'country': 'AU'
     },
     {
@@ -4585,12 +4585,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Helsinki',
-        'offset': -180,
+        'offset': -120,
         'country': 'AX'
     },
     {
         'name': 'Europe/Mariehamn',
-        'offset': -180,
+        'offset': -120,
         'country': 'AX'
     },
     {
@@ -4600,12 +4600,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -120,
+        'offset': -60,
         'country': 'BA'
     },
     {
         'name': 'Europe/Sarajevo',
-        'offset': -120,
+        'offset': -60,
         'country': 'BA'
     },
     {
@@ -4620,7 +4620,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Brussels',
-        'offset': -120,
+        'offset': -60,
         'country': 'BE'
     },
     {
@@ -4635,7 +4635,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Sofia',
-        'offset': -180,
+        'offset': -120,
         'country': 'BG'
     },
     {
@@ -4680,7 +4680,7 @@ const timezones = [
     },
     {
         'name': 'Atlantic/Bermuda',
-        'offset': 180,
+        'offset': 240,
         'country': 'BM'
     },
     {
@@ -4790,12 +4790,12 @@ const timezones = [
     },
     {
         'name': 'America/Nassau',
-        'offset': 240,
+        'offset': 300,
         'country': 'BS'
     },
     {
         'name': 'America/Toronto',
-        'offset': 240,
+        'offset': 300,
         'country': 'BS'
     },
     {
@@ -4835,7 +4835,7 @@ const timezones = [
     },
     {
         'name': 'America/Cambridge_Bay',
-        'offset': 360,
+        'offset': 420,
         'country': 'CA'
     },
     {
@@ -4855,7 +4855,7 @@ const timezones = [
     },
     {
         'name': 'America/Edmonton',
-        'offset': 360,
+        'offset': 420,
         'country': 'CA'
     },
     {
@@ -4865,32 +4865,32 @@ const timezones = [
     },
     {
         'name': 'America/Glace_Bay',
-        'offset': 180,
-        'country': 'CA'
-    },
-    {
-        'name': 'America/Goose_Bay',
-        'offset': 180,
-        'country': 'CA'
-    },
-    {
-        'name': 'America/Halifax',
-        'offset': 180,
-        'country': 'CA'
-    },
-    {
-        'name': 'America/Inuvik',
-        'offset': 360,
-        'country': 'CA'
-    },
-    {
-        'name': 'America/Iqaluit',
         'offset': 240,
         'country': 'CA'
     },
     {
+        'name': 'America/Goose_Bay',
+        'offset': 240,
+        'country': 'CA'
+    },
+    {
+        'name': 'America/Halifax',
+        'offset': 240,
+        'country': 'CA'
+    },
+    {
+        'name': 'America/Inuvik',
+        'offset': 420,
+        'country': 'CA'
+    },
+    {
+        'name': 'America/Iqaluit',
+        'offset': 300,
+        'country': 'CA'
+    },
+    {
         'name': 'America/Moncton',
-        'offset': 180,
+        'offset': 240,
         'country': 'CA'
     },
     {
@@ -4910,7 +4910,7 @@ const timezones = [
     },
     {
         'name': 'America/Rankin_Inlet',
-        'offset': 300,
+        'offset': 360,
         'country': 'CA'
     },
     {
@@ -4920,12 +4920,12 @@ const timezones = [
     },
     {
         'name': 'America/Resolute',
-        'offset': 300,
+        'offset': 360,
         'country': 'CA'
     },
     {
         'name': 'America/St_Johns',
-        'offset': 150,
+        'offset': 210,
         'country': 'CA'
     },
     {
@@ -4935,12 +4935,12 @@ const timezones = [
     },
     {
         'name': 'America/Toronto',
-        'offset': 240,
+        'offset': 300,
         'country': 'CA'
     },
     {
         'name': 'America/Vancouver',
-        'offset': 420,
+        'offset': 480,
         'country': 'CA'
     },
     {
@@ -4950,7 +4950,7 @@ const timezones = [
     },
     {
         'name': 'America/Winnipeg',
-        'offset': 300,
+        'offset': 360,
         'country': 'CA'
     },
     {
@@ -5005,7 +5005,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Zurich',
-        'offset': -120,
+        'offset': -60,
         'country': 'CH'
     },
     {
@@ -5025,12 +5025,12 @@ const timezones = [
     },
     {
         'name': 'America/Santiago',
-        'offset': 240,
+        'offset': 180,
         'country': 'CL'
     },
     {
         'name': 'Pacific/Easter',
-        'offset': 360,
+        'offset': 300,
         'country': 'CL'
     },
     {
@@ -5065,7 +5065,7 @@ const timezones = [
     },
     {
         'name': 'America/Havana',
-        'offset': 240,
+        'offset': 300,
         'country': 'CU'
     },
     {
@@ -5095,32 +5095,32 @@ const timezones = [
     },
     {
         'name': 'Asia/Famagusta',
-        'offset': -180,
+        'offset': -120,
         'country': 'CY'
     },
     {
         'name': 'Asia/Nicosia',
-        'offset': -180,
+        'offset': -120,
         'country': 'CY'
     },
     {
         'name': 'Europe/Prague',
-        'offset': -120,
+        'offset': -60,
         'country': 'CZ'
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -120,
+        'offset': -60,
         'country': 'DE'
     },
     {
         'name': 'Europe/Busingen',
-        'offset': -120,
+        'offset': -60,
         'country': 'DE'
     },
     {
         'name': 'Europe/Zurich',
-        'offset': -120,
+        'offset': -60,
         'country': 'DE'
     },
     {
@@ -5135,12 +5135,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -120,
+        'offset': -60,
         'country': 'DK'
     },
     {
         'name': 'Europe/Copenhagen',
-        'offset': -120,
+        'offset': -60,
         'country': 'DK'
     },
     {
@@ -5175,12 +5175,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Tallinn',
-        'offset': -180,
+        'offset': -120,
         'country': 'EE'
     },
     {
         'name': 'Africa/Cairo',
-        'offset': -180,
+        'offset': -120,
         'country': 'EG'
     },
     {
@@ -5200,17 +5200,17 @@ const timezones = [
     },
     {
         'name': 'Africa/Ceuta',
-        'offset': -120,
-        'country': 'ES'
-    },
-    {
-        'name': 'Atlantic/Canary',
         'offset': -60,
         'country': 'ES'
     },
     {
+        'name': 'Atlantic/Canary',
+        'offset': 0,
+        'country': 'ES'
+    },
+    {
         'name': 'Europe/Madrid',
-        'offset': -120,
+        'offset': -60,
         'country': 'ES'
     },
     {
@@ -5225,7 +5225,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Helsinki',
-        'offset': -180,
+        'offset': -120,
         'country': 'FI'
     },
     {
@@ -5265,12 +5265,12 @@ const timezones = [
     },
     {
         'name': 'Atlantic/Faroe',
-        'offset': -60,
+        'offset': 0,
         'country': 'FO'
     },
     {
         'name': 'Europe/Paris',
-        'offset': -120,
+        'offset': -60,
         'country': 'FR'
     },
     {
@@ -5285,7 +5285,7 @@ const timezones = [
     },
     {
         'name': 'Europe/London',
-        'offset': -60,
+        'offset': 0,
         'country': 'GB'
     },
     {
@@ -5310,12 +5310,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Guernsey',
-        'offset': -60,
+        'offset': 0,
         'country': 'GG'
     },
     {
         'name': 'Europe/London',
-        'offset': -60,
+        'offset': 0,
         'country': 'GG'
     },
     {
@@ -5330,7 +5330,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Gibraltar',
-        'offset': -120,
+        'offset': -60,
         'country': 'GI'
     },
     {
@@ -5345,12 +5345,12 @@ const timezones = [
     },
     {
         'name': 'America/Scoresbysund',
-        'offset': 0,
+        'offset': 60,
         'country': 'GL'
     },
     {
         'name': 'America/Thule',
-        'offset': 180,
+        'offset': 240,
         'country': 'GL'
     },
     {
@@ -5395,7 +5395,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Athens',
-        'offset': -180,
+        'offset': -120,
         'country': 'GR'
     },
     {
@@ -5435,22 +5435,22 @@ const timezones = [
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -120,
+        'offset': -60,
         'country': 'HR'
     },
     {
         'name': 'Europe/Zagreb',
-        'offset': -120,
+        'offset': -60,
         'country': 'HR'
     },
     {
         'name': 'America/Port-au-Prince',
-        'offset': 240,
+        'offset': 300,
         'country': 'HT'
     },
     {
         'name': 'Europe/Budapest',
-        'offset': -120,
+        'offset': -60,
         'country': 'HU'
     },
     {
@@ -5475,22 +5475,22 @@ const timezones = [
     },
     {
         'name': 'Europe/Dublin',
-        'offset': -60,
+        'offset': 0,
         'country': 'IE'
     },
     {
         'name': 'Asia/Jerusalem',
-        'offset': -180,
+        'offset': -120,
         'country': 'IL'
     },
     {
         'name': 'Europe/Isle_of_Man',
-        'offset': -60,
+        'offset': 0,
         'country': 'IM'
     },
     {
         'name': 'Europe/London',
-        'offset': -60,
+        'offset': 0,
         'country': 'IM'
     },
     {
@@ -5525,17 +5525,17 @@ const timezones = [
     },
     {
         'name': 'Europe/Rome',
-        'offset': -120,
+        'offset': -60,
         'country': 'IT'
     },
     {
         'name': 'Europe/Jersey',
-        'offset': -60,
+        'offset': 0,
         'country': 'JE'
     },
     {
         'name': 'Europe/London',
-        'offset': -60,
+        'offset': 0,
         'country': 'JE'
     },
     {
@@ -5685,7 +5685,7 @@ const timezones = [
     },
     {
         'name': 'Asia/Beirut',
-        'offset': -180,
+        'offset': -120,
         'country': 'LB'
     },
     {
@@ -5700,12 +5700,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Vaduz',
-        'offset': -120,
+        'offset': -60,
         'country': 'LI'
     },
     {
         'name': 'Europe/Zurich',
-        'offset': -120,
+        'offset': -60,
         'country': 'LI'
     },
     {
@@ -5730,22 +5730,22 @@ const timezones = [
     },
     {
         'name': 'Europe/Vilnius',
-        'offset': -180,
+        'offset': -120,
         'country': 'LT'
     },
     {
         'name': 'Europe/Brussels',
-        'offset': -120,
+        'offset': -60,
         'country': 'LU'
     },
     {
         'name': 'Europe/Luxembourg',
-        'offset': -120,
+        'offset': -60,
         'country': 'LU'
     },
     {
         'name': 'Europe/Riga',
-        'offset': -180,
+        'offset': -120,
         'country': 'LV'
     },
     {
@@ -5760,27 +5760,27 @@ const timezones = [
     },
     {
         'name': 'Europe/Monaco',
-        'offset': -120,
+        'offset': -60,
         'country': 'MC'
     },
     {
         'name': 'Europe/Paris',
-        'offset': -120,
+        'offset': -60,
         'country': 'MC'
     },
     {
         'name': 'Europe/Chisinau',
-        'offset': -180,
+        'offset': -120,
         'country': 'MD'
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -120,
+        'offset': -60,
         'country': 'ME'
     },
     {
         'name': 'Europe/Podgorica',
-        'offset': -120,
+        'offset': -60,
         'country': 'ME'
     },
     {
@@ -5820,12 +5820,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -120,
+        'offset': -60,
         'country': 'MK'
     },
     {
         'name': 'Europe/Skopje',
-        'offset': -120,
+        'offset': -60,
         'country': 'MK'
     },
     {
@@ -5900,7 +5900,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Malta',
-        'offset': -120,
+        'offset': -60,
         'country': 'MT'
     },
     {
@@ -5940,7 +5940,7 @@ const timezones = [
     },
     {
         'name': 'America/Ciudad_Juarez',
-        'offset': 360,
+        'offset': 420,
         'country': 'MX'
     },
     {
@@ -5950,7 +5950,7 @@ const timezones = [
     },
     {
         'name': 'America/Matamoros',
-        'offset': 300,
+        'offset': 360,
         'country': 'MX'
     },
     {
@@ -5975,12 +5975,12 @@ const timezones = [
     },
     {
         'name': 'America/Ojinaga',
-        'offset': 300,
+        'offset': 360,
         'country': 'MX'
     },
     {
         'name': 'America/Tijuana',
-        'offset': 420,
+        'offset': 480,
         'country': 'MX'
     },
     {
@@ -6025,7 +6025,7 @@ const timezones = [
     },
     {
         'name': 'Pacific/Norfolk',
-        'offset': -660,
+        'offset': -720,
         'country': 'NF'
     },
     {
@@ -6040,22 +6040,22 @@ const timezones = [
     },
     {
         'name': 'Europe/Amsterdam',
-        'offset': -120,
+        'offset': -60,
         'country': 'NL'
     },
     {
         'name': 'Europe/Brussels',
-        'offset': -120,
+        'offset': -60,
         'country': 'NL'
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -120,
+        'offset': -60,
         'country': 'NO'
     },
     {
         'name': 'Europe/Oslo',
-        'offset': -120,
+        'offset': -60,
         'country': 'NO'
     },
     {
@@ -6075,12 +6075,12 @@ const timezones = [
     },
     {
         'name': 'Pacific/Auckland',
-        'offset': -720,
+        'offset': -780,
         'country': 'NZ'
     },
     {
         'name': 'Pacific/Chatham',
-        'offset': -765,
+        'offset': -825,
         'country': 'NZ'
     },
     {
@@ -6140,12 +6140,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Warsaw',
-        'offset': -120,
+        'offset': -60,
         'country': 'PL'
     },
     {
         'name': 'America/Miquelon',
-        'offset': 120,
+        'offset': 180,
         'country': 'PM'
     },
     {
@@ -6160,27 +6160,27 @@ const timezones = [
     },
     {
         'name': 'Asia/Gaza',
-        'offset': -180,
+        'offset': -120,
         'country': 'PS'
     },
     {
         'name': 'Asia/Hebron',
-        'offset': -180,
+        'offset': -120,
         'country': 'PS'
     },
     {
         'name': 'Atlantic/Azores',
-        'offset': 0,
+        'offset': 60,
         'country': 'PT'
     },
     {
         'name': 'Atlantic/Madeira',
-        'offset': -60,
+        'offset': 0,
         'country': 'PT'
     },
     {
         'name': 'Europe/Lisbon',
-        'offset': -60,
+        'offset': 0,
         'country': 'PT'
     },
     {
@@ -6190,7 +6190,7 @@ const timezones = [
     },
     {
         'name': 'America/Asuncion',
-        'offset': 240,
+        'offset': 180,
         'country': 'PY'
     },
     {
@@ -6210,12 +6210,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Bucharest',
-        'offset': -180,
+        'offset': -120,
         'country': 'RO'
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -120,
+        'offset': -60,
         'country': 'RS'
     },
     {
@@ -6390,12 +6390,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -120,
+        'offset': -60,
         'country': 'SE'
     },
     {
         'name': 'Europe/Stockholm',
-        'offset': -120,
+        'offset': -60,
         'country': 'SE'
     },
     {
@@ -6415,32 +6415,32 @@ const timezones = [
     },
     {
         'name': 'Europe/Belgrade',
-        'offset': -120,
+        'offset': -60,
         'country': 'SI'
     },
     {
         'name': 'Europe/Ljubljana',
-        'offset': -120,
+        'offset': -60,
         'country': 'SI'
     },
     {
         'name': 'Arctic/Longyearbyen',
-        'offset': -120,
+        'offset': -60,
         'country': 'SJ'
     },
     {
         'name': 'Europe/Berlin',
-        'offset': -120,
+        'offset': -60,
         'country': 'SJ'
     },
     {
         'name': 'Europe/Bratislava',
-        'offset': -120,
+        'offset': -60,
         'country': 'SK'
     },
     {
         'name': 'Europe/Prague',
-        'offset': -120,
+        'offset': -60,
         'country': 'SK'
     },
     {
@@ -6455,12 +6455,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Rome',
-        'offset': -120,
+        'offset': -60,
         'country': 'SM'
     },
     {
         'name': 'Europe/San_Marino',
-        'offset': -120,
+        'offset': -60,
         'country': 'SM'
     },
     {
@@ -6530,7 +6530,7 @@ const timezones = [
     },
     {
         'name': 'America/Grand_Turk',
-        'offset': 240,
+        'offset': 300,
         'country': 'TC'
     },
     {
@@ -6640,7 +6640,7 @@ const timezones = [
     },
     {
         'name': 'Europe/Kyiv',
-        'offset': -180,
+        'offset': -120,
         'country': 'UA'
     },
     {
@@ -6680,127 +6680,127 @@ const timezones = [
     },
     {
         'name': 'America/Adak',
-        'offset': 540,
+        'offset': 600,
         'country': 'US'
     },
     {
         'name': 'America/Anchorage',
-        'offset': 480,
+        'offset': 540,
         'country': 'US'
     },
     {
         'name': 'America/Boise',
-        'offset': 360,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Chicago',
-        'offset': 300,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Denver',
-        'offset': 360,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Detroit',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Indiana/Indianapolis',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Indiana/Knox',
-        'offset': 300,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Indiana/Marengo',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Indiana/Petersburg',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Indiana/Tell_City',
-        'offset': 300,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Indiana/Vevay',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Indiana/Vincennes',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Indiana/Winamac',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Juneau',
-        'offset': 480,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Kentucky/Louisville',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Kentucky/Monticello',
-        'offset': 240,
-        'country': 'US'
-    },
-    {
-        'name': 'America/Los_Angeles',
         'offset': 420,
         'country': 'US'
     },
     {
-        'name': 'America/Menominee',
+        'name': 'America/Chicago',
+        'offset': 360,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Denver',
+        'offset': 420,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Detroit',
         'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Indiana/Indianapolis',
+        'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Indiana/Knox',
+        'offset': 360,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Indiana/Marengo',
+        'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Indiana/Petersburg',
+        'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Indiana/Tell_City',
+        'offset': 360,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Indiana/Vevay',
+        'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Indiana/Vincennes',
+        'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Indiana/Winamac',
+        'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Juneau',
+        'offset': 540,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Kentucky/Louisville',
+        'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Kentucky/Monticello',
+        'offset': 300,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Los_Angeles',
+        'offset': 480,
+        'country': 'US'
+    },
+    {
+        'name': 'America/Menominee',
+        'offset': 360,
         'country': 'US'
     },
     {
         'name': 'America/Metlakatla',
-        'offset': 480,
+        'offset': 540,
         'country': 'US'
     },
     {
         'name': 'America/New_York',
-        'offset': 240,
+        'offset': 300,
         'country': 'US'
     },
     {
         'name': 'America/Nome',
-        'offset': 480,
+        'offset': 540,
         'country': 'US'
     },
     {
         'name': 'America/North_Dakota/Beulah',
-        'offset': 300,
+        'offset': 360,
         'country': 'US'
     },
     {
         'name': 'America/North_Dakota/Center',
-        'offset': 300,
+        'offset': 360,
         'country': 'US'
     },
     {
         'name': 'America/North_Dakota/New_Salem',
-        'offset': 300,
+        'offset': 360,
         'country': 'US'
     },
     {
@@ -6810,12 +6810,12 @@ const timezones = [
     },
     {
         'name': 'America/Sitka',
-        'offset': 480,
+        'offset': 540,
         'country': 'US'
     },
     {
         'name': 'America/Yakutat',
-        'offset': 480,
+        'offset': 540,
         'country': 'US'
     },
     {
@@ -6840,12 +6840,12 @@ const timezones = [
     },
     {
         'name': 'Europe/Rome',
-        'offset': -120,
+        'offset': -60,
         'country': 'VA'
     },
     {
         'name': 'Europe/Vatican',
-        'offset': -120,
+        'offset': -60,
         'country': 'VA'
     },
     {
@@ -7224,14 +7224,12 @@ const findCountry = (v) => {
     return countries.find(({ code }) => code === v);
 };
 const findCallingCode = (v) => {
-    return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v)
-        ? countryCallingCodes[v]
-        : undefined;
+    // @ts-ignore
+    return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v) ? countryCallingCodes[v] : undefined;
 };
 const findCountryLanguages = (v) => {
-    return isCountryCode(v) && Object.hasOwn(countryLanguages, v)
-        ? countryLanguages[v]
-        : undefined;
+    // @ts-ignore
+    return isCountryCode(v) && Object.hasOwn(countryLanguages, v) ? countryLanguages[v] : undefined;
 };
 const isCurrencyCode = (v) => {
     return typeof v === 'string' && currencyCodes.find((code) => code === v) !== undefined;
@@ -7240,6 +7238,7 @@ const findCurrency = (v) => {
     return currencies.find(({ code }) => code === v);
 };
 const findCurrencyCode = (v) => {
+    // @ts-ignore
     return countryCurrencies[v] || undefined;
 };
 const isLanguageCode = (v) => {

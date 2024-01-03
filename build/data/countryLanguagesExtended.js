@@ -150,7 +150,8 @@ export const countryLanguagesExtended = {
     'BJ': [
         'fr',
         'fon',
-        'yo'
+        'yo',
+        'blo'
     ],
     'BL': [
         'fr'
@@ -274,7 +275,8 @@ export const countryLanguagesExtended = {
         'pqm',
         'crl',
         'kwk',
-        'gwi'
+        'gwi',
+        'tok'
     ],
     'CC': [
         'ms_Arab',
@@ -448,7 +450,8 @@ export const countryLanguagesExtended = {
         'dsb',
         'frs',
         'stq',
-        'pfl'
+        'pfl',
+        'vo'
     ],
     'DG': [
         'en'
@@ -495,7 +498,8 @@ export const countryLanguagesExtended = {
         'ru',
         'en',
         'fi',
-        'vro'
+        'vro',
+        'ie'
     ],
     'EG': [
         'ar',
@@ -795,6 +799,7 @@ export const countryLanguagesExtended = {
         'he',
         'en',
         'ar',
+        'apc',
         'ru',
         'ro',
         'yi',
@@ -881,6 +886,7 @@ export const countryLanguagesExtended = {
         'bft',
         'bra',
         'lep',
+        'kxv',
         'btv',
         'lif',
         'lah',
@@ -932,6 +938,7 @@ export const countryLanguagesExtended = {
         'it',
         'en',
         'fr',
+        'lmo',
         'sc',
         'de',
         'vec',
@@ -944,7 +951,6 @@ export const countryLanguagesExtended = {
         'egl',
         'ca',
         'el',
-        'lmo',
         'pms',
         'hr',
         'rgn'
@@ -958,6 +964,7 @@ export const countryLanguagesExtended = {
     ],
     'JO': [
         'ar',
+        'apc',
         'en'
     ],
     'JP': [
@@ -1035,6 +1042,7 @@ export const countryLanguagesExtended = {
         'kdt'
     ],
     'LB': [
+        'apc',
         'ar',
         'en',
         'hy',
@@ -1103,7 +1111,7 @@ export const countryLanguagesExtended = {
         'shi',
         'shi_Latn',
         'rif',
-        'rif_Latn',
+        'rif_Tfng',
         'es'
     ],
     'MC': [
@@ -1318,7 +1326,7 @@ export const countryLanguagesExtended = {
         'gos',
         'id',
         'zea',
-        'rif_Latn',
+        'rif',
         'tr'
     ],
     'NO': [
@@ -1467,7 +1475,8 @@ export const countryLanguagesExtended = {
         'en'
     ],
     'PS': [
-        'ar'
+        'ar',
+        'apc'
     ],
     'PT': [
         'pt',
@@ -1688,6 +1697,7 @@ export const countryLanguagesExtended = {
         'nl'
     ],
     'SY': [
+        'apc',
         'ar',
         'ku',
         'fr',
@@ -1716,7 +1726,8 @@ export const countryLanguagesExtended = {
     'TG': [
         'fr',
         'ee',
-        'ife'
+        'ife',
+        'blo'
     ],
     'TH': [
         'th',
@@ -1767,6 +1778,7 @@ export const countryLanguagesExtended = {
         'tr',
         'en',
         'ku',
+        'apc',
         'zza',
         'kbd',
         'az',

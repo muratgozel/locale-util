@@ -60,7 +60,7 @@ export class Supplement {
         const currencies = supplement.currencies.map(({code, num}) => {
             const countryCode = Object.keys(supplement.countryCurrencyMap).filter((countryCode) => supplement.countryCurrencyMap[countryCode] === code)[0]
             const languageCode = Object.hasOwn(supplement.countryLanguages, countryCode) ? (supplement.countryLanguages[countryCode][0] || 'en') : 'en'
-            const nativeName = supplementLocal.some(({language}) => language === languageCode)
+            const nativeName = supplementLocal.some(({language}) => language === languageCode) && supplementLocal.filter(({language}) => language === languageCode)[0].languageCodeNativeNames.some(({code}) => code === languageCode)
                 ? supplementLocal.filter(({language}) => language === languageCode)[0].languageCodeNativeNames.filter(({code}) => code === languageCode)[0].localName
                 : ''
 
@@ -125,7 +125,7 @@ export class Supplement {
         const countryLanguages = {}
         const countryLanguagesExtended = {}
         territoryInfo.territory.map(({languagePopulation, type}) => {
-            if (type === 'ZZ' || type === 'AQ' || type === 'CP' || /[^A-Z]/.test(type)) return
+            if (type === 'ZZ' || type === 'AQ' || type === 'CP' || type === 'CQ' || /[^A-Z]/.test(type)) return
 
             countryCodes.push(type)
 
@@ -188,7 +188,7 @@ export class Supplement {
                 const xmldata = await readFile(path.join(this.pathSourceMain, resource), {encoding: 'utf8'})
                 const {ldml} = this.xmlParser.parse(xmldata)
                 const {localeDisplayNames, characters, numbers} = ldml
-                if (!localeDisplayNames) {
+                if (!localeDisplayNames || !localeDisplayNames.territories || typeof characters.exemplarCharacters[0] !== 'string') {
                     return {
                         language: locale,
                         languageCodeNativeNames: [],
@@ -198,6 +198,7 @@ export class Supplement {
                     }
                 }
                 if (this.isObject(localeDisplayNames.languages.language)) localeDisplayNames.languages.language = [localeDisplayNames.languages.language]
+                if (this.isObject(localeDisplayNames.territories.territory)) localeDisplayNames.territories.territory = [localeDisplayNames.territories.territory]
 
                 const languageCodeNativeNames = localeDisplayNames.languages.language.map((obj) => ({code: obj.type, localName: obj['#text']}))
                 const countryCodeNativeNames = localeDisplayNames.territories.territory.map((obj) => ({code: obj.type, localName: obj['#text']}))

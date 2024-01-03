@@ -61,7 +61,7 @@ export const languages = [
     },
     {
         'code': 'pap',
-        'nativeName': '',
+        'nativeName': 'Papiamentu',
         'englishName': 'Papiamento'
     },
     {
@@ -131,7 +131,7 @@ export const languages = [
     },
     {
         'code': 'tn',
-        'nativeName': '',
+        'nativeName': 'Setswana',
         'englishName': 'Tswana'
     },
     {
@@ -386,7 +386,7 @@ export const languages = [
     },
     {
         'code': 'dv',
-        'nativeName': '',
+        'nativeName': 'ދިވެހިބަސް',
         'englishName': 'Divehi'
     },
     {
@@ -416,7 +416,7 @@ export const languages = [
     },
     {
         'code': 'nn',
-        'nativeName': 'norsk nynorsk',
+        'nativeName': '↑↑↑',
         'englishName': 'Norwegian Nynorsk'
     },
     {
@@ -476,7 +476,7 @@ export const languages = [
     },
     {
         'code': 'gn',
-        'nativeName': '',
+        'nativeName': 'avañe’ẽ',
         'englishName': 'Guarani'
     },
     {
@@ -501,7 +501,7 @@ export const languages = [
     },
     {
         'code': 'ss',
-        'nativeName': '',
+        'nativeName': 'siSwati',
         'englishName': 'Swati'
     },
     {

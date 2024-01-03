@@ -25,14 +25,12 @@ export const findCountry = (v) => {
     return countries.find(({ code }) => code === v);
 };
 export const findCallingCode = (v) => {
-    return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v)
-        ? countryCallingCodes[v]
-        : undefined;
+    // @ts-ignore
+    return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v) ? countryCallingCodes[v] : undefined;
 };
 export const findCountryLanguages = (v) => {
-    return isCountryCode(v) && Object.hasOwn(countryLanguages, v)
-        ? countryLanguages[v]
-        : undefined;
+    // @ts-ignore
+    return isCountryCode(v) && Object.hasOwn(countryLanguages, v) ? countryLanguages[v] : undefined;
 };
 export const isCurrencyCode = (v) => {
     return typeof v === 'string' && currencyCodes.find((code) => code === v) !== undefined;
@@ -41,6 +39,7 @@ export const findCurrency = (v) => {
     return currencies.find(({ code }) => code === v);
 };
 export const findCurrencyCode = (v) => {
+    // @ts-ignore
     return countryCurrencies[v] || undefined;
 };
 export const isLanguageCode = (v) => {

@@ -1,5 +1,5 @@
 import type {
-    CountryCode, Country, CountryCallingCodes, CountryLanguages,
+    CountryCode, Country,
     LanguageCode, CurrencyCode, Currency, Language, Timezone
 } from 'locale-util'
 
@@ -45,15 +45,13 @@ export const findCountry = (v: CountryCode): Country | undefined => {
 }
 
 export const findCallingCode = (v: CountryCode): number | undefined => {
-    return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v)
-        ? countryCallingCodes[(v as keyof CountryCallingCodes)]
-        : undefined
+    // @ts-ignore
+    return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v) ? countryCallingCodes[v] : undefined
 }
 
 export const findCountryLanguages = (v: CountryCode): LanguageCode[] | undefined => {
-    return isCountryCode(v) && Object.hasOwn(countryLanguages, v)
-        ? countryLanguages[(v as keyof CountryLanguages)]
-        : undefined
+    // @ts-ignore
+    return isCountryCode(v) && Object.hasOwn(countryLanguages, v) ? countryLanguages[v] : undefined
 }
 
 export const isCurrencyCode = (v: unknown): v is CurrencyCode => {
@@ -65,6 +63,7 @@ export const findCurrency = (v: CurrencyCode): Currency | undefined => {
 }
 
 export const findCurrencyCode = (v: CountryCode): CurrencyCode | undefined => {
+    // @ts-ignore
     return countryCurrencies[v] || undefined
 }
 

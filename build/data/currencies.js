@@ -531,7 +531,7 @@ export const currencies = [
         'code': 'MVR',
         'num': 462,
         'englishName': 'Divehi',
-        'nativeName': ''
+        'nativeName': 'ދިވެހިބަސް'
     },
     {
         'code': 'MWK',
@@ -639,7 +639,7 @@ export const currencies = [
         'code': 'PYG',
         'num': 600,
         'englishName': 'Guarani',
-        'nativeName': ''
+        'nativeName': 'avañe’ẽ'
     },
     {
         'code': 'QAR',
