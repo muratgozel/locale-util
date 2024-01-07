@@ -60,14 +60,14 @@ export class Supplement {
         const currencies = supplement.currencies.map(({code, num}) => {
             const countryCode = Object.keys(supplement.countryCurrencyMap).filter((countryCode) => supplement.countryCurrencyMap[countryCode] === code)[0]
             const languageCode = Object.hasOwn(supplement.countryLanguages, countryCode) ? (supplement.countryLanguages[countryCode][0] || 'en') : 'en'
-            const nativeName = supplementLocal.some(({language}) => language === languageCode) && supplementLocal.filter(({language}) => language === languageCode)[0].languageCodeNativeNames.some(({code}) => code === languageCode)
-                ? supplementLocal.filter(({language}) => language === languageCode)[0].languageCodeNativeNames.filter(({code}) => code === languageCode)[0].localName
+            const nativeName = supplementLocal.some(({language}) => language === languageCode) && supplementLocal.filter(({language}) => language === languageCode)[0].currencies.some((c) => code === c.code)
+                ? supplementLocal.filter(({language}) => language === languageCode)[0].currencies.filter((c) => code === c.code)[0].localName
                 : ''
 
             return {
                 code,
                 num,
-                englishName: englishNames.languageCodeNativeNames.filter(({code}) => code === languageCode)[0].localName,
+                englishName: englishNames.currencies.filter((c) => code === c.code)[0].localName,
                 nativeName: nativeName
             }
         })

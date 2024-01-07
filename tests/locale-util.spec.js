@@ -42,8 +42,8 @@ test('finds currencies', () => {
     expect(findCurrency('TRY')).toStrictEqual({
         'code': 'TRY',
         'num': 949,
-        'englishName': 'Turkish',
-        'nativeName': 'Türkçe'
+        'englishName': 'Turkish Lira',
+        'nativeName': 'Türk lirası'
     })
     expect(findCurrency('XXX')).toBe(undefined)
 })
