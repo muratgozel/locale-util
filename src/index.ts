@@ -1,81 +1,66 @@
-import type {
-    CountryCode, Country,
-    LanguageCode, CurrencyCode, Currency, Language, Timezone
-} from 'locale-util'
+import type {Country, Currency, Language, Timezone} from './setup'
 
-import {countryCodes} from './data/countryCodes.js'
-import {countries} from './data/countries.js'
-import {countryCallingCodes} from './data/countryCallingCodes.js'
-import {countryLanguages} from './data/countryLanguages.js'
-import {currencyCodes} from './data/currencyCodes.js'
-import {currencies} from './data/currencies.js'
-import {languageCodes} from './data/languageCodes.js'
-import {languages} from './data/languages.js'
-import {timezones} from './data/timezones.js'
-import {countryCurrencies} from './data/countryCurrencies.js'
+import countryCodes from './data/countryCodes.json'
+import countries from './data/countries.json'
+import countryCallingCodes from './data/countryCallingCodes.json'
+import countryLanguages from './data/countryLanguages.json'
+import currencyCodes from './data/currencyCodes.json'
+import currencies from './data/currencies.json'
+import languageCodes from './data/languageCodes.json'
+import languages from './data/languages.json'
+import timezones from './data/timezones.json'
+import countryCurrencies from './data/countryCurrencies.json'
 
-export {countryCodes} from './data/countryCodes.js'
-export {countries} from './data/countries.js'
-export {countryCallingCodes} from './data/countryCallingCodes.js'
-export {countryLanguages} from './data/countryLanguages.js'
-export {currencyCodes} from './data/currencyCodes.js'
-export {currencies} from './data/currencies.js'
-export {languageCodes} from './data/languageCodes.js'
-export {languages} from './data/languages.js'
-export {timezones} from './data/timezones.js'
-export {countryCurrencies} from './data/countryCurrencies.js'
-
-export type {CountryCode} from './data/countryCodes'
-export type {Country} from './data/countries'
-export type {CountryCallingCodes} from './data/countryCallingCodes'
-export type {CountryLanguages} from './data/countryLanguages'
-export type {CurrencyCode} from './data/currencyCodes'
-export type {Currency} from './data/currencies'
-export type {LanguageCode} from './data/languageCodes'
-export type {Language} from './data/languages'
-export type {Timezone} from './data/timezones'
-export type {CountryCurrencies} from './data/countryCurrencies'
-
-export const isCountryCode = (v: unknown): v is CountryCode => {
-    return typeof v === 'string' && countryCodes.find((code) => code === v) !== undefined
+export {
+    countryCodes,
+    countries,
+    countryCallingCodes,
+    countryLanguages,
+    currencyCodes,
+    currencies,
+    languageCodes,
+    languages,
+    timezones,
+    countryCurrencies
 }
 
-export const findCountry = (v: CountryCode): Country | undefined => {
-    return countries.find(({code}) => code === v)
+export const isCountryCode = (v: unknown): boolean => {
+    return typeof v === 'string' && countryCodes.includes(v)
 }
 
-export const findCallingCode = (v: CountryCode): number | undefined => {
-    // @ts-ignore
-    return isCountryCode(v) && Object.hasOwn(countryCallingCodes, v) ? countryCallingCodes[v] : undefined
+export const findCountry = (v: string): Country | undefined => {
+    return (countries as Country[]).find(({code}) => code === v)
 }
 
-export const findCountryLanguages = (v: CountryCode): LanguageCode[] | undefined => {
-    // @ts-ignore
-    return isCountryCode(v) && Object.hasOwn(countryLanguages, v) ? countryLanguages[v] : undefined
+export const findCountryCallingCode = (v: string): number | undefined => {
+    return isCountryCode(v) && v in countryCallingCodes ? countryCallingCodes[v as keyof typeof countryCallingCodes] : undefined
 }
 
-export const isCurrencyCode = (v: unknown): v is CurrencyCode => {
-    return typeof v === 'string' && currencyCodes.find((code) => code === v) !== undefined
+export const findCountryLanguages = (v: string): string[] | undefined => {
+    return isCountryCode(v) && v in countryLanguages ? countryLanguages[v as keyof typeof countryLanguages] : undefined
 }
 
-export const findCurrency = (v: CurrencyCode): Currency | undefined => {
-    return currencies.find(({code}) => code === v)
+export const isCurrencyCode = (v: unknown): boolean => {
+    return typeof v === 'string' && currencyCodes.includes(v)
 }
 
-export const findCurrencyCode = (v: CountryCode): CurrencyCode | undefined => {
-    // @ts-ignore
-    return countryCurrencies[v] || undefined
+export const findCurrency = (v: string): Currency | undefined => {
+    return (currencies as Currency[]).find(({code}) => code === v)
 }
 
-export const isLanguageCode = (v: unknown): v is LanguageCode => {
-    return typeof v === 'string' && languageCodes.find((code) => code === v) !== undefined
+export const findCountryCurrencyCode = (v: string): string | undefined => {
+    return isCountryCode(v) ? countryCurrencies[v as keyof typeof countryCurrencies] : undefined
 }
 
-export const findLanguage = (v: LanguageCode): Language | undefined => {
-    return languages.find(({code}) => code === v)
+export const isLanguageCode = (v: unknown): boolean => {
+    return typeof v === 'string' && languageCodes.includes(v)
 }
 
-export const findCountryTimezones = (v: CountryCode): Timezone[] | undefined => {
+export const findLanguage = (v: string): Language | undefined => {
+    return (languages as Language[]).find(({code}) => code === v)
+}
+
+export const findCountryTimezones = (v: string): Timezone[] | undefined => {
     return isCountryCode(v) && timezones.some(({country}) => country === v)
         ? timezones.filter(({country}) => country === v)
         : undefined

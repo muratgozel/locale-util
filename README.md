@@ -30,9 +30,9 @@ findCountry('TR') /*
 */
 findCountry('ABC') // undefined
 
-findCallingCode('US') // 1
-findCallingCode('TR') // 90
-findCallingCode(null) // undefined
+findCountryCallingCode('US') // 1
+findCountryCallingCode('TR') // 90
+findCountryCallingCode(null) // undefined
 
 findCountryLanguages('TR') // ['tr']
 findCountryLanguages('US') // ['en', 'es', 'haw']
@@ -48,8 +48,8 @@ findCurrency('TRY') /*
 }
 */
 
-findCurrencyCode('TR') // TRY
-findCurrencyCode('US') // USD
+findCountryCurrencyCode('TR') // TRY
+findCountryCurrencyCode('US') // USD
 
 isLanguageCode('xxx') // false
 isLanguageCode('tr') // true

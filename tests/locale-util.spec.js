@@ -1,14 +1,15 @@
 import {expect, test} from '@jest/globals'
 import {
-    isCountryCode, findCountry, findCallingCode, findCountryLanguages,
+    isCountryCode, findCountry, findCountryCallingCode, findCountryLanguages,
     isCurrencyCode, findCurrency, isLanguageCode, findLanguage, findCountryTimezones, findTimezoneOffset,
-    findCurrencyCode
-} from '../build/index.js'
+    findCountryCurrencyCode
+} from '../dist/index.js'
 
 test('validates country codes', () => {
     expect(isCountryCode('TR')).toBe(true)
     expect(isCountryCode('XX')).toBe(false)
     expect(isCountryCode(null)).toBe(false)
+    expect(isCountryCode(undefined)).toBe(false)
 })
 
 test('finds a country by its code', () => {
@@ -21,9 +22,9 @@ test('finds a country by its code', () => {
 })
 
 test('finds countries calling codes', () => {
-    expect(findCallingCode('TR')).toBe(90)
-    expect(findCallingCode('US')).toBe(1)
-    expect(findCallingCode(null)).toBe(undefined)
+    expect(findCountryCallingCode('TR')).toBe(90)
+    expect(findCountryCallingCode('US')).toBe(1)
+    expect(findCountryCallingCode(null)).toBe(undefined)
 })
 
 test('finds countries languages', () => {
@@ -41,7 +42,7 @@ test('validates currency codes', () => {
 test('finds currencies', () => {
     expect(findCurrency('TRY')).toStrictEqual({
         'code': 'TRY',
-        'num': 949,
+        'num': '949',
         'englishName': 'Turkish Lira',
         'nativeName': 'Türk lirası'
     })
@@ -86,6 +87,6 @@ test('finds timezone offset', () => {
 })
 
 test('finds currency code from country code', () => {
-    expect(findCurrencyCode('TR')).toBe('TRY')
-    expect(findCurrencyCode('US')).toBe('USD')
+    expect(findCountryCurrencyCode('TR')).toBe('TRY')
+    expect(findCountryCurrencyCode('US')).toBe('USD')
 })

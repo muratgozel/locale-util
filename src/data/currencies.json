@@ -1,0 +1,903 @@
+[
+    {
+        "code": "SHP",
+        "num": "654",
+        "englishName": "St. Helena Pound"
+    },
+    {
+        "code": "EUR",
+        "num": "978",
+        "nativeName": "euro",
+        "englishName": "Euro"
+    },
+    {
+        "code": "AED",
+        "num": "784",
+        "nativeName": "درهم إماراتي",
+        "englishName": "United Arab Emirates Dirham"
+    },
+    {
+        "code": "AFN",
+        "num": "971",
+        "nativeName": "افغانی افغانستان",
+        "englishName": "Afghan Afghani"
+    },
+    {
+        "code": "XCD",
+        "num": "951",
+        "nativeName": "East Caribbean Dollar",
+        "englishName": "East Caribbean Dollar"
+    },
+    {
+        "code": "ALL",
+        "num": "8",
+        "nativeName": "Leku shqiptar",
+        "englishName": "Albanian Lek"
+    },
+    {
+        "code": "AMD",
+        "num": "51",
+        "nativeName": "հայկական դրամ",
+        "englishName": "Armenian Dram"
+    },
+    {
+        "code": "AOA",
+        "num": "973",
+        "nativeName": "Kwanza angolano",
+        "englishName": "Angolan Kwanza"
+    },
+    {
+        "code": "ARS",
+        "num": "32",
+        "nativeName": "peso argentino",
+        "englishName": "Argentine Peso"
+    },
+    {
+        "code": "USD",
+        "num": "840",
+        "nativeName": "US Dollar",
+        "englishName": "US Dollar"
+    },
+    {
+        "code": "AUD",
+        "num": "36",
+        "nativeName": "Australian Dollar",
+        "englishName": "Australian Dollar"
+    },
+    {
+        "code": "AWG",
+        "num": "533",
+        "nativeName": "Arubaanse gulden",
+        "englishName": "Aruban Florin"
+    },
+    {
+        "code": "AZN",
+        "num": "944",
+        "nativeName": "Azərbaycan Manatı",
+        "englishName": "Azerbaijani Manat"
+    },
+    {
+        "code": "BAM",
+        "num": "977",
+        "nativeName": "Bosanskohercegovačka konvertibilna marka",
+        "englishName": "Bosnia-Herzegovina Convertible Mark"
+    },
+    {
+        "code": "BBD",
+        "num": "52",
+        "nativeName": "Barbadian Dollar",
+        "englishName": "Barbadian Dollar"
+    },
+    {
+        "code": "BDT",
+        "num": "50",
+        "nativeName": "বাংলাদেশী টাকা",
+        "englishName": "Bangladeshi Taka"
+    },
+    {
+        "code": "XOF",
+        "num": "952",
+        "nativeName": "franc CFA (BCEAO)",
+        "englishName": "West African CFA Franc"
+    },
+    {
+        "code": "BGN",
+        "num": "975",
+        "nativeName": "Български лев",
+        "englishName": "Bulgarian Lev"
+    },
+    {
+        "code": "BHD",
+        "num": "48",
+        "nativeName": "دينار بحريني",
+        "englishName": "Bahraini Dinar"
+    },
+    {
+        "code": "BIF",
+        "num": "108",
+        "nativeName": "Ifaranga ry’Uburundi",
+        "englishName": "Burundian Franc"
+    },
+    {
+        "code": "BMD",
+        "num": "60",
+        "nativeName": "Bermudan Dollar",
+        "englishName": "Bermudan Dollar"
+    },
+    {
+        "code": "BND",
+        "num": "96",
+        "nativeName": "Dolar Brunei",
+        "englishName": "Brunei Dollar"
+    },
+    {
+        "code": "BOB",
+        "num": "68",
+        "nativeName": "boliviano",
+        "englishName": "Bolivian Boliviano"
+    },
+    {
+        "code": "BRL",
+        "num": "986",
+        "nativeName": "Real brasileiro",
+        "englishName": "Brazilian Real"
+    },
+    {
+        "code": "BSD",
+        "num": "44",
+        "nativeName": "Bahamian Dollar",
+        "englishName": "Bahamian Dollar"
+    },
+    {
+        "code": "BTN",
+        "num": "64",
+        "nativeName": "དངུལ་ཀྲམ",
+        "englishName": "Bhutanese Ngultrum"
+    },
+    {
+        "code": "NOK",
+        "num": "578",
+        "englishName": "Norwegian Krone"
+    },
+    {
+        "code": "BWP",
+        "num": "72",
+        "nativeName": "Botswanan Pula",
+        "englishName": "Botswanan Pula"
+    },
+    {
+        "code": "BZD",
+        "num": "84",
+        "nativeName": "Belize Dollar",
+        "englishName": "Belize Dollar"
+    },
+    {
+        "code": "CAD",
+        "num": "124",
+        "nativeName": "Canadian Dollar",
+        "englishName": "Canadian Dollar"
+    },
+    {
+        "code": "CDF",
+        "num": "976",
+        "nativeName": "Faranga ya Kongo",
+        "englishName": "Congolese Franc"
+    },
+    {
+        "code": "XAF",
+        "num": "950",
+        "nativeName": "franc CFA (BEAC)",
+        "englishName": "Central African CFA Franc"
+    },
+    {
+        "code": "CHF",
+        "num": "756",
+        "nativeName": "Schweizer Franken",
+        "englishName": "Swiss Franc"
+    },
+    {
+        "code": "NZD",
+        "num": "554",
+        "nativeName": "New Zealand Dollar",
+        "englishName": "New Zealand Dollar"
+    },
+    {
+        "code": "CLP",
+        "num": "152",
+        "nativeName": "peso chileno",
+        "englishName": "Chilean Peso"
+    },
+    {
+        "code": "CNY",
+        "num": "156",
+        "nativeName": "人民币",
+        "englishName": "Chinese Yuan"
+    },
+    {
+        "code": "COP",
+        "num": "170",
+        "nativeName": "peso colombiano",
+        "englishName": "Colombian Peso"
+    },
+    {
+        "code": "CRC",
+        "num": "188",
+        "nativeName": "colón costarricense",
+        "englishName": "Costa Rican Colón"
+    },
+    {
+        "code": "CUP",
+        "num": "192",
+        "nativeName": "peso cubano",
+        "englishName": "Cuban Peso"
+    },
+    {
+        "code": "CVE",
+        "num": "132",
+        "nativeName": "Escudo cabo-verdiano",
+        "englishName": "Cape Verdean Escudo"
+    },
+    {
+        "code": "ANG",
+        "num": "532",
+        "nativeName": {
+            "#text": "Florin",
+            "draft": "unconfirmed"
+        },
+        "englishName": "Netherlands Antillean Guilder"
+    },
+    {
+        "code": "CZK",
+        "num": "203",
+        "nativeName": "česká koruna",
+        "englishName": "Czech Koruna"
+    },
+    {
+        "code": "DJF",
+        "num": "262",
+        "nativeName": "فرنك جيبوتي",
+        "englishName": "Djiboutian Franc"
+    },
+    {
+        "code": "DKK",
+        "num": "208",
+        "nativeName": "dansk krone",
+        "englishName": "Danish Krone"
+    },
+    {
+        "code": "DOP",
+        "num": "214",
+        "nativeName": "peso dominicano",
+        "englishName": "Dominican Peso"
+    },
+    {
+        "code": "DZD",
+        "num": "12",
+        "nativeName": "دينار جزائري",
+        "englishName": "Algerian Dinar"
+    },
+    {
+        "code": "EGP",
+        "num": "818",
+        "nativeName": "جنيه مصري",
+        "englishName": "Egyptian Pound"
+    },
+    {
+        "code": "MAD",
+        "num": "504",
+        "nativeName": "درهم مغربي",
+        "englishName": "Moroccan Dirham"
+    },
+    {
+        "code": "ERN",
+        "num": "232",
+        "nativeName": "ናቕፋ",
+        "englishName": "Eritrean Nakfa"
+    },
+    {
+        "code": "ETB",
+        "num": "230",
+        "nativeName": "የኢትዮጵያ ብር",
+        "englishName": "Ethiopian Birr"
+    },
+    {
+        "code": "FJD",
+        "num": "242",
+        "nativeName": "Fijian Dollar",
+        "englishName": "Fijian Dollar"
+    },
+    {
+        "code": "FKP",
+        "num": "238",
+        "nativeName": "Falkland Islands Pound",
+        "englishName": "Falkland Islands Pound"
+    },
+    {
+        "code": "GBP",
+        "num": "826",
+        "nativeName": "British Pound",
+        "englishName": "British Pound"
+    },
+    {
+        "code": "GEL",
+        "num": "981",
+        "nativeName": "ქართული ლარი",
+        "englishName": "Georgian Lari"
+    },
+    {
+        "code": "GHS",
+        "num": "936",
+        "nativeName": "Ghana Sidi",
+        "englishName": "Ghanaian Cedi"
+    },
+    {
+        "code": "GIP",
+        "num": "292",
+        "nativeName": "Gibraltar Pound",
+        "englishName": "Gibraltar Pound"
+    },
+    {
+        "code": "GMD",
+        "num": "270",
+        "nativeName": "Gambian Dalasi",
+        "englishName": "Gambian Dalasi"
+    },
+    {
+        "code": "GNF",
+        "num": "324",
+        "nativeName": "franc guinéen",
+        "englishName": "Guinean Franc"
+    },
+    {
+        "code": "GTQ",
+        "num": "320",
+        "nativeName": "quetzal guatemalteco",
+        "englishName": "Guatemalan Quetzal"
+    },
+    {
+        "code": "GYD",
+        "num": "328",
+        "nativeName": "Guyanaese Dollar",
+        "englishName": "Guyanaese Dollar"
+    },
+    {
+        "code": "HKD",
+        "num": "344",
+        "nativeName": "Hong Kong Dollar",
+        "englishName": "Hong Kong Dollar"
+    },
+    {
+        "code": "HNL",
+        "num": "340",
+        "nativeName": "lempira hondureño",
+        "englishName": "Honduran Lempira"
+    },
+    {
+        "code": "HTG",
+        "num": "332",
+        "nativeName": "gourde haïtienne",
+        "englishName": "Haitian Gourde"
+    },
+    {
+        "code": "HUF",
+        "num": "348",
+        "nativeName": "magyar forint",
+        "englishName": "Hungarian Forint"
+    },
+    {
+        "code": "IDR",
+        "num": "360",
+        "nativeName": "Rupiah Indonesia",
+        "englishName": "Indonesian Rupiah"
+    },
+    {
+        "code": "ILS",
+        "num": "376",
+        "nativeName": "שקל חדש",
+        "englishName": "Israeli New Shekel"
+    },
+    {
+        "code": "INR",
+        "num": "356",
+        "nativeName": "भारतीय रुपया",
+        "englishName": "Indian Rupee"
+    },
+    {
+        "code": "IQD",
+        "num": "368",
+        "nativeName": "دينار عراقي",
+        "englishName": "Iraqi Dinar"
+    },
+    {
+        "code": "IRR",
+        "num": "364",
+        "nativeName": "ریال ایران",
+        "englishName": "Iranian Rial"
+    },
+    {
+        "code": "ISK",
+        "num": "352",
+        "nativeName": "íslensk króna",
+        "englishName": "Icelandic Króna"
+    },
+    {
+        "code": "JMD",
+        "num": "388",
+        "nativeName": "Jamaican Dollar",
+        "englishName": "Jamaican Dollar"
+    },
+    {
+        "code": "JOD",
+        "num": "400",
+        "nativeName": "دينار أردني",
+        "englishName": "Jordanian Dinar"
+    },
+    {
+        "code": "JPY",
+        "num": "392",
+        "nativeName": "日本円",
+        "englishName": "Japanese Yen"
+    },
+    {
+        "code": "KES",
+        "num": "404",
+        "nativeName": "Shilingi ya Kenya",
+        "englishName": "Kenyan Shilling"
+    },
+    {
+        "code": "KGS",
+        "num": "417",
+        "nativeName": "Кыргызстан сому",
+        "englishName": "Kyrgystani Som"
+    },
+    {
+        "code": "KHR",
+        "num": "116",
+        "nativeName": "រៀល​កម្ពុជា",
+        "englishName": "Cambodian Riel"
+    },
+    {
+        "code": "KMF",
+        "num": "174",
+        "nativeName": "فرنك جزر القمر",
+        "englishName": "Comorian Franc"
+    },
+    {
+        "code": "KPW",
+        "num": "408",
+        "nativeName": "조선 민주주의 인민 공화국 원",
+        "englishName": "North Korean Won"
+    },
+    {
+        "code": "KRW",
+        "num": "410",
+        "nativeName": "대한민국 원",
+        "englishName": "South Korean Won"
+    },
+    {
+        "code": "KWD",
+        "num": "414",
+        "nativeName": "دينار كويتي",
+        "englishName": "Kuwaiti Dinar"
+    },
+    {
+        "code": "KYD",
+        "num": "136",
+        "nativeName": "Cayman Islands Dollar",
+        "englishName": "Cayman Islands Dollar"
+    },
+    {
+        "code": "KZT",
+        "num": "398",
+        "nativeName": "казахский тенге",
+        "englishName": "Kazakhstani Tenge"
+    },
+    {
+        "code": "LAK",
+        "num": "418",
+        "nativeName": "ລາວ ກີບ",
+        "englishName": "Laotian Kip"
+    },
+    {
+        "code": "LBP",
+        "num": "422",
+        "nativeName": "جنيه لبناني",
+        "englishName": "Lebanese Pound"
+    },
+    {
+        "code": "LKR",
+        "num": "144",
+        "nativeName": "ශ්‍රී ලංකා රුපියල",
+        "englishName": "Sri Lankan Rupee"
+    },
+    {
+        "code": "LRD",
+        "num": "430",
+        "nativeName": "Liberian Dollar",
+        "englishName": "Liberian Dollar"
+    },
+    {
+        "code": "ZAR",
+        "num": "710",
+        "nativeName": "South African Rand",
+        "englishName": "South African Rand"
+    },
+    {
+        "code": "LYD",
+        "num": "434",
+        "nativeName": "دينار ليبي",
+        "englishName": "Libyan Dinar"
+    },
+    {
+        "code": "MDL",
+        "num": "498",
+        "nativeName": "leu moldovenesc",
+        "englishName": "Moldovan Leu"
+    },
+    {
+        "code": "MGA",
+        "num": "969",
+        "nativeName": "Ariary",
+        "englishName": "Malagasy Ariary"
+    },
+    {
+        "code": "MKD",
+        "num": "807",
+        "nativeName": "Македонски денар",
+        "englishName": "Macedonian Denar"
+    },
+    {
+        "code": "MMK",
+        "num": "104",
+        "nativeName": "မြန်မာ ကျပ်",
+        "englishName": "Myanmar Kyat"
+    },
+    {
+        "code": "MNT",
+        "num": "496",
+        "nativeName": "Монгол төгрөг",
+        "englishName": "Mongolian Tugrik"
+    },
+    {
+        "code": "MOP",
+        "num": "446",
+        "nativeName": "Pataca macaense",
+        "englishName": "Macanese Pataca"
+    },
+    {
+        "code": "MRU",
+        "num": "929",
+        "nativeName": "أوقية موريتانية",
+        "englishName": "Mauritanian Ouguiya"
+    },
+    {
+        "code": "MUR",
+        "num": "480",
+        "nativeName": "Mauritian Rupee",
+        "englishName": "Mauritian Rupee"
+    },
+    {
+        "code": "MVR",
+        "num": "462",
+        "englishName": "Maldivian Rufiyaa"
+    },
+    {
+        "code": "MWK",
+        "num": "454",
+        "nativeName": "Malawian Kwacha",
+        "englishName": "Malawian Kwacha"
+    },
+    {
+        "code": "MXN",
+        "num": "484",
+        "nativeName": "peso mexicano",
+        "englishName": "Mexican Peso"
+    },
+    {
+        "code": "MYR",
+        "num": "458",
+        "nativeName": "Ringgit Malaysia",
+        "englishName": "Malaysian Ringgit"
+    },
+    {
+        "code": "MZN",
+        "num": "943",
+        "nativeName": "Metical moçambicano",
+        "englishName": "Mozambican Metical"
+    },
+    {
+        "code": "NAD",
+        "num": "516",
+        "nativeName": "Namibian Dollar",
+        "englishName": "Namibian Dollar"
+    },
+    {
+        "code": "XPF",
+        "num": "953",
+        "nativeName": "franc CFP",
+        "englishName": "CFP Franc"
+    },
+    {
+        "code": "NGN",
+        "num": "566",
+        "nativeName": "Nigerian Naira",
+        "englishName": "Nigerian Naira"
+    },
+    {
+        "code": "NIO",
+        "num": "558",
+        "nativeName": "córdoba oro",
+        "englishName": "Nicaraguan Córdoba"
+    },
+    {
+        "code": "NPR",
+        "num": "524",
+        "nativeName": "नेपाली रूपैयाँ",
+        "englishName": "Nepalese Rupee"
+    },
+    {
+        "code": "OMR",
+        "num": "512",
+        "nativeName": "ريال عماني",
+        "englishName": "Omani Rial"
+    },
+    {
+        "code": "PAB",
+        "num": "590",
+        "nativeName": "balboa panameño",
+        "englishName": "Panamanian Balboa"
+    },
+    {
+        "code": "PEN",
+        "num": "604",
+        "nativeName": "sol peruano",
+        "englishName": "Peruvian Sol"
+    },
+    {
+        "code": "PGK",
+        "num": "598",
+        "englishName": "Papua New Guinean Kina"
+    },
+    {
+        "code": "PHP",
+        "num": "608",
+        "nativeName": "Philippine Peso",
+        "englishName": "Philippine Peso"
+    },
+    {
+        "code": "PKR",
+        "num": "586",
+        "nativeName": "پاکستانی روپیہ",
+        "englishName": "Pakistani Rupee"
+    },
+    {
+        "code": "PLN",
+        "num": "985",
+        "nativeName": "złoty polski",
+        "englishName": "Polish Zloty"
+    },
+    {
+        "code": "PYG",
+        "num": "600",
+        "englishName": "Paraguayan Guarani"
+    },
+    {
+        "code": "QAR",
+        "num": "634",
+        "nativeName": "ريال قطري",
+        "englishName": "Qatari Riyal"
+    },
+    {
+        "code": "RON",
+        "num": "946",
+        "nativeName": "leu românesc",
+        "englishName": "Romanian Leu"
+    },
+    {
+        "code": "RSD",
+        "num": "941",
+        "nativeName": "српски динар",
+        "englishName": "Serbian Dinar"
+    },
+    {
+        "code": "RUB",
+        "num": "643",
+        "nativeName": "российский рубль",
+        "englishName": "Russian Ruble"
+    },
+    {
+        "code": "RWF",
+        "num": "646",
+        "englishName": "Rwandan Franc"
+    },
+    {
+        "code": "SAR",
+        "num": "682",
+        "nativeName": "ريال سعودي",
+        "englishName": "Saudi Riyal"
+    },
+    {
+        "code": "SBD",
+        "num": "90",
+        "nativeName": "Solomon Islands Dollar",
+        "englishName": "Solomon Islands Dollar"
+    },
+    {
+        "code": "SCR",
+        "num": "690",
+        "nativeName": "roupie des Seychelles",
+        "englishName": "Seychellois Rupee"
+    },
+    {
+        "code": "SDG",
+        "num": "938",
+        "nativeName": "جنيه سوداني",
+        "englishName": "Sudanese Pound"
+    },
+    {
+        "code": "SEK",
+        "num": "752",
+        "nativeName": "svensk krona",
+        "englishName": "Swedish Krona"
+    },
+    {
+        "code": "SGD",
+        "num": "702",
+        "nativeName": "Singapore Dollar",
+        "englishName": "Singapore Dollar"
+    },
+    {
+        "code": "SOS",
+        "num": "706",
+        "nativeName": "Shilingka Soomaaliya",
+        "englishName": "Somali Shilling"
+    },
+    {
+        "code": "SRD",
+        "num": "968",
+        "nativeName": "Surinaamse dollar",
+        "englishName": "Surinamese Dollar"
+    },
+    {
+        "code": "SSP",
+        "num": "728",
+        "nativeName": "South Sudanese Pound",
+        "englishName": "South Sudanese Pound"
+    },
+    {
+        "code": "STN",
+        "num": "930",
+        "nativeName": "Dobra de São Tomé e Príncipe",
+        "englishName": "São Tomé & Príncipe Dobra"
+    },
+    {
+        "code": "SYP",
+        "num": "760",
+        "nativeName": "ليرة سورية",
+        "englishName": "Syrian Pound"
+    },
+    {
+        "code": "SZL",
+        "num": "748",
+        "nativeName": "Swazi Lilangeni",
+        "englishName": "Swazi Lilangeni"
+    },
+    {
+        "code": "THB",
+        "num": "764",
+        "nativeName": "บาท",
+        "englishName": "Thai Baht"
+    },
+    {
+        "code": "TJS",
+        "num": "972",
+        "nativeName": "Сомонӣ",
+        "englishName": "Tajikistani Somoni"
+    },
+    {
+        "code": "TMT",
+        "num": "934",
+        "nativeName": "Türkmen manady",
+        "englishName": "Turkmenistani Manat"
+    },
+    {
+        "code": "TND",
+        "num": "788",
+        "nativeName": "دينار تونسي",
+        "englishName": "Tunisian Dinar"
+    },
+    {
+        "code": "TOP",
+        "num": "776",
+        "nativeName": "Paʻanga fakatonga",
+        "englishName": "Tongan Paʻanga"
+    },
+    {
+        "code": "TRY",
+        "num": "949",
+        "nativeName": "Türk lirası",
+        "englishName": "Turkish Lira"
+    },
+    {
+        "code": "TTD",
+        "num": "780",
+        "nativeName": "Trinidad & Tobago Dollar",
+        "englishName": "Trinidad & Tobago Dollar"
+    },
+    {
+        "code": "TWD",
+        "num": "901",
+        "englishName": "New Taiwan Dollar"
+    },
+    {
+        "code": "TZS",
+        "num": "834",
+        "nativeName": "Shilingi ya Tanzania",
+        "englishName": "Tanzanian Shilling"
+    },
+    {
+        "code": "UAH",
+        "num": "980",
+        "nativeName": "українська гривня",
+        "englishName": "Ukrainian Hryvnia"
+    },
+    {
+        "code": "UGX",
+        "num": "800",
+        "nativeName": "Shilingi ya Uganda",
+        "englishName": "Ugandan Shilling"
+    },
+    {
+        "code": "UYU",
+        "num": "858",
+        "nativeName": "peso uruguayo",
+        "englishName": "Uruguayan Peso"
+    },
+    {
+        "code": "UZS",
+        "num": "860",
+        "nativeName": "O‘zbekiston so‘mi",
+        "englishName": "Uzbekistani Som"
+    },
+    {
+        "code": "VES",
+        "num": "928",
+        "nativeName": "bolívar venezolano",
+        "englishName": "Venezuelan Bolívar"
+    },
+    {
+        "code": "VND",
+        "num": "704",
+        "nativeName": "Đồng Việt Nam",
+        "englishName": "Vietnamese Dong"
+    },
+    {
+        "code": "VUV",
+        "num": "548",
+        "nativeName": "Vanuatu Vatu",
+        "englishName": "Vanuatu Vatu"
+    },
+    {
+        "code": "WST",
+        "num": "882",
+        "nativeName": "Samoan Tala",
+        "englishName": "Samoan Tala"
+    },
+    {
+        "code": "YER",
+        "num": "886",
+        "nativeName": "ريال يمني",
+        "englishName": "Yemeni Rial"
+    },
+    {
+        "code": "ZMW",
+        "num": "967",
+        "nativeName": "Zambian Kwacha",
+        "englishName": "Zambian Kwacha"
+    },
+    {
+        "code": "XAG",
+        "num": "961",
+        "englishName": "Silver"
+    }
+]
