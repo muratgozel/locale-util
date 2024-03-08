@@ -1,35 +1,33 @@
 import type {Country, Currency, Language, Timezone} from './setup'
 
-import countryCodes from './data/countryCodes.json'
-import countries from './data/countries.json'
-import countryCallingCodes from './data/countryCallingCodes.json'
-import countryLanguages from './data/countryLanguages.json'
-import currencyCodes from './data/currencyCodes.json'
-import currencies from './data/currencies.json'
-import languageCodes from './data/languageCodes.json'
-import languages from './data/languages.json'
-import timezones from './data/timezones.json'
-import countryCurrencies from './data/countryCurrencies.json'
+import {default as _countryCodes} from './data/countryCodes.json'
+import {default as _countries} from './data/countries.json'
+import {default as _countryCallingCodes} from './data/countryCallingCodes.json'
+import {default as _countryLanguages} from './data/countryLanguages.json'
+import {default as _currencyCodes} from './data/currencyCodes.json'
+import {default as _currencies} from './data/currencies.json'
+import {default as _languageCodes} from './data/languageCodes.json'
+import {default as _languages} from './data/languages.json'
+import {default as _timezones} from './data/timezones.json'
+import {default as _countryCurrencies} from './data/countryCurrencies.json'
 
-export {
-    countryCodes,
-    countries,
-    countryCallingCodes,
-    countryLanguages,
-    currencyCodes,
-    currencies,
-    languageCodes,
-    languages,
-    timezones,
-    countryCurrencies
-}
+export const countryCodes: string[] = _countryCodes
+export const countries: Country[] = _countries
+export const countryCallingCodes = _countryCallingCodes
+export const countryLanguages = _countryLanguages
+export const currencyCodes = _currencyCodes
+export const currencies: Currency[] = _currencies
+export const languageCodes = _languageCodes
+export const languages: Language[] = _languages
+export const timezones: Timezone[] = _timezones
+export const countryCurrencies = _countryCurrencies
 
 export const isCountryCode = (v: unknown): boolean => {
     return typeof v === 'string' && countryCodes.includes(v)
 }
 
 export const findCountry = (v: string): Country | undefined => {
-    return (countries as Country[]).find(({code}) => code === v)
+    return countries.find(({code}) => code === v)
 }
 
 export const findCountryCallingCode = (v: string): number | undefined => {
@@ -45,7 +43,7 @@ export const isCurrencyCode = (v: unknown): boolean => {
 }
 
 export const findCurrency = (v: string): Currency | undefined => {
-    return (currencies as Currency[]).find(({code}) => code === v)
+    return currencies.find(({code}) => code === v)
 }
 
 export const findCountryCurrencyCode = (v: string): string | undefined => {
@@ -57,7 +55,7 @@ export const isLanguageCode = (v: unknown): boolean => {
 }
 
 export const findLanguage = (v: string): Language | undefined => {
-    return (languages as Language[]).find(({code}) => code === v)
+    return languages.find(({code}) => code === v)
 }
 
 export const findCountryTimezones = (v: string): Timezone[] | undefined => {
@@ -68,6 +66,6 @@ export const findCountryTimezones = (v: string): Timezone[] | undefined => {
 
 export const findTimezoneOffset = (v: string): number | undefined => {
     return timezones.some(({name}) => name === v)
-        ? (timezones.filter(({name}) => name === v)[0] as Timezone).offset
+        ? (timezones.filter(({name}) => name === v)[0]!).offset
         : undefined
 }

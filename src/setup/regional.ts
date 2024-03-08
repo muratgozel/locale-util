@@ -32,6 +32,7 @@ export async function parseRegionalData (languageCodes: string[]) {
         }, {})
         const currencies = numbers?.currencies && isArray(numbers.currencies.currency)
             ? numbers.currencies.currency.reduce((memo: Record<string, string>, item) => {
+                if (isArray(item.displayName) && typeof item.displayName[0] !== 'string') return memo
                 memo[item.type] = isArray(item.displayName) ? item.displayName[0]! : item.displayName
                 return memo
             }, {})

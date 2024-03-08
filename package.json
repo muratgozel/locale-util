@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "4.0.0-beta.0",
+  "version": "4.0.0-beta.1",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "type": "module",
   "exports": {
@@ -18,7 +18,7 @@
     "compile": "tsc -p tsconfig.json",
     "build": "NODE_ENV=production tsup",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "docs": "typedoc --includeVersion --excludePrivate src/index.ts types/index.d.ts"
+    "docs": "typedoc --includeVersion --excludePrivate src/index.ts"
   },
   "config": {
     "phonenumber_metadata_endpoint": "https://raw.githubusercontent.com/googlei18n/libphonenumber/master/resources/PhoneNumberMetadata.xml",

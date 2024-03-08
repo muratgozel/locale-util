@@ -72,7 +72,7 @@ const countries: Country[] = countryCodes.map((code) => {
     return {
         code,
         nativeName: nativeLanguage.length > 0 ? regionalData[nativeLanguage]!.countries[code] : undefined,
-        englishName: englishNames.countries[code]
+        englishName: englishNames.countries[code]!
     }
 })
 const timezones = countryCodes.reduce((memo: Timezone[], code) => {
@@ -106,21 +106,21 @@ logger.info('All data generated successfully.')
 
 export interface Language {
     code: string
-    nativeName: string | undefined
-    englishName: string | undefined
+    nativeName?: string | undefined
+    englishName?: string | undefined
 }
 
 export interface Currency {
     code: string
     num: string
-    nativeName: string | undefined
+    nativeName?: string | undefined
     englishName: string | undefined
 }
 
 export interface Country {
     code: string
-    nativeName: string | undefined
-    englishName: string | undefined
+    nativeName?: string | undefined
+    englishName: string
 }
 
 export interface Timezone {
