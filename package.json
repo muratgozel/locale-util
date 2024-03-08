@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "4.0.0-beta.2",
+  "version": "4.0.0",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "type": "module",
   "exports": {
@@ -10,6 +10,7 @@
     }
   },
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "presetup": "rm -rf src/data/*",
     "setup": "node --loader @swc-node/register/esm ./src/setup/index.ts",
@@ -26,8 +27,8 @@
     "data_path": "./src/data"
   },
   "engines": {
-    "node": "20.x",
-    "pnpm": "8.x"
+    "node": ">=20.x",
+    "pnpm": ">=8.x"
   },
   "repository": {
     "type": "git",
