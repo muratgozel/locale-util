@@ -2,7 +2,7 @@ import {expect, test} from '@jest/globals'
 import {
     isCountryCode, findCountry, findCountryCallingCode, findCountryLanguages,
     isCurrencyCode, findCurrency, isLanguageCode, findLanguage, findCountryTimezones, findTimezoneOffset,
-    findCountryCurrencyCode
+    findCountryCurrencyCode, findCountryFromTimezoneName
 } from '../dist/index.js'
 
 test('validates country codes', () => {
@@ -78,6 +78,11 @@ test('finds country timezones', () => {
         'offset': 240,
         'country': 'TT'
     })
+})
+
+test('find country from timezone name', () => {
+    expect(findCountryFromTimezoneName('Europe/Istanbul')).toBe('TR')
+    expect(findCountryFromTimezoneName('Invalid/Name')).toBe(undefined)
 })
 
 test('finds timezone offset', () => {

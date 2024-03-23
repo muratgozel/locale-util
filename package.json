@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "type": "module",
   "exports": {
@@ -14,8 +14,7 @@
   "scripts": {
     "presetup": "rm -rf src/data/*",
     "setup": "node --loader @swc-node/register/esm ./src/setup/index.ts",
-    "precompile": "rm -rf build/*",
-    "compile": "tsc -p tsconfig.json",
+    "compile": "exit 0",
     "build": "NODE_ENV=production tsup",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "docs": "typedoc --includeVersion --excludePrivate src/index.ts"

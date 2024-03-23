@@ -800,6 +800,7 @@ declare const findCountryCurrencyCode: (v: string) => string | undefined;
 declare const isLanguageCode: (v: unknown) => boolean;
 declare const findLanguage: (v: string) => Language | undefined;
 declare const findCountryTimezones: (v: string) => Timezone[] | undefined;
+declare const findCountryFromTimezoneName: (n: string) => string | undefined;
 declare const findTimezoneOffset: (v: string) => number | undefined;
 
-export { countries, countryCallingCodes, countryCodes, countryCurrencies, countryLanguages, currencies, currencyCodes, findCountry, findCountryCallingCode, findCountryCurrencyCode, findCountryLanguages, findCountryTimezones, findCurrency, findLanguage, findTimezoneOffset, isCountryCode, isCurrencyCode, isLanguageCode, languageCodes, languages, timezones };
+export { countries, countryCallingCodes, countryCodes, countryCurrencies, countryLanguages, currencies, currencyCodes, findCountry, findCountryCallingCode, findCountryCurrencyCode, findCountryFromTimezoneName, findCountryLanguages, findCountryTimezones, findCurrency, findLanguage, findTimezoneOffset, isCountryCode, isCurrencyCode, isLanguageCode, languageCodes, languages, timezones };

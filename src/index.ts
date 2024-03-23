@@ -64,6 +64,10 @@ export const findCountryTimezones = (v: string): Timezone[] | undefined => {
         : undefined
 }
 
+export const findCountryFromTimezoneName = (n: string): string | undefined => {
+    return timezones.find(({ name }) => name === n)?.country
+}
+
 export const findTimezoneOffset = (v: string): number | undefined => {
     return timezones.some(({name}) => name === v)
         ? (timezones.filter(({name}) => name === v)[0]!).offset

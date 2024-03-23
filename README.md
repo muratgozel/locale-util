@@ -1,9 +1,6 @@
 # locale-util
 Unicode CLDR data parser and module, regularly updated based on https://github.com/unicode-org/cldr releases. Refer to https://muratgozel.github.io/locale-util/ for full api docs.
 
-## ⭐ Breaking Changes in v3
-In v3, I extended the scope of the package, made it a module that has the necessary methods to interact with the data.
-
 ## Installation
 ```sh
 npm install locale-util
