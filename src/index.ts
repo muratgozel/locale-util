@@ -10,6 +10,8 @@ import {default as _languageCodes} from './data/languageCodes.json'
 import {default as _languages} from './data/languages.json'
 import {default as _timezones} from './data/timezones.json'
 import {default as _countryCurrencies} from './data/countryCurrencies.json'
+import {default as _territories} from './data/territories.json'
+import {default as _countriesByTerritory} from './data/countriesByTerritory.json'
 
 export const countryCodes: string[] = _countryCodes
 export const countries: Country[] = _countries
@@ -21,6 +23,20 @@ export const languageCodes = _languageCodes
 export const languages: Language[] = _languages
 export const timezones: Timezone[] = _timezones
 export const countryCurrencies = _countryCurrencies
+export const territories: { code: string, name: string }[] = _territories
+export const countriesByTerritory = _countriesByTerritory
+
+export const findTerritories = () => {
+    return territories
+}
+
+export const findCountryTerritory = (v: string): { code: string, name: string } | undefined => {
+    const code = Object.keys(countriesByTerritory).filter((territory) => countriesByTerritory[territory as keyof typeof countriesByTerritory].includes(v))[0] ?? ''
+
+    if (!code) return undefined
+
+    return territories.find((item) => item.code === code)
+}
 
 export const isCountryCode = (v: unknown): boolean => {
     return typeof v === 'string' && countryCodes.includes(v)

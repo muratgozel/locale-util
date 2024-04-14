@@ -1,7 +1,7 @@
 [
     {
         "name": "Europe/Andorra",
-        "offset": -60,
+        "offset": -120,
         "country": "AD"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
         "name": "Europe/Tirane",
-        "offset": -60,
+        "offset": -120,
         "country": "AL"
     },
     {
@@ -121,17 +121,17 @@
     },
     {
         "name": "Europe/Vienna",
-        "offset": -60,
+        "offset": -120,
         "country": "AT"
     },
     {
         "name": "Antarctica/Macquarie",
-        "offset": -660,
+        "offset": -600,
         "country": "AU"
     },
     {
         "name": "Australia/Adelaide",
-        "offset": -630,
+        "offset": -570,
         "country": "AU"
     },
     {
@@ -141,7 +141,7 @@
     },
     {
         "name": "Australia/Broken_Hill",
-        "offset": -630,
+        "offset": -570,
         "country": "AU"
     },
     {
@@ -156,7 +156,7 @@
     },
     {
         "name": "Australia/Hobart",
-        "offset": -660,
+        "offset": -600,
         "country": "AU"
     },
     {
@@ -166,12 +166,12 @@
     },
     {
         "name": "Australia/Lord_Howe",
-        "offset": -660,
+        "offset": -630,
         "country": "AU"
     },
     {
         "name": "Australia/Melbourne",
-        "offset": -660,
+        "offset": -600,
         "country": "AU"
     },
     {
@@ -181,7 +181,7 @@
     },
     {
         "name": "Australia/Sydney",
-        "offset": -660,
+        "offset": -600,
         "country": "AU"
     },
     {
@@ -196,12 +196,12 @@
     },
     {
         "name": "Europe/Helsinki",
-        "offset": -120,
+        "offset": -180,
         "country": "AX"
     },
     {
         "name": "Europe/Mariehamn",
-        "offset": -120,
+        "offset": -180,
         "country": "AX"
     },
     {
@@ -211,12 +211,12 @@
     },
     {
         "name": "Europe/Belgrade",
-        "offset": -60,
+        "offset": -120,
         "country": "BA"
     },
     {
         "name": "Europe/Sarajevo",
-        "offset": -60,
+        "offset": -120,
         "country": "BA"
     },
     {
@@ -231,7 +231,7 @@
     },
     {
         "name": "Europe/Brussels",
-        "offset": -60,
+        "offset": -120,
         "country": "BE"
     },
     {
@@ -246,7 +246,7 @@
     },
     {
         "name": "Europe/Sofia",
-        "offset": -120,
+        "offset": -180,
         "country": "BG"
     },
     {
@@ -291,7 +291,7 @@
     },
     {
         "name": "Atlantic/Bermuda",
-        "offset": 240,
+        "offset": 180,
         "country": "BM"
     },
     {
@@ -401,12 +401,12 @@
     },
     {
         "name": "America/Nassau",
-        "offset": 300,
+        "offset": 240,
         "country": "BS"
     },
     {
         "name": "America/Toronto",
-        "offset": 300,
+        "offset": 240,
         "country": "BS"
     },
     {
@@ -446,7 +446,7 @@
     },
     {
         "name": "America/Cambridge_Bay",
-        "offset": 420,
+        "offset": 360,
         "country": "CA"
     },
     {
@@ -466,7 +466,7 @@
     },
     {
         "name": "America/Edmonton",
-        "offset": 420,
+        "offset": 360,
         "country": "CA"
     },
     {
@@ -476,32 +476,32 @@
     },
     {
         "name": "America/Glace_Bay",
-        "offset": 240,
+        "offset": 180,
         "country": "CA"
     },
     {
         "name": "America/Goose_Bay",
-        "offset": 240,
+        "offset": 180,
         "country": "CA"
     },
     {
         "name": "America/Halifax",
-        "offset": 240,
+        "offset": 180,
         "country": "CA"
     },
     {
         "name": "America/Inuvik",
-        "offset": 420,
+        "offset": 360,
         "country": "CA"
     },
     {
         "name": "America/Iqaluit",
-        "offset": 300,
+        "offset": 240,
         "country": "CA"
     },
     {
         "name": "America/Moncton",
-        "offset": 240,
+        "offset": 180,
         "country": "CA"
     },
     {
@@ -521,7 +521,7 @@
     },
     {
         "name": "America/Rankin_Inlet",
-        "offset": 360,
+        "offset": 300,
         "country": "CA"
     },
     {
@@ -531,12 +531,12 @@
     },
     {
         "name": "America/Resolute",
-        "offset": 360,
+        "offset": 300,
         "country": "CA"
     },
     {
         "name": "America/St_Johns",
-        "offset": 210,
+        "offset": 150,
         "country": "CA"
     },
     {
@@ -546,12 +546,12 @@
     },
     {
         "name": "America/Toronto",
-        "offset": 300,
+        "offset": 240,
         "country": "CA"
     },
     {
         "name": "America/Vancouver",
-        "offset": 480,
+        "offset": 420,
         "country": "CA"
     },
     {
@@ -561,7 +561,7 @@
     },
     {
         "name": "America/Winnipeg",
-        "offset": 360,
+        "offset": 300,
         "country": "CA"
     },
     {
@@ -616,7 +616,7 @@
     },
     {
         "name": "Europe/Zurich",
-        "offset": -60,
+        "offset": -120,
         "country": "CH"
     },
     {
@@ -636,12 +636,12 @@
     },
     {
         "name": "America/Santiago",
-        "offset": 180,
+        "offset": 240,
         "country": "CL"
     },
     {
         "name": "Pacific/Easter",
-        "offset": 300,
+        "offset": 360,
         "country": "CL"
     },
     {
@@ -676,7 +676,7 @@
     },
     {
         "name": "America/Havana",
-        "offset": 300,
+        "offset": 240,
         "country": "CU"
     },
     {
@@ -706,32 +706,32 @@
     },
     {
         "name": "Asia/Famagusta",
-        "offset": -120,
+        "offset": -180,
         "country": "CY"
     },
     {
         "name": "Asia/Nicosia",
-        "offset": -120,
+        "offset": -180,
         "country": "CY"
     },
     {
         "name": "Europe/Prague",
-        "offset": -60,
+        "offset": -120,
         "country": "CZ"
     },
     {
         "name": "Europe/Berlin",
-        "offset": -60,
+        "offset": -120,
         "country": "DE"
     },
     {
         "name": "Europe/Busingen",
-        "offset": -60,
+        "offset": -120,
         "country": "DE"
     },
     {
         "name": "Europe/Zurich",
-        "offset": -60,
+        "offset": -120,
         "country": "DE"
     },
     {
@@ -746,12 +746,12 @@
     },
     {
         "name": "Europe/Berlin",
-        "offset": -60,
+        "offset": -120,
         "country": "DK"
     },
     {
         "name": "Europe/Copenhagen",
-        "offset": -60,
+        "offset": -120,
         "country": "DK"
     },
     {
@@ -786,7 +786,7 @@
     },
     {
         "name": "Europe/Tallinn",
-        "offset": -120,
+        "offset": -180,
         "country": "EE"
     },
     {
@@ -811,17 +811,17 @@
     },
     {
         "name": "Africa/Ceuta",
-        "offset": -60,
+        "offset": -120,
         "country": "ES"
     },
     {
         "name": "Atlantic/Canary",
-        "offset": 0,
+        "offset": -60,
         "country": "ES"
     },
     {
         "name": "Europe/Madrid",
-        "offset": -60,
+        "offset": -120,
         "country": "ES"
     },
     {
@@ -836,7 +836,7 @@
     },
     {
         "name": "Europe/Helsinki",
-        "offset": -120,
+        "offset": -180,
         "country": "FI"
     },
     {
@@ -876,12 +876,12 @@
     },
     {
         "name": "Atlantic/Faroe",
-        "offset": 0,
+        "offset": -60,
         "country": "FO"
     },
     {
         "name": "Europe/Paris",
-        "offset": -60,
+        "offset": -120,
         "country": "FR"
     },
     {
@@ -896,7 +896,7 @@
     },
     {
         "name": "Europe/London",
-        "offset": 0,
+        "offset": -60,
         "country": "GB"
     },
     {
@@ -921,12 +921,12 @@
     },
     {
         "name": "Europe/Guernsey",
-        "offset": 0,
+        "offset": -60,
         "country": "GG"
     },
     {
         "name": "Europe/London",
-        "offset": 0,
+        "offset": -60,
         "country": "GG"
     },
     {
@@ -941,7 +941,7 @@
     },
     {
         "name": "Europe/Gibraltar",
-        "offset": -60,
+        "offset": -120,
         "country": "GI"
     },
     {
@@ -951,7 +951,7 @@
     },
     {
         "name": "America/Nuuk",
-        "offset": 120,
+        "offset": 60,
         "country": "GL"
     },
     {
@@ -961,7 +961,7 @@
     },
     {
         "name": "America/Thule",
-        "offset": 240,
+        "offset": 180,
         "country": "GL"
     },
     {
@@ -1006,7 +1006,7 @@
     },
     {
         "name": "Europe/Athens",
-        "offset": -120,
+        "offset": -180,
         "country": "GR"
     },
     {
@@ -1041,22 +1041,22 @@
     },
     {
         "name": "Europe/Belgrade",
-        "offset": -60,
+        "offset": -120,
         "country": "HR"
     },
     {
         "name": "Europe/Zagreb",
-        "offset": -60,
+        "offset": -120,
         "country": "HR"
     },
     {
         "name": "America/Port-au-Prince",
-        "offset": 300,
+        "offset": 240,
         "country": "HT"
     },
     {
         "name": "Europe/Budapest",
-        "offset": -60,
+        "offset": -120,
         "country": "HU"
     },
     {
@@ -1081,22 +1081,22 @@
     },
     {
         "name": "Europe/Dublin",
-        "offset": 0,
+        "offset": -60,
         "country": "IE"
     },
     {
         "name": "Asia/Jerusalem",
-        "offset": -120,
+        "offset": -180,
         "country": "IL"
     },
     {
         "name": "Europe/Isle_of_Man",
-        "offset": 0,
+        "offset": -60,
         "country": "IM"
     },
     {
         "name": "Europe/London",
-        "offset": 0,
+        "offset": -60,
         "country": "IM"
     },
     {
@@ -1131,17 +1131,17 @@
     },
     {
         "name": "Europe/Rome",
-        "offset": -60,
+        "offset": -120,
         "country": "IT"
     },
     {
         "name": "Europe/Jersey",
-        "offset": 0,
+        "offset": -60,
         "country": "JE"
     },
     {
         "name": "Europe/London",
-        "offset": 0,
+        "offset": -60,
         "country": "JE"
     },
     {
@@ -1291,7 +1291,7 @@
     },
     {
         "name": "Asia/Beirut",
-        "offset": -120,
+        "offset": -180,
         "country": "LB"
     },
     {
@@ -1306,12 +1306,12 @@
     },
     {
         "name": "Europe/Vaduz",
-        "offset": -60,
+        "offset": -120,
         "country": "LI"
     },
     {
         "name": "Europe/Zurich",
-        "offset": -60,
+        "offset": -120,
         "country": "LI"
     },
     {
@@ -1336,22 +1336,22 @@
     },
     {
         "name": "Europe/Vilnius",
-        "offset": -120,
+        "offset": -180,
         "country": "LT"
     },
     {
         "name": "Europe/Brussels",
-        "offset": -60,
+        "offset": -120,
         "country": "LU"
     },
     {
         "name": "Europe/Luxembourg",
-        "offset": -60,
+        "offset": -120,
         "country": "LU"
     },
     {
         "name": "Europe/Riga",
-        "offset": -120,
+        "offset": -180,
         "country": "LV"
     },
     {
@@ -1366,27 +1366,27 @@
     },
     {
         "name": "Europe/Monaco",
-        "offset": -60,
+        "offset": -120,
         "country": "MC"
     },
     {
         "name": "Europe/Paris",
-        "offset": -60,
+        "offset": -120,
         "country": "MC"
     },
     {
         "name": "Europe/Chisinau",
-        "offset": -120,
+        "offset": -180,
         "country": "MD"
     },
     {
         "name": "Europe/Belgrade",
-        "offset": -60,
+        "offset": -120,
         "country": "ME"
     },
     {
         "name": "Europe/Podgorica",
-        "offset": -60,
+        "offset": -120,
         "country": "ME"
     },
     {
@@ -1426,12 +1426,12 @@
     },
     {
         "name": "Europe/Belgrade",
-        "offset": -60,
+        "offset": -120,
         "country": "MK"
     },
     {
         "name": "Europe/Skopje",
-        "offset": -60,
+        "offset": -120,
         "country": "MK"
     },
     {
@@ -1506,7 +1506,7 @@
     },
     {
         "name": "Europe/Malta",
-        "offset": -60,
+        "offset": -120,
         "country": "MT"
     },
     {
@@ -1546,7 +1546,7 @@
     },
     {
         "name": "America/Ciudad_Juarez",
-        "offset": 420,
+        "offset": 360,
         "country": "MX"
     },
     {
@@ -1556,7 +1556,7 @@
     },
     {
         "name": "America/Matamoros",
-        "offset": 360,
+        "offset": 300,
         "country": "MX"
     },
     {
@@ -1581,12 +1581,12 @@
     },
     {
         "name": "America/Ojinaga",
-        "offset": 360,
+        "offset": 300,
         "country": "MX"
     },
     {
         "name": "America/Tijuana",
-        "offset": 480,
+        "offset": 420,
         "country": "MX"
     },
     {
@@ -1631,7 +1631,7 @@
     },
     {
         "name": "Pacific/Norfolk",
-        "offset": -720,
+        "offset": -660,
         "country": "NF"
     },
     {
@@ -1646,22 +1646,22 @@
     },
     {
         "name": "Europe/Amsterdam",
-        "offset": -60,
+        "offset": -120,
         "country": "NL"
     },
     {
         "name": "Europe/Brussels",
-        "offset": -60,
+        "offset": -120,
         "country": "NL"
     },
     {
         "name": "Europe/Berlin",
-        "offset": -60,
+        "offset": -120,
         "country": "NO"
     },
     {
         "name": "Europe/Oslo",
-        "offset": -60,
+        "offset": -120,
         "country": "NO"
     },
     {
@@ -1681,12 +1681,12 @@
     },
     {
         "name": "Pacific/Auckland",
-        "offset": -780,
+        "offset": -720,
         "country": "NZ"
     },
     {
         "name": "Pacific/Chatham",
-        "offset": -825,
+        "offset": -765,
         "country": "NZ"
     },
     {
@@ -1746,12 +1746,12 @@
     },
     {
         "name": "Europe/Warsaw",
-        "offset": -60,
+        "offset": -120,
         "country": "PL"
     },
     {
         "name": "America/Miquelon",
-        "offset": 180,
+        "offset": 120,
         "country": "PM"
     },
     {
@@ -1776,17 +1776,17 @@
     },
     {
         "name": "Atlantic/Azores",
-        "offset": 60,
+        "offset": 0,
         "country": "PT"
     },
     {
         "name": "Atlantic/Madeira",
-        "offset": 0,
+        "offset": -60,
         "country": "PT"
     },
     {
         "name": "Europe/Lisbon",
-        "offset": 0,
+        "offset": -60,
         "country": "PT"
     },
     {
@@ -1796,7 +1796,7 @@
     },
     {
         "name": "America/Asuncion",
-        "offset": 180,
+        "offset": 240,
         "country": "PY"
     },
     {
@@ -1816,12 +1816,12 @@
     },
     {
         "name": "Europe/Bucharest",
-        "offset": -120,
+        "offset": -180,
         "country": "RO"
     },
     {
         "name": "Europe/Belgrade",
-        "offset": -60,
+        "offset": -120,
         "country": "RS"
     },
     {
@@ -1996,12 +1996,12 @@
     },
     {
         "name": "Europe/Berlin",
-        "offset": -60,
+        "offset": -120,
         "country": "SE"
     },
     {
         "name": "Europe/Stockholm",
-        "offset": -60,
+        "offset": -120,
         "country": "SE"
     },
     {
@@ -2021,32 +2021,32 @@
     },
     {
         "name": "Europe/Belgrade",
-        "offset": -60,
+        "offset": -120,
         "country": "SI"
     },
     {
         "name": "Europe/Ljubljana",
-        "offset": -60,
+        "offset": -120,
         "country": "SI"
     },
     {
         "name": "Arctic/Longyearbyen",
-        "offset": -60,
+        "offset": -120,
         "country": "SJ"
     },
     {
         "name": "Europe/Berlin",
-        "offset": -60,
+        "offset": -120,
         "country": "SJ"
     },
     {
         "name": "Europe/Bratislava",
-        "offset": -60,
+        "offset": -120,
         "country": "SK"
     },
     {
         "name": "Europe/Prague",
-        "offset": -60,
+        "offset": -120,
         "country": "SK"
     },
     {
@@ -2061,12 +2061,12 @@
     },
     {
         "name": "Europe/Rome",
-        "offset": -60,
+        "offset": -120,
         "country": "SM"
     },
     {
         "name": "Europe/San_Marino",
-        "offset": -60,
+        "offset": -120,
         "country": "SM"
     },
     {
@@ -2136,7 +2136,7 @@
     },
     {
         "name": "America/Grand_Turk",
-        "offset": 300,
+        "offset": 240,
         "country": "TC"
     },
     {
@@ -2231,7 +2231,7 @@
     },
     {
         "name": "Europe/Kyiv",
-        "offset": -120,
+        "offset": -180,
         "country": "UA"
     },
     {
@@ -2271,127 +2271,127 @@
     },
     {
         "name": "America/Adak",
-        "offset": 600,
+        "offset": 540,
         "country": "US"
     },
     {
         "name": "America/Anchorage",
-        "offset": 540,
-        "country": "US"
-    },
-    {
-        "name": "America/Boise",
-        "offset": 420,
-        "country": "US"
-    },
-    {
-        "name": "America/Chicago",
-        "offset": 360,
-        "country": "US"
-    },
-    {
-        "name": "America/Denver",
-        "offset": 420,
-        "country": "US"
-    },
-    {
-        "name": "America/Detroit",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Indiana/Indianapolis",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Indiana/Knox",
-        "offset": 360,
-        "country": "US"
-    },
-    {
-        "name": "America/Indiana/Marengo",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Indiana/Petersburg",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Indiana/Tell_City",
-        "offset": 360,
-        "country": "US"
-    },
-    {
-        "name": "America/Indiana/Vevay",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Indiana/Vincennes",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Indiana/Winamac",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Juneau",
-        "offset": 540,
-        "country": "US"
-    },
-    {
-        "name": "America/Kentucky/Louisville",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Kentucky/Monticello",
-        "offset": 300,
-        "country": "US"
-    },
-    {
-        "name": "America/Los_Angeles",
         "offset": 480,
         "country": "US"
     },
     {
-        "name": "America/Menominee",
+        "name": "America/Boise",
         "offset": 360,
         "country": "US"
     },
     {
-        "name": "America/Metlakatla",
-        "offset": 540,
-        "country": "US"
-    },
-    {
-        "name": "America/New_York",
+        "name": "America/Chicago",
         "offset": 300,
         "country": "US"
     },
     {
+        "name": "America/Denver",
+        "offset": 360,
+        "country": "US"
+    },
+    {
+        "name": "America/Detroit",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Indiana/Indianapolis",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Indiana/Knox",
+        "offset": 300,
+        "country": "US"
+    },
+    {
+        "name": "America/Indiana/Marengo",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Indiana/Petersburg",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Indiana/Tell_City",
+        "offset": 300,
+        "country": "US"
+    },
+    {
+        "name": "America/Indiana/Vevay",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Indiana/Vincennes",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Indiana/Winamac",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Juneau",
+        "offset": 480,
+        "country": "US"
+    },
+    {
+        "name": "America/Kentucky/Louisville",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Kentucky/Monticello",
+        "offset": 240,
+        "country": "US"
+    },
+    {
+        "name": "America/Los_Angeles",
+        "offset": 420,
+        "country": "US"
+    },
+    {
+        "name": "America/Menominee",
+        "offset": 300,
+        "country": "US"
+    },
+    {
+        "name": "America/Metlakatla",
+        "offset": 480,
+        "country": "US"
+    },
+    {
+        "name": "America/New_York",
+        "offset": 240,
+        "country": "US"
+    },
+    {
         "name": "America/Nome",
-        "offset": 540,
+        "offset": 480,
         "country": "US"
     },
     {
         "name": "America/North_Dakota/Beulah",
-        "offset": 360,
+        "offset": 300,
         "country": "US"
     },
     {
         "name": "America/North_Dakota/Center",
-        "offset": 360,
+        "offset": 300,
         "country": "US"
     },
     {
         "name": "America/North_Dakota/New_Salem",
-        "offset": 360,
+        "offset": 300,
         "country": "US"
     },
     {
@@ -2401,12 +2401,12 @@
     },
     {
         "name": "America/Sitka",
-        "offset": 540,
+        "offset": 480,
         "country": "US"
     },
     {
         "name": "America/Yakutat",
-        "offset": 540,
+        "offset": 480,
         "country": "US"
     },
     {
@@ -2431,12 +2431,12 @@
     },
     {
         "name": "Europe/Rome",
-        "offset": -60,
+        "offset": -120,
         "country": "VA"
     },
     {
         "name": "Europe/Vatican",
-        "offset": -60,
+        "offset": -120,
         "country": "VA"
     },
     {

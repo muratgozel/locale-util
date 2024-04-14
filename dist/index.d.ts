@@ -790,6 +790,43 @@ declare const countryCurrencies: {
     ZW: string;
     ZZ: string;
 };
+declare const territories: {
+    code: string;
+    name: string;
+}[];
+declare const countriesByTerritory: {
+    "143": string[];
+    "145": string[];
+    "151": string[];
+    "154": string[];
+    "155": string[];
+    "011": string[];
+    "013": string[];
+    "014": string[];
+    "015": string[];
+    "017": string[];
+    "018": string[];
+    "021": string[];
+    "029": string[];
+    "030": string[];
+    "035": string[];
+    "039": string[];
+    "005": string[];
+    "053": string[];
+    "054": string[];
+    "057": string[];
+    "061": string[];
+    "034": string[];
+    QO: string[];
+};
+declare const findTerritories: () => {
+    code: string;
+    name: string;
+}[];
+declare const findCountryTerritory: (v: string) => {
+    code: string;
+    name: string;
+} | undefined;
 declare const isCountryCode: (v: unknown) => boolean;
 declare const findCountry: (v: string) => Country | undefined;
 declare const findCountryCallingCode: (v: string) => number | undefined;
@@ -803,4 +840,4 @@ declare const findCountryTimezones: (v: string) => Timezone[] | undefined;
 declare const findCountryFromTimezoneName: (n: string) => string | undefined;
 declare const findTimezoneOffset: (v: string) => number | undefined;
 
-export { countries, countryCallingCodes, countryCodes, countryCurrencies, countryLanguages, currencies, currencyCodes, findCountry, findCountryCallingCode, findCountryCurrencyCode, findCountryFromTimezoneName, findCountryLanguages, findCountryTimezones, findCurrency, findLanguage, findTimezoneOffset, isCountryCode, isCurrencyCode, isLanguageCode, languageCodes, languages, timezones };
+export { countries, countriesByTerritory, countryCallingCodes, countryCodes, countryCurrencies, countryLanguages, currencies, currencyCodes, findCountry, findCountryCallingCode, findCountryCurrencyCode, findCountryFromTimezoneName, findCountryLanguages, findCountryTerritory, findCountryTimezones, findCurrency, findLanguage, findTerritories, findTimezoneOffset, isCountryCode, isCurrencyCode, isLanguageCode, languageCodes, languages, territories, timezones };

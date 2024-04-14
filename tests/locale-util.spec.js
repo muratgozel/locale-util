@@ -2,7 +2,7 @@ import {expect, test} from '@jest/globals'
 import {
     isCountryCode, findCountry, findCountryCallingCode, findCountryLanguages,
     isCurrencyCode, findCurrency, isLanguageCode, findLanguage, findCountryTimezones, findTimezoneOffset,
-    findCountryCurrencyCode, findCountryFromTimezoneName
+    findCountryCurrencyCode, findCountryFromTimezoneName, findTerritories, findCountryTerritory
 } from '../dist/index.js'
 
 test('validates country codes', () => {
@@ -94,4 +94,21 @@ test('finds timezone offset', () => {
 test('finds currency code from country code', () => {
     expect(findCountryCurrencyCode('TR')).toBe('TRY')
     expect(findCountryCurrencyCode('US')).toBe('USD')
+})
+
+test('finds territories', () => {
+    const list = findTerritories()
+    expect(list.length > 0).toBe(true)
+    expect(list.every((item) => Object.hasOwn(item, 'code') && Object.hasOwn(item, 'name'))).toBe(true)
+})
+
+test('finds territory of a country', () => {
+    expect(findCountryTerritory('TR')).toStrictEqual({
+        code: '145',
+        name: 'Western Asia'
+    })
+    expect(findCountryTerritory('US')).toStrictEqual({
+        code: '021',
+        name: 'Northern America'
+    })
 })

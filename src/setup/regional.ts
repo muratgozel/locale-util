@@ -18,18 +18,28 @@ export async function parseRegionalData (languageCodes: string[]) {
         if (isObject(localeDisplayNames.languages.language)) localeDisplayNames.languages.language = [(localeDisplayNames.languages.language as LanguageItem)]
         if (isObject(localeDisplayNames.territories.territory)) localeDisplayNames.territories.territory = [(localeDisplayNames.territories.territory as TerritoryItem)]
 
+        const territories = localeDisplayNames.territories.territory
+            .filter((item) => item.type.length === 3 || item.type === 'Q0')
+            .map((item) => ({ code: item.type, name: item['#text'] }))
+            /*.reduce((memo: Record<string, string>, item) => {
+                memo[item.type] = item['#text']
+                return memo
+            }, {})*/
+
         const languages = localeDisplayNames.languages.language.reduce((memo: Record<string, string>, item) => {
             if (!memo[item.type]) {
                 memo[item.type] = item['#text']
             }
             return memo
         }, {})
+
         const countries = localeDisplayNames.territories.territory.reduce((memo: Record<string, string>, item) => {
             if (!memo[item.type]) {
                 memo[item.type] = item['#text']
             }
             return memo
         }, {})
+
         const currencies = numbers?.currencies && isArray(numbers.currencies.currency)
             ? numbers.currencies.currency.reduce((memo: Record<string, string>, item) => {
                 if (isArray(item.displayName) && typeof item.displayName[0] !== 'string') return memo
@@ -39,6 +49,7 @@ export async function parseRegionalData (languageCodes: string[]) {
             : {}
 
         regionalNamings[language] = {
+            territories,
             languages,
             countries,
             currencies,
@@ -50,6 +61,7 @@ export async function parseRegionalData (languageCodes: string[]) {
 }
 
 interface RegionalNaming {
+    territories: { code: string, name: string }[]
     languages: Record<string, string>
     countries: Record<string, string>
     currencies: Record<string, string>

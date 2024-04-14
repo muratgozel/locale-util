@@ -17,7 +17,8 @@ const {
     languageCodes,
     countryLanguages,
     countryCurrencyMap,
-    currencies
+    currencies,
+    countriesByTerritory
 } = await parseSupplementalData()
 logger.info(`Found ${currencyCodes.length} currencies, ${countryCodes.length} countries, ${languageCodes.length} languages.`)
 
@@ -82,6 +83,9 @@ const timezones = countryCodes.reduce((memo: Timezone[], code) => {
     )
 }, [])
 
+const countryTerritories = Object.keys(countriesByTerritory)
+const territories = englishNames.territories.filter((territory) => countryTerritories.includes(territory.code))
+
 const outputPath = process.env.npm_package_config_data_path
 const filenameToDataMapping = {
     'languageCodes.json': languageCodes,
@@ -93,7 +97,9 @@ const filenameToDataMapping = {
     'currencies.json': _currencies,
     'countries.json': countries,
     'timezones.json': timezones,
-    'countryCallingCodes.json': countryCallingCodes
+    'countryCallingCodes.json': countryCallingCodes,
+    'territories.json': territories,
+    'countriesByTerritory.json': countriesByTerritory
 }
 
 for (const filename of Object.keys(filenameToDataMapping)) {

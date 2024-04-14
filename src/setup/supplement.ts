@@ -3,9 +3,16 @@ import {readFile} from 'node:fs/promises'
 
 export async function parseSupplementalData () {
     const data = await readFile(process.env.npm_package_config_cldr_supplement_filepath, 'utf8')
-    const {currencyData, territoryInfo, codeMappings} = (xmlParser
+    const {currencyData, territoryInfo, codeMappings, territoryContainment} = (xmlParser
         .parse(data) as XmlParseResult)
         .supplementalData
+
+    const countriesByTerritory = territoryContainment.group
+        .filter((item) => !Object.hasOwn(item, 'status') && !Object.hasOwn(item, 'grouping') && item.contains.split(' ')[0]!.length === 2)
+        .reduce((memo: Record<string, string[]>, item) => {
+            memo[item.type] = item.contains.split(' ')
+            return memo
+        }, {})
 
     const countryCurrencyMap = currencyData.region.reduce((memo: Record<string, string>, item) => {
         const code = isArray(item.currency) ? item.currency[0]!.iso4217 : item.currency.iso4217
@@ -54,7 +61,8 @@ export async function parseSupplementalData () {
         currencies,
         languageCodes,
         countryCodes,
-        countryLanguages
+        countryLanguages,
+        countriesByTerritory
     }
 
     function findOfficialLanguages (item: TerritoryItem) {
@@ -82,6 +90,13 @@ export async function parseSupplementalData () {
     function hasCurrencyNum (code: string) {
         return codeMappings.currencyCodes.some(({ type, numeric }) => type === code && typeof numeric === 'string')
     }
+}
+
+interface TerritoryContainmentItem {
+    type: string
+    contains: string
+    status: string
+    grouping: string
 }
 
 interface CurrencyData {
@@ -126,6 +141,9 @@ interface XmlParseResult {
     supplementalData: {
         currencyData: CurrencyData
         territoryInfo: TerritoryInfo
-        codeMappings: CodeMappings
+        codeMappings: CodeMappings,
+        territoryContainment: {
+            group: TerritoryContainmentItem[]
+        }
     }
 }
