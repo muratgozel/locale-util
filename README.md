@@ -13,7 +13,8 @@ Here are the methods that you can use to interact with the data:
 ```js
 import {isCountryCode, findCountry, findCallingCode, findCountryLanguages, 
     isCurrencyCode, findCurrency, isLanguageCode, findLanguage, 
-    findCountryTimezones, findTimezoneOffset} from 'locale-util'
+    findCountryTimezones, findTimezoneOffset, findTerritories, findCountryTerritory
+} from 'locale-util'
 
 isCountryCode('TR') // true
 isCountryCode('XX') // false
@@ -81,6 +82,24 @@ findCountryTimezones('TT') /*
 
 findTimezoneOffset('America/Puerto_Rico') // 240
 findTimezoneOffset('Europe/Istanbul') // -180
+
+findTerritories() /*
+[
+    {
+        "code": "005",
+        "name": "South America"
+    },
+    {
+        "code": "011",
+        "name": "Western Africa"
+    },
+    ...
+    ...
+]
+*/
+
+findCountryTerritory('TR') // { code: '145', name: 'Western Asia' }
+findCountryTerritory('TR') // { code: '021', name: 'Northern America' }
 ```
 
 Have a look at the tests, types and source for more info.
