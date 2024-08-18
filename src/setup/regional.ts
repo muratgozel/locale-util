@@ -1,11 +1,23 @@
 import {readdir, readFile} from 'node:fs/promises'
 import {extname, basename, join} from 'node:path'
-import {isArray, isObject, xmlParser} from './utilities'
+import {isArray, isFileExists, isObject, xmlParser} from './utilities'
 
 export async function parseRegionalData (languageCodes: string[]) {
+    const subdivisionsPath = process.env.npm_package_config_cldr_subdivisions_path
     const mainPath = process.env.npm_package_config_cldr_main_path
     const files = (await readdir(mainPath))
         .filter(resource => extname(resource) === '.xml' && languageCodes.includes(basename(resource, extname(resource))))
+
+    const divisionsXmlDataEn = await readFile(join(subdivisionsPath, 'en.xml'))
+    const { localeDisplayNames } = (xmlParser.parse(divisionsXmlDataEn) as XmlParserResultSubdivision).ldml
+    const divisionsEn = localeDisplayNames.subdivisions.subdivision.reduce((memo: Record<string, Record<string, string>>, item) => {
+        if (item.type && item.type.length > 2) {
+            const countryCode = item.type.slice(0, 2).toUpperCase()
+            if (!memo[countryCode]) memo[countryCode] = {}
+            memo[countryCode]![item.type.slice(2)] = item['#text']
+        }
+        return memo
+    }, {})
 
     const regionalNamings: Record<string, RegionalNaming> = {}
     for (const filepath of files) {
@@ -48,12 +60,27 @@ export async function parseRegionalData (languageCodes: string[]) {
             }, {})
             : {}
 
+        const subdivisions: Subdivision[] = []
+        const divisionsXmlData = await isFileExists(join(subdivisionsPath, language + '.xml')) ? await readFile(join(subdivisionsPath, language + '.xml')) : null
+        if (divisionsXmlData) {
+            const { localeDisplayNames } = (xmlParser.parse(divisionsXmlData) as XmlParserResultSubdivision).ldml
+            if (localeDisplayNames?.subdivisions) {
+                localeDisplayNames.subdivisions.subdivision.map((item) => {
+                    if (item.type && item.type.length > 2) {
+                        const country = item.type.slice(0, 2).toUpperCase()
+                        subdivisions.push({ countryCode: country, code: item.type.slice(2), nativeName: item['#text'], englishName: divisionsEn[country]![item.type.slice(2)]! })
+                    }
+                })
+            }
+        }
+
         regionalNamings[language] = {
             territories,
             languages,
             countries,
             currencies,
             chars: !characters.exemplarCharacters ? [] : characters.exemplarCharacters.length > 0 && typeof characters.exemplarCharacters[0] === 'string' ? characters.exemplarCharacters[0].slice(1, -1).split(' ') : [],
+            subdivisions,
         }
     }
 
@@ -66,6 +93,27 @@ interface RegionalNaming {
     countries: Record<string, string>
     currencies: Record<string, string>
     chars: string[]
+    subdivisions: Subdivision[]
+}
+
+export interface Subdivision {
+    countryCode: string
+    code: string
+    nativeName?: string
+    englishName: string
+}
+
+interface XmlParserResultSubdivision {
+    ldml: {
+        localeDisplayNames: {
+            subdivisions: {
+                subdivision: {
+                    type: string
+                    "#text": string
+                }[]
+            }
+        }
+    }
 }
 
 interface XmlParserResult {

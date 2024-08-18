@@ -20,6 +20,13 @@ interface Timezone {
     country: string;
 }
 
+interface Subdivision {
+    countryCode: string;
+    code: string;
+    nativeName?: string;
+    englishName: string;
+}
+
 declare const countryCodes: string[];
 declare const countries: Country[];
 declare const countryCallingCodes: {
@@ -819,6 +826,17 @@ declare const countriesByTerritory: {
     "034": string[];
     QO: string[];
 };
+declare const subdivisions: ({
+    code: string;
+    countryCode: string;
+    englishName: string;
+    nativeName: string;
+} | {
+    code: string;
+    countryCode: string;
+    englishName: string;
+    nativeName?: never;
+})[];
 declare const findTerritories: () => {
     code: string;
     name: string;
@@ -839,5 +857,6 @@ declare const findLanguage: (v: string) => Language | undefined;
 declare const findCountryTimezones: (v: string) => Timezone[] | undefined;
 declare const findCountryFromTimezoneName: (n: string) => string | undefined;
 declare const findTimezoneOffset: (v: string) => number | undefined;
+declare const findCountrySubdivisions: (v: string) => Subdivision[];
 
-export { countries, countriesByTerritory, countryCallingCodes, countryCodes, countryCurrencies, countryLanguages, currencies, currencyCodes, findCountry, findCountryCallingCode, findCountryCurrencyCode, findCountryFromTimezoneName, findCountryLanguages, findCountryTerritory, findCountryTimezones, findCurrency, findLanguage, findTerritories, findTimezoneOffset, isCountryCode, isCurrencyCode, isLanguageCode, languageCodes, languages, territories, timezones };
+export { countries, countriesByTerritory, countryCallingCodes, countryCodes, countryCurrencies, countryLanguages, currencies, currencyCodes, findCountry, findCountryCallingCode, findCountryCurrencyCode, findCountryFromTimezoneName, findCountryLanguages, findCountrySubdivisions, findCountryTerritory, findCountryTimezones, findCurrency, findLanguage, findTerritories, findTimezoneOffset, isCountryCode, isCurrencyCode, isLanguageCode, languageCodes, languages, subdivisions, territories, timezones };

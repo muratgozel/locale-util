@@ -1,4 +1,5 @@
 import type {Country, Currency, Language, Timezone} from './setup'
+import type {Subdivision} from './setup/regional'
 
 import {default as _countryCodes} from './data/countryCodes.json'
 import {default as _countries} from './data/countries.json'
@@ -12,6 +13,7 @@ import {default as _timezones} from './data/timezones.json'
 import {default as _countryCurrencies} from './data/countryCurrencies.json'
 import {default as _territories} from './data/territories.json'
 import {default as _countriesByTerritory} from './data/countriesByTerritory.json'
+import {default as _subdivisions} from './data/subdivisions.json'
 
 export const countryCodes: string[] = _countryCodes
 export const countries: Country[] = _countries
@@ -25,6 +27,7 @@ export const timezones: Timezone[] = _timezones
 export const countryCurrencies = _countryCurrencies
 export const territories: { code: string, name: string }[] = _territories
 export const countriesByTerritory = _countriesByTerritory
+export const subdivisions = _subdivisions
 
 export const findTerritories = () => {
     return territories
@@ -88,4 +91,8 @@ export const findTimezoneOffset = (v: string): number | undefined => {
     return timezones.some(({name}) => name === v)
         ? (timezones.filter(({name}) => name === v)[0]!).offset
         : undefined
+}
+
+export const findCountrySubdivisions = (v: string): Subdivision[] => {
+    return subdivisions.filter((d) => d.countryCode === v)
 }

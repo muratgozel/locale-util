@@ -86,6 +86,27 @@ const timezones = countryCodes.reduce((memo: Timezone[], code) => {
 const countryTerritories = Object.keys(countriesByTerritory)
 const territories = englishNames.territories.filter((territory) => countryTerritories.includes(territory.code))
 
+const subdivisions = regionalData['en']!.subdivisions.map((d) => {
+    let nativeLanguage = ''
+    if (countryLanguages[d.countryCode]) {
+        const languages = countryLanguages[d.countryCode]!
+        while (languages.length > 0) {
+            if (languages[0]! in regionalData) {
+                nativeLanguage = languages[0]!
+                break
+            }
+            languages.shift()
+        }
+    }
+
+    return {
+        code: d.code,
+        countryCode: d.countryCode,
+        englishName: d.englishName,
+        nativeName: nativeLanguage.length > 0 ? regionalData[nativeLanguage]!.subdivisions.find((_d) => _d.countryCode === d.countryCode && _d.code === d.code)?.nativeName : ''
+    }
+})
+
 const outputPath = process.env.npm_package_config_data_path
 const filenameToDataMapping = {
     'languageCodes.json': languageCodes,
@@ -99,7 +120,8 @@ const filenameToDataMapping = {
     'timezones.json': timezones,
     'countryCallingCodes.json': countryCallingCodes,
     'territories.json': territories,
-    'countriesByTerritory.json': countriesByTerritory
+    'countriesByTerritory.json': countriesByTerritory,
+    'subdivisions.json': subdivisions
 }
 
 for (const filename of Object.keys(filenameToDataMapping)) {

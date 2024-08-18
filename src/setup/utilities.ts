@@ -1,5 +1,7 @@
 import pino from 'pino'
 import {XMLParser} from 'fast-xml-parser'
+import {access, constants} from 'node:fs/promises'
+import path from 'node:path'
 
 export const logger = pino({
     transport: {
@@ -16,6 +18,15 @@ export const xmlParser = new XMLParser({
     allowBooleanAttributes: true,
     attributeNamePrefix: ''
 })
+
+export async function isFileExists(filepath: string) {
+    try {
+        await access(filepath, constants.F_OK)
+        return true
+    } catch (e) {
+        return false
+    }
+}
 
 export function stringify (obj: unknown) {
     return JSON.stringify(obj, null, 4)

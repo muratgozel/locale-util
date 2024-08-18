@@ -1,6 +1,6 @@
 {
   "name": "locale-util",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "description": "Locale data generators written in node.js. Uses reliable sources. Generated data available as JS/JSON objects.",
   "type": "module",
   "exports": {
@@ -23,6 +23,7 @@
     "phonenumber_metadata_endpoint": "https://raw.githubusercontent.com/googlei18n/libphonenumber/master/resources/PhoneNumberMetadata.xml",
     "cldr_supplement_filepath": "./cldr-data-common/supplemental/supplementalData.xml",
     "cldr_main_path": "./cldr-data-common/main",
+    "cldr_subdivisions_path": "./cldr-data-common/subdivisions",
     "data_path": "./src/data"
   },
   "engines": {

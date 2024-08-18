@@ -791,7 +791,7 @@
     },
     {
         "name": "Africa/Cairo",
-        "offset": -120,
+        "offset": -180,
         "country": "EG"
     },
     {
@@ -1766,12 +1766,12 @@
     },
     {
         "name": "Asia/Gaza",
-        "offset": -120,
+        "offset": -180,
         "country": "PS"
     },
     {
         "name": "Asia/Hebron",
-        "offset": -120,
+        "offset": -180,
         "country": "PS"
     },
     {
