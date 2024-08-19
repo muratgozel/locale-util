@@ -16,18 +16,18 @@ import {default as _countriesByTerritory} from './data/countriesByTerritory.json
 import {default as _subdivisions} from './data/subdivisions.json'
 
 export const countryCodes: string[] = _countryCodes
-export const countries: Country[] = _countries
+export const countries: LocaleUtilCountry[] = _countries
 export const countryCallingCodes = _countryCallingCodes
 export const countryLanguages = _countryLanguages
 export const currencyCodes = _currencyCodes
-export const currencies: Currency[] = _currencies
+export const currencies: LocaleUtilCurrency[] = _currencies
 export const languageCodes = _languageCodes
-export const languages: Language[] = _languages
-export const timezones: Timezone[] = _timezones
+export const languages: LocaleUtilLanguage[] = _languages
+export const timezones: LocaleUtilTimezone[] = _timezones
 export const countryCurrencies = _countryCurrencies
 export const territories: { code: string, name: string }[] = _territories
 export const countriesByTerritory = _countriesByTerritory
-export const subdivisions = _subdivisions
+export const subdivisions: LocaleUtilSubdivision[] = _subdivisions
 
 export const findTerritories = () => {
     return territories
@@ -45,7 +45,7 @@ export const isCountryCode = (v: unknown): boolean => {
     return typeof v === 'string' && countryCodes.includes(v)
 }
 
-export const findCountry = (v: string): Country | undefined => {
+export const findCountry = (v: string): LocaleUtilCountry | undefined => {
     return countries.find(({code}) => code === v)
 }
 
@@ -61,7 +61,7 @@ export const isCurrencyCode = (v: unknown): boolean => {
     return typeof v === 'string' && currencyCodes.includes(v)
 }
 
-export const findCurrency = (v: string): Currency | undefined => {
+export const findCurrency = (v: string): LocaleUtilCurrency | undefined => {
     return currencies.find(({code}) => code === v)
 }
 
@@ -73,11 +73,11 @@ export const isLanguageCode = (v: unknown): boolean => {
     return typeof v === 'string' && languageCodes.includes(v)
 }
 
-export const findLanguage = (v: string): Language | undefined => {
+export const findLanguage = (v: string): LocaleUtilLanguage | undefined => {
     return languages.find(({code}) => code === v)
 }
 
-export const findCountryTimezones = (v: string): Timezone[] | undefined => {
+export const findCountryTimezones = (v: string): LocaleUtilTimezone[] | undefined => {
     return isCountryCode(v) && timezones.some(({country}) => country === v)
         ? timezones.filter(({country}) => country === v)
         : undefined
@@ -93,6 +93,12 @@ export const findTimezoneOffset = (v: string): number | undefined => {
         : undefined
 }
 
-export const findCountrySubdivisions = (v: string): Subdivision[] => {
+export const findCountrySubdivisions = (v: string): LocaleUtilSubdivision[] => {
     return subdivisions.filter((d) => d.countryCode === v)
 }
+
+export type LocaleUtilCountry = Country
+export type LocaleUtilCurrency = Currency
+export type LocaleUtilLanguage = Language
+export type LocaleUtilTimezone = Timezone
+export type LocaleUtilSubdivision = Subdivision

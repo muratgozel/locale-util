@@ -35,5 +35,5 @@ var localeUtil = (function (exports) {
 	return exports;
 
 })({});
-//# sourceMappingURL=out.js.map
+//# sourceMappingURL=index.global.js.map
 //# sourceMappingURL=index.global.js.map

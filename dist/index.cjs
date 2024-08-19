@@ -30,5 +30,5 @@ exports.languages = j;
 exports.subdivisions = z;
 exports.territories = A;
 exports.timezones = n;
-//# sourceMappingURL=out.js.map
+//# sourceMappingURL=index.cjs.map
 //# sourceMappingURL=index.cjs.map

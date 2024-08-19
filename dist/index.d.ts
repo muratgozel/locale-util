@@ -28,7 +28,7 @@ interface Subdivision {
 }
 
 declare const countryCodes: string[];
-declare const countries: Country[];
+declare const countries: LocaleUtilCountry[];
 declare const countryCallingCodes: {
     AC: number;
     AD: number;
@@ -527,10 +527,10 @@ declare const countryLanguages: {
     ZW: string[];
 };
 declare const currencyCodes: string[];
-declare const currencies: Currency[];
+declare const currencies: LocaleUtilCurrency[];
 declare const languageCodes: string[];
-declare const languages: Language[];
-declare const timezones: Timezone[];
+declare const languages: LocaleUtilLanguage[];
+declare const timezones: LocaleUtilTimezone[];
 declare const countryCurrencies: {
     AC: string;
     AD: string;
@@ -826,17 +826,7 @@ declare const countriesByTerritory: {
     "034": string[];
     QO: string[];
 };
-declare const subdivisions: ({
-    code: string;
-    countryCode: string;
-    englishName: string;
-    nativeName: string;
-} | {
-    code: string;
-    countryCode: string;
-    englishName: string;
-    nativeName?: never;
-})[];
+declare const subdivisions: LocaleUtilSubdivision[];
 declare const findTerritories: () => {
     code: string;
     name: string;
@@ -846,17 +836,22 @@ declare const findCountryTerritory: (v: string) => {
     name: string;
 } | undefined;
 declare const isCountryCode: (v: unknown) => boolean;
-declare const findCountry: (v: string) => Country | undefined;
+declare const findCountry: (v: string) => LocaleUtilCountry | undefined;
 declare const findCountryCallingCode: (v: string) => number | undefined;
 declare const findCountryLanguages: (v: string) => string[] | undefined;
 declare const isCurrencyCode: (v: unknown) => boolean;
-declare const findCurrency: (v: string) => Currency | undefined;
+declare const findCurrency: (v: string) => LocaleUtilCurrency | undefined;
 declare const findCountryCurrencyCode: (v: string) => string | undefined;
 declare const isLanguageCode: (v: unknown) => boolean;
-declare const findLanguage: (v: string) => Language | undefined;
-declare const findCountryTimezones: (v: string) => Timezone[] | undefined;
+declare const findLanguage: (v: string) => LocaleUtilLanguage | undefined;
+declare const findCountryTimezones: (v: string) => LocaleUtilTimezone[] | undefined;
 declare const findCountryFromTimezoneName: (n: string) => string | undefined;
 declare const findTimezoneOffset: (v: string) => number | undefined;
-declare const findCountrySubdivisions: (v: string) => Subdivision[];
+declare const findCountrySubdivisions: (v: string) => LocaleUtilSubdivision[];
+type LocaleUtilCountry = Country;
+type LocaleUtilCurrency = Currency;
+type LocaleUtilLanguage = Language;
+type LocaleUtilTimezone = Timezone;
+type LocaleUtilSubdivision = Subdivision;
 
-export { countries, countriesByTerritory, countryCallingCodes, countryCodes, countryCurrencies, countryLanguages, currencies, currencyCodes, findCountry, findCountryCallingCode, findCountryCurrencyCode, findCountryFromTimezoneName, findCountryLanguages, findCountrySubdivisions, findCountryTerritory, findCountryTimezones, findCurrency, findLanguage, findTerritories, findTimezoneOffset, isCountryCode, isCurrencyCode, isLanguageCode, languageCodes, languages, subdivisions, territories, timezones };
+export { type LocaleUtilCountry, type LocaleUtilCurrency, type LocaleUtilLanguage, type LocaleUtilSubdivision, type LocaleUtilTimezone, countries, countriesByTerritory, countryCallingCodes, countryCodes, countryCurrencies, countryLanguages, currencies, currencyCodes, findCountry, findCountryCallingCode, findCountryCurrencyCode, findCountryFromTimezoneName, findCountryLanguages, findCountrySubdivisions, findCountryTerritory, findCountryTimezones, findCurrency, findLanguage, findTerritories, findTimezoneOffset, isCountryCode, isCurrencyCode, isLanguageCode, languageCodes, languages, subdivisions, territories, timezones };
